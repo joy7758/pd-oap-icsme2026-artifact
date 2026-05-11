@@ -1,0 +1,177 @@
+{
+  "actor": {
+    "actor_id": "synthetic-data-steward-review-001",
+    "actor_type": "synthetic_data_steward",
+    "name": "Synthetic Data Steward Office"
+  },
+  "catalog": {
+    "catalog_id": "synthetic-catalog-review-001",
+    "catalog_label": "Synthetic review catalog",
+    "dataset_refs": [
+      "synthetic-dataset-review-006"
+    ],
+    "policy_refs": [
+      "synthetic-policy-review-001"
+    ]
+  },
+  "conditions": [
+    {
+      "condition_id": "condition-invalid_review_policy_version_mismatch_002-purpose",
+      "source": "synthetic_policy",
+      "type": "review_condition",
+      "value": "limited_to_accountability_review"
+    }
+  ],
+  "decision": {
+    "decision_basis": "synthetic_authorization_basis_review",
+    "decision_id": "decision-invalid_review_policy_version_mismatch_002",
+    "outcome": "allow",
+    "rationale": "Synthetic fixture decision with internally consistent policy and evidence linkage."
+  },
+  "evidence": {
+    "evidence_ids": [
+      "evidence-invalid_review_policy_version_mismatch_002-policy",
+      "evidence-invalid_review_policy_version_mismatch_002-dataset",
+      "evidence-invalid_review_policy_version_mismatch_002-decision",
+      "evidence-invalid_review_policy_version_mismatch_002-review"
+    ],
+    "evidence_objects": [
+      {
+        "digest": "sha256:e1745ba405dceddde7a9f3dfd87615791d424a4c7f9a0bdfb7740dc9fd058ea0",
+        "evidence_id": "evidence-invalid_review_policy_version_mismatch_002-policy",
+        "linked_refs": [
+          "synthetic-policy-review-001"
+        ],
+        "purpose": "policy_basis",
+        "synthetic": true,
+        "type": "policy_record"
+      },
+      {
+        "digest": "sha256:a36505660317a98e7159dedd1f00e7dfa28672aede6917137f5fe2836c65a481",
+        "evidence_id": "evidence-invalid_review_policy_version_mismatch_002-dataset",
+        "linked_refs": [
+          "synthetic-dataset-review-006"
+        ],
+        "purpose": "dataset_reference",
+        "synthetic": true,
+        "type": "dataset_record"
+      },
+      {
+        "digest": "sha256:525a576debdf7e6e620bb5911b7a9253c42f9550ccec4575ad6e78beb01dceb1",
+        "evidence_id": "evidence-invalid_review_policy_version_mismatch_002-decision",
+        "linked_refs": [
+          "synthetic-dataset-review-006",
+          "synthetic-policy-review-001"
+        ],
+        "purpose": "decision_record",
+        "synthetic": true,
+        "type": "review_record"
+      },
+      {
+        "digest": "sha256:d7b1d9c0ee68e33bcec70ee31479f4c88ebf8c2d59e428502445a75aaf2e5bff",
+        "evidence_id": "evidence-invalid_review_policy_version_mismatch_002-review",
+        "linked_refs": [
+          "synthetic-dataset-review-006",
+          "synthetic-policy-review-001"
+        ],
+        "purpose": "review_record",
+        "synthetic": true,
+        "type": "review_record"
+      }
+    ],
+    "integrity_digest": "sha256:eb33dfc8b9deff625cf50c68b2e254f53dce8a3e0832ba072627baa0ee55526a"
+  },
+  "fixture_id": "invalid_review_policy_version_mismatch_002",
+  "fixture_metadata": {
+    "benchmark_version": "2.0-draft",
+    "controlled_fixture": true,
+    "fixture_family": "invalid",
+    "notes": "Synthetic controlled fixture for PD-OAP v2.0 evaluation design.",
+    "operation_family": "review_decision",
+    "primary_purpose": "negative_control",
+    "synthetic": true
+  },
+  "intentional_defect": {
+    "defect_description": "Operation policy version differs from the packaged policy version.",
+    "expected_detection_surface": "policy version consistency",
+    "failure_class": "policy_version_mismatch"
+  },
+  "non_claims": {
+    "complete_workflow_coverage": false,
+    "legal_sufficiency": false,
+    "privacy_compliance_claim": false,
+    "production_deployment": false,
+    "real_government_decision": false,
+    "statistical_population_claim": false
+  },
+  "operation": {
+    "catalog_id": "synthetic-catalog-review-001",
+    "data_object_id": "synthetic-dataset-review-006",
+    "decision_scope": "single_operation",
+    "operation_family": "review_decision",
+    "operation_id": "operation-invalid_review_policy_version_mismatch_002",
+    "operation_type": "review_decision",
+    "policy_id": "synthetic-policy-review-001",
+    "policy_version": "2026.0",
+    "requested_action": "post_operation_review"
+  },
+  "policy": {
+    "allowed_purposes": [
+      "accountability_review"
+    ],
+    "allowed_requester_roles": [
+      "review_board_member"
+    ],
+    "authorization_basis": "synthetic_authorization_basis_review",
+    "policy_id": "synthetic-policy-review-001",
+    "policy_version": "2026.1",
+    "required_reuse_conditions": [],
+    "review_triggers": [
+      "scheduled_review",
+      "evidence_completeness_check"
+    ]
+  },
+  "profile": {
+    "name": "public-data-operation-accountability-profile",
+    "profile_id": "public-data-operation-accountability-profile@2.0-draft",
+    "version": "2.0-draft"
+  },
+  "provenance": {
+    "handoff_refs": [],
+    "integrity_digest": "sha256:eb33dfc8b9deff625cf50c68b2e254f53dce8a3e0832ba072627baa0ee55526a",
+    "source_refs": [
+      "synthetic-dataset-review-006",
+      "synthetic-catalog-review-001",
+      "synthetic-policy-review-001"
+    ]
+  },
+  "purpose": {
+    "allowed_by_policy": true,
+    "declared_purpose": "accountability_review",
+    "purpose_id": "purpose-invalid_review_policy_version_mismatch_002"
+  },
+  "requester": {
+    "declared_affiliation": "synthetic local research or service unit",
+    "requester_id": "synthetic-requester-review-006",
+    "role": "review_board_member"
+  },
+  "statement_id": "statement-invalid_review_policy_version_mismatch_002",
+  "subject": {
+    "data_object_id": "synthetic-dataset-review-006",
+    "object_type": "public_data_object",
+    "sensitivity": "bounded_public_sector_data",
+    "title": "Synthetic review public-data object 006"
+  },
+  "validation": {
+    "expected_failure_class": "policy_version_mismatch",
+    "expected_primary_failure_code": "policy_version_mismatch",
+    "expected_result": "invalid",
+    "required_rule_surfaces": [
+      "operation_boundary",
+      "review_trigger_presence",
+      "review_evidence_presence",
+      "policy_version_consistency",
+      "integrity_digest_consistency"
+    ]
+  }
+}

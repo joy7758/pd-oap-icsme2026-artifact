@@ -1,0 +1,13 @@
+# Related Work Positioning v2.0
+
+This file records positioning only. It does not add bibliography entries and does not fabricate citations.
+
+| Category | What prior work contributes | Why PD-OAP differs | How v2.0 should position itself | Unsafe wording to avoid |
+|---|---|---|---|---|
+| data spaces | Data-space work contributes architecture, governance concepts, and interoperability goals. | PD-OAP focuses on one operation-accountability artifact and its checker-facing evaluation. | Position PD-OAP as an artifact-level reviewability method adjacent to data-space governance. | Do not claim full data-space coverage. |
+| FAIR Digital Objects | FDO work contributes object identity, metadata, and digital-object framing. | PD-OAP packages operation accountability around public-data decisions rather than implementing an FDO standard. | Treat FDO work as positioning and vocabulary support. | Do not claim official FDO implementation. |
+| provenance and decision provenance | Provenance work contributes data-flow and decision-trace concepts. | PD-OAP includes provenance-like linkage but also requires policy basis, evidence completeness, validation expectations, and non-claims. | Position PD-OAP as adjacent to provenance but not limited to provenance. | Do not call provenance alone sufficient for reviewability. |
+| reviewability and auditability | Reviewability and auditability work motivates inspectable decision records. | PD-OAP operationalizes reviewability as checkable statement fields, fixtures, semantic rules, and mutation tests. | Use this area to justify structural inspectability and reviewer-facing evidence packaging. | Do not claim completed legal audit. |
+| policy-as-code and constraint validation | Policy-as-code work contributes machine-checkable rules and constraints. | PD-OAP uses policy and constraint validation as part of a broader statement artifact, not as a policy-engine benchmark. | Position policy checks as one rule surface among several. | Do not evaluate policy engines unless a later study does so. |
+| software artifact evaluation | Artifact evaluation work contributes reproducibility and executable evidence expectations. | PD-OAP builds a domain artifact with fixtures, checker matrix, mutation evaluation, and dashboard reports. | Position v2.0 as an artifact-evaluation-centered SE contribution. | Do not claim venue certification. |
+| software testing and mutation testing | Testing work contributes controlled negative controls and fault injection logic. | PD-OAP adapts mutation testing to operation-accountability statements and semantic failure surfaces. | Use mutation testing as the SE bridge for RQ3. | Do not imply production fault coverage. |

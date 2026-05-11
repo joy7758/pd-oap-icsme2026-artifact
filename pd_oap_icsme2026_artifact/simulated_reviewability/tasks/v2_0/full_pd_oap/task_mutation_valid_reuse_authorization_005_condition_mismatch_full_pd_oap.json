@@ -1,0 +1,225 @@
+{
+  "expected_review_target": {
+    "evidence_completeness_expected": "judge whether evidence refs and validation fields are visible",
+    "failure_detection_expected": "detect reuse_condition_mismatch",
+    "operation_reconstruction_expected": "reuse_authorization",
+    "policy_basis_expected": "identify policy id and policy version when visible"
+  },
+  "hidden_material_summary": {
+    "excluded": [
+      "external_real_world_evidence_beyond_source_specimen"
+    ]
+  },
+  "non_claims": {
+    "human_participant_data": false,
+    "human_study_result": false,
+    "legal_sufficiency": false,
+    "production_deployment": false
+  },
+  "representation_condition": "full_pd_oap",
+  "scoring_expectation": {},
+  "simulation_profile": {
+    "name": "pd-oap-simulated-reviewability",
+    "version": "2.0-draft"
+  },
+  "source_specimen": {
+    "expected_primary_failure_code": "reuse_condition_mismatch",
+    "expected_result": "invalid",
+    "fixture_id": "mutation_valid_reuse_authorization_005_condition_mismatch",
+    "operation_family": "reuse_authorization",
+    "source_type": "mutation"
+  },
+  "task_id": "task_mutation_valid_reuse_authorization_005_condition_mismatch_full_pd_oap",
+  "visible_material": {
+    "actor": {
+      "actor_id": "synthetic-data-steward-reuse-001",
+      "actor_type": "synthetic_data_steward",
+      "name": "Synthetic Data Steward Office"
+    },
+    "catalog": {
+      "catalog_id": "synthetic-catalog-reuse-001",
+      "catalog_label": "Synthetic reuse catalog",
+      "dataset_refs": [
+        "synthetic-dataset-reuse-005"
+      ],
+      "policy_refs": [
+        "synthetic-policy-reuse-001"
+      ]
+    },
+    "conditions": [
+      {
+        "condition_id": "condition-valid_reuse_authorization_005-purpose",
+        "source": "synthetic_policy",
+        "type": "reuse_condition",
+        "value": "limited_to_service_improvement"
+      },
+      {
+        "condition_id": "condition-valid_reuse_authorization_005-attribution",
+        "source": "synthetic_policy",
+        "type": "attribution",
+        "value": "required"
+      },
+      {
+        "condition_id": "condition-valid_reuse_authorization_005-onward-transfer",
+        "source": "synthetic_policy",
+        "type": "onward_transfer",
+        "value": "permitted"
+      }
+    ],
+    "decision": {
+      "decision_basis": "synthetic_authorization_basis_reuse",
+      "decision_id": "decision-valid_reuse_authorization_005",
+      "outcome": "allow",
+      "rationale": "Synthetic fixture decision with internally consistent policy and evidence linkage."
+    },
+    "evidence": {
+      "evidence_ids": [
+        "evidence-valid_reuse_authorization_005-policy",
+        "evidence-valid_reuse_authorization_005-dataset",
+        "evidence-valid_reuse_authorization_005-decision",
+        "synthetic-handoff-valid_reuse_authorization_005"
+      ],
+      "evidence_objects": [
+        {
+          "digest": "sha256:f24512eb1d7f11bd5fe1228ee224a6ce4d1aaa4fa8f165c43784b264ea5f2c77",
+          "evidence_id": "evidence-valid_reuse_authorization_005-policy",
+          "linked_refs": [
+            "synthetic-policy-reuse-001"
+          ],
+          "purpose": "policy_basis",
+          "synthetic": true,
+          "type": "policy_record"
+        },
+        {
+          "digest": "sha256:06e0a7b532b7ef817a69b5d4f85f622c89128b67ac4e8097e0c66552395605f4",
+          "evidence_id": "evidence-valid_reuse_authorization_005-dataset",
+          "linked_refs": [
+            "synthetic-dataset-reuse-005"
+          ],
+          "purpose": "dataset_reference",
+          "synthetic": true,
+          "type": "dataset_record"
+        },
+        {
+          "digest": "sha256:0b83fec685d0f40b7e5f13533b098b3323388e9ecda1fbe5a726c3e6e70c01c3",
+          "evidence_id": "evidence-valid_reuse_authorization_005-decision",
+          "linked_refs": [
+            "synthetic-dataset-reuse-005",
+            "synthetic-policy-reuse-001"
+          ],
+          "purpose": "decision_record",
+          "synthetic": true,
+          "type": "reuse_authorization_record"
+        },
+        {
+          "digest": "sha256:ee8f9079b300c8aeede3d3a2155acf01684cbf7b548bbbd3e015a78452abe990",
+          "evidence_id": "synthetic-handoff-valid_reuse_authorization_005",
+          "linked_refs": [
+            "synthetic-dataset-reuse-005",
+            "synthetic-policy-reuse-001"
+          ],
+          "purpose": "handoff_record",
+          "synthetic": true,
+          "type": "handoff_record"
+        }
+      ],
+      "integrity_digest": "sha256:accae004c48650ad276c8a8736e00f46a052d4b8632b1d066338d711035dc7bf"
+    },
+    "fixture_id": "mutation_valid_reuse_authorization_005_condition_mismatch",
+    "fixture_metadata": {
+      "benchmark_version": "2.0-draft",
+      "controlled_fixture": true,
+      "fixture_family": "mutation",
+      "notes": "Synthetic mutation generated from a valid v2.0 fixture.",
+      "operation_family": "reuse_authorization",
+      "primary_purpose": "mutation_evaluation",
+      "synthetic": true
+    },
+    "mutation_metadata": {
+      "expected_failure_class": "reuse_condition_mismatch",
+      "mutation_description": "Onward transfer condition changed to conflict with policy boundary.",
+      "mutation_operator": "mutate_reuse_condition_mismatch",
+      "source_fixture_id": "valid_reuse_authorization_005"
+    },
+    "non_claims": {
+      "complete_workflow_coverage": false,
+      "legal_sufficiency": false,
+      "privacy_compliance_claim": false,
+      "production_deployment": false,
+      "real_government_decision": false,
+      "statistical_population_claim": false
+    },
+    "operation": {
+      "catalog_id": "synthetic-catalog-reuse-001",
+      "data_object_id": "synthetic-dataset-reuse-005",
+      "decision_scope": "single_operation",
+      "operation_family": "reuse_authorization",
+      "operation_id": "operation-valid_reuse_authorization_005",
+      "operation_type": "reuse_authorization",
+      "policy_id": "synthetic-policy-reuse-001",
+      "policy_version": "2026.1",
+      "requested_action": "bounded_reuse"
+    },
+    "policy": {
+      "allowed_purposes": [
+        "service_improvement"
+      ],
+      "allowed_requester_roles": [
+        "public_service_partner"
+      ],
+      "authorization_basis": "synthetic_authorization_basis_reuse",
+      "policy_id": "synthetic-policy-reuse-001",
+      "policy_version": "2026.1",
+      "required_reuse_conditions": [
+        "attribution",
+        "onward_transfer_forbidden"
+      ],
+      "review_triggers": []
+    },
+    "profile": {
+      "name": "public-data-operation-accountability-profile",
+      "profile_id": "public-data-operation-accountability-profile@2.0-draft",
+      "version": "2.0-draft"
+    },
+    "provenance": {
+      "handoff_refs": [
+        "synthetic-handoff-valid_reuse_authorization_005"
+      ],
+      "integrity_digest": "sha256:accae004c48650ad276c8a8736e00f46a052d4b8632b1d066338d711035dc7bf",
+      "source_refs": [
+        "synthetic-dataset-reuse-005",
+        "synthetic-catalog-reuse-001",
+        "synthetic-policy-reuse-001"
+      ]
+    },
+    "purpose": {
+      "allowed_by_policy": true,
+      "declared_purpose": "service_improvement",
+      "purpose_id": "purpose-valid_reuse_authorization_005"
+    },
+    "requester": {
+      "declared_affiliation": "synthetic local research or service unit",
+      "requester_id": "synthetic-requester-reuse-005",
+      "role": "public_service_partner"
+    },
+    "statement_id": "statement-mutation_valid_reuse_authorization_005_condition_mismatch",
+    "subject": {
+      "data_object_id": "synthetic-dataset-reuse-005",
+      "object_type": "public_data_object",
+      "sensitivity": "bounded_public_sector_data",
+      "title": "Synthetic reuse public-data object 005"
+    },
+    "validation": {
+      "expected_failure_class": "reuse_condition_mismatch",
+      "expected_primary_failure_code": "reuse_condition_mismatch",
+      "expected_result": "invalid",
+      "required_rule_surfaces": [
+        "operation_boundary",
+        "purpose_policy_match",
+        "reuse_condition_completeness",
+        "reuse_condition_consistency",
+        "handoff_reference_closure"
+      ]
+    }
+  }
+}

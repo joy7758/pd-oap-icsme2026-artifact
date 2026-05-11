@@ -1,0 +1,629 @@
+{
+  "expected_failure_class_counts": {
+    "handoff_ref_unresolved": 6,
+    "integrity_digest_mismatch": 6,
+    "missing_authorization_basis": 6,
+    "policy_version_mismatch": 6,
+    "purpose_constraint_mismatch": 6,
+    "requester_role_mismatch": 6,
+    "reuse_condition_mismatch": 6,
+    "reuse_condition_missing": 6,
+    "review_evidence_missing": 6,
+    "review_trigger_missing": 6,
+    "unresolved_catalog_ref": 6,
+    "unresolved_dataset_ref": 6
+  },
+  "mutation_benchmark_id": "pd-oap-mutation-evaluation@2.0-draft",
+  "mutation_count": 72,
+  "mutation_generation": {
+    "name": "pd-oap-v2-mutation-generation",
+    "version": "2.0-draft"
+  },
+  "mutation_operator_counts": {
+    "mutate_access_break_catalog_ref": 6,
+    "mutate_access_break_dataset_ref": 6,
+    "mutate_access_remove_authorization_basis": 6,
+    "mutate_access_requester_role_mismatch": 6,
+    "mutate_reuse_break_handoff_ref": 6,
+    "mutate_reuse_condition_mismatch": 6,
+    "mutate_reuse_purpose_constraint_mismatch": 6,
+    "mutate_reuse_remove_reuse_conditions": 6,
+    "mutate_review_integrity_digest_mismatch": 6,
+    "mutate_review_policy_version_mismatch": 6,
+    "mutate_review_remove_review_evidence": 6,
+    "mutate_review_remove_trigger": 6
+  },
+  "mutations": [
+    {
+      "expected_failure_class": "unresolved_catalog_ref",
+      "fixture_id": "mutation_valid_access_decision_001_break_catalog_ref",
+      "mutation_operator": "mutate_access_break_catalog_ref",
+      "operation_family": "access_decision",
+      "path": "access/mutation_valid_access_decision_001_break_catalog_ref.json",
+      "source_fixture_id": "valid_access_decision_001"
+    },
+    {
+      "expected_failure_class": "unresolved_dataset_ref",
+      "fixture_id": "mutation_valid_access_decision_001_break_dataset_ref",
+      "mutation_operator": "mutate_access_break_dataset_ref",
+      "operation_family": "access_decision",
+      "path": "access/mutation_valid_access_decision_001_break_dataset_ref.json",
+      "source_fixture_id": "valid_access_decision_001"
+    },
+    {
+      "expected_failure_class": "missing_authorization_basis",
+      "fixture_id": "mutation_valid_access_decision_001_remove_authorization_basis",
+      "mutation_operator": "mutate_access_remove_authorization_basis",
+      "operation_family": "access_decision",
+      "path": "access/mutation_valid_access_decision_001_remove_authorization_basis.json",
+      "source_fixture_id": "valid_access_decision_001"
+    },
+    {
+      "expected_failure_class": "requester_role_mismatch",
+      "fixture_id": "mutation_valid_access_decision_001_requester_role_mismatch",
+      "mutation_operator": "mutate_access_requester_role_mismatch",
+      "operation_family": "access_decision",
+      "path": "access/mutation_valid_access_decision_001_requester_role_mismatch.json",
+      "source_fixture_id": "valid_access_decision_001"
+    },
+    {
+      "expected_failure_class": "unresolved_catalog_ref",
+      "fixture_id": "mutation_valid_access_decision_002_break_catalog_ref",
+      "mutation_operator": "mutate_access_break_catalog_ref",
+      "operation_family": "access_decision",
+      "path": "access/mutation_valid_access_decision_002_break_catalog_ref.json",
+      "source_fixture_id": "valid_access_decision_002"
+    },
+    {
+      "expected_failure_class": "unresolved_dataset_ref",
+      "fixture_id": "mutation_valid_access_decision_002_break_dataset_ref",
+      "mutation_operator": "mutate_access_break_dataset_ref",
+      "operation_family": "access_decision",
+      "path": "access/mutation_valid_access_decision_002_break_dataset_ref.json",
+      "source_fixture_id": "valid_access_decision_002"
+    },
+    {
+      "expected_failure_class": "missing_authorization_basis",
+      "fixture_id": "mutation_valid_access_decision_002_remove_authorization_basis",
+      "mutation_operator": "mutate_access_remove_authorization_basis",
+      "operation_family": "access_decision",
+      "path": "access/mutation_valid_access_decision_002_remove_authorization_basis.json",
+      "source_fixture_id": "valid_access_decision_002"
+    },
+    {
+      "expected_failure_class": "requester_role_mismatch",
+      "fixture_id": "mutation_valid_access_decision_002_requester_role_mismatch",
+      "mutation_operator": "mutate_access_requester_role_mismatch",
+      "operation_family": "access_decision",
+      "path": "access/mutation_valid_access_decision_002_requester_role_mismatch.json",
+      "source_fixture_id": "valid_access_decision_002"
+    },
+    {
+      "expected_failure_class": "unresolved_catalog_ref",
+      "fixture_id": "mutation_valid_access_decision_003_break_catalog_ref",
+      "mutation_operator": "mutate_access_break_catalog_ref",
+      "operation_family": "access_decision",
+      "path": "access/mutation_valid_access_decision_003_break_catalog_ref.json",
+      "source_fixture_id": "valid_access_decision_003"
+    },
+    {
+      "expected_failure_class": "unresolved_dataset_ref",
+      "fixture_id": "mutation_valid_access_decision_003_break_dataset_ref",
+      "mutation_operator": "mutate_access_break_dataset_ref",
+      "operation_family": "access_decision",
+      "path": "access/mutation_valid_access_decision_003_break_dataset_ref.json",
+      "source_fixture_id": "valid_access_decision_003"
+    },
+    {
+      "expected_failure_class": "missing_authorization_basis",
+      "fixture_id": "mutation_valid_access_decision_003_remove_authorization_basis",
+      "mutation_operator": "mutate_access_remove_authorization_basis",
+      "operation_family": "access_decision",
+      "path": "access/mutation_valid_access_decision_003_remove_authorization_basis.json",
+      "source_fixture_id": "valid_access_decision_003"
+    },
+    {
+      "expected_failure_class": "requester_role_mismatch",
+      "fixture_id": "mutation_valid_access_decision_003_requester_role_mismatch",
+      "mutation_operator": "mutate_access_requester_role_mismatch",
+      "operation_family": "access_decision",
+      "path": "access/mutation_valid_access_decision_003_requester_role_mismatch.json",
+      "source_fixture_id": "valid_access_decision_003"
+    },
+    {
+      "expected_failure_class": "unresolved_catalog_ref",
+      "fixture_id": "mutation_valid_access_decision_004_break_catalog_ref",
+      "mutation_operator": "mutate_access_break_catalog_ref",
+      "operation_family": "access_decision",
+      "path": "access/mutation_valid_access_decision_004_break_catalog_ref.json",
+      "source_fixture_id": "valid_access_decision_004"
+    },
+    {
+      "expected_failure_class": "unresolved_dataset_ref",
+      "fixture_id": "mutation_valid_access_decision_004_break_dataset_ref",
+      "mutation_operator": "mutate_access_break_dataset_ref",
+      "operation_family": "access_decision",
+      "path": "access/mutation_valid_access_decision_004_break_dataset_ref.json",
+      "source_fixture_id": "valid_access_decision_004"
+    },
+    {
+      "expected_failure_class": "missing_authorization_basis",
+      "fixture_id": "mutation_valid_access_decision_004_remove_authorization_basis",
+      "mutation_operator": "mutate_access_remove_authorization_basis",
+      "operation_family": "access_decision",
+      "path": "access/mutation_valid_access_decision_004_remove_authorization_basis.json",
+      "source_fixture_id": "valid_access_decision_004"
+    },
+    {
+      "expected_failure_class": "requester_role_mismatch",
+      "fixture_id": "mutation_valid_access_decision_004_requester_role_mismatch",
+      "mutation_operator": "mutate_access_requester_role_mismatch",
+      "operation_family": "access_decision",
+      "path": "access/mutation_valid_access_decision_004_requester_role_mismatch.json",
+      "source_fixture_id": "valid_access_decision_004"
+    },
+    {
+      "expected_failure_class": "unresolved_catalog_ref",
+      "fixture_id": "mutation_valid_access_decision_005_break_catalog_ref",
+      "mutation_operator": "mutate_access_break_catalog_ref",
+      "operation_family": "access_decision",
+      "path": "access/mutation_valid_access_decision_005_break_catalog_ref.json",
+      "source_fixture_id": "valid_access_decision_005"
+    },
+    {
+      "expected_failure_class": "unresolved_dataset_ref",
+      "fixture_id": "mutation_valid_access_decision_005_break_dataset_ref",
+      "mutation_operator": "mutate_access_break_dataset_ref",
+      "operation_family": "access_decision",
+      "path": "access/mutation_valid_access_decision_005_break_dataset_ref.json",
+      "source_fixture_id": "valid_access_decision_005"
+    },
+    {
+      "expected_failure_class": "missing_authorization_basis",
+      "fixture_id": "mutation_valid_access_decision_005_remove_authorization_basis",
+      "mutation_operator": "mutate_access_remove_authorization_basis",
+      "operation_family": "access_decision",
+      "path": "access/mutation_valid_access_decision_005_remove_authorization_basis.json",
+      "source_fixture_id": "valid_access_decision_005"
+    },
+    {
+      "expected_failure_class": "requester_role_mismatch",
+      "fixture_id": "mutation_valid_access_decision_005_requester_role_mismatch",
+      "mutation_operator": "mutate_access_requester_role_mismatch",
+      "operation_family": "access_decision",
+      "path": "access/mutation_valid_access_decision_005_requester_role_mismatch.json",
+      "source_fixture_id": "valid_access_decision_005"
+    },
+    {
+      "expected_failure_class": "unresolved_catalog_ref",
+      "fixture_id": "mutation_valid_access_decision_006_break_catalog_ref",
+      "mutation_operator": "mutate_access_break_catalog_ref",
+      "operation_family": "access_decision",
+      "path": "access/mutation_valid_access_decision_006_break_catalog_ref.json",
+      "source_fixture_id": "valid_access_decision_006"
+    },
+    {
+      "expected_failure_class": "unresolved_dataset_ref",
+      "fixture_id": "mutation_valid_access_decision_006_break_dataset_ref",
+      "mutation_operator": "mutate_access_break_dataset_ref",
+      "operation_family": "access_decision",
+      "path": "access/mutation_valid_access_decision_006_break_dataset_ref.json",
+      "source_fixture_id": "valid_access_decision_006"
+    },
+    {
+      "expected_failure_class": "missing_authorization_basis",
+      "fixture_id": "mutation_valid_access_decision_006_remove_authorization_basis",
+      "mutation_operator": "mutate_access_remove_authorization_basis",
+      "operation_family": "access_decision",
+      "path": "access/mutation_valid_access_decision_006_remove_authorization_basis.json",
+      "source_fixture_id": "valid_access_decision_006"
+    },
+    {
+      "expected_failure_class": "requester_role_mismatch",
+      "fixture_id": "mutation_valid_access_decision_006_requester_role_mismatch",
+      "mutation_operator": "mutate_access_requester_role_mismatch",
+      "operation_family": "access_decision",
+      "path": "access/mutation_valid_access_decision_006_requester_role_mismatch.json",
+      "source_fixture_id": "valid_access_decision_006"
+    },
+    {
+      "expected_failure_class": "handoff_ref_unresolved",
+      "fixture_id": "mutation_valid_reuse_authorization_001_break_handoff_ref",
+      "mutation_operator": "mutate_reuse_break_handoff_ref",
+      "operation_family": "reuse_authorization",
+      "path": "reuse/mutation_valid_reuse_authorization_001_break_handoff_ref.json",
+      "source_fixture_id": "valid_reuse_authorization_001"
+    },
+    {
+      "expected_failure_class": "reuse_condition_mismatch",
+      "fixture_id": "mutation_valid_reuse_authorization_001_condition_mismatch",
+      "mutation_operator": "mutate_reuse_condition_mismatch",
+      "operation_family": "reuse_authorization",
+      "path": "reuse/mutation_valid_reuse_authorization_001_condition_mismatch.json",
+      "source_fixture_id": "valid_reuse_authorization_001"
+    },
+    {
+      "expected_failure_class": "purpose_constraint_mismatch",
+      "fixture_id": "mutation_valid_reuse_authorization_001_purpose_constraint_mismatch",
+      "mutation_operator": "mutate_reuse_purpose_constraint_mismatch",
+      "operation_family": "reuse_authorization",
+      "path": "reuse/mutation_valid_reuse_authorization_001_purpose_constraint_mismatch.json",
+      "source_fixture_id": "valid_reuse_authorization_001"
+    },
+    {
+      "expected_failure_class": "reuse_condition_missing",
+      "fixture_id": "mutation_valid_reuse_authorization_001_remove_reuse_conditions",
+      "mutation_operator": "mutate_reuse_remove_reuse_conditions",
+      "operation_family": "reuse_authorization",
+      "path": "reuse/mutation_valid_reuse_authorization_001_remove_reuse_conditions.json",
+      "source_fixture_id": "valid_reuse_authorization_001"
+    },
+    {
+      "expected_failure_class": "handoff_ref_unresolved",
+      "fixture_id": "mutation_valid_reuse_authorization_002_break_handoff_ref",
+      "mutation_operator": "mutate_reuse_break_handoff_ref",
+      "operation_family": "reuse_authorization",
+      "path": "reuse/mutation_valid_reuse_authorization_002_break_handoff_ref.json",
+      "source_fixture_id": "valid_reuse_authorization_002"
+    },
+    {
+      "expected_failure_class": "reuse_condition_mismatch",
+      "fixture_id": "mutation_valid_reuse_authorization_002_condition_mismatch",
+      "mutation_operator": "mutate_reuse_condition_mismatch",
+      "operation_family": "reuse_authorization",
+      "path": "reuse/mutation_valid_reuse_authorization_002_condition_mismatch.json",
+      "source_fixture_id": "valid_reuse_authorization_002"
+    },
+    {
+      "expected_failure_class": "purpose_constraint_mismatch",
+      "fixture_id": "mutation_valid_reuse_authorization_002_purpose_constraint_mismatch",
+      "mutation_operator": "mutate_reuse_purpose_constraint_mismatch",
+      "operation_family": "reuse_authorization",
+      "path": "reuse/mutation_valid_reuse_authorization_002_purpose_constraint_mismatch.json",
+      "source_fixture_id": "valid_reuse_authorization_002"
+    },
+    {
+      "expected_failure_class": "reuse_condition_missing",
+      "fixture_id": "mutation_valid_reuse_authorization_002_remove_reuse_conditions",
+      "mutation_operator": "mutate_reuse_remove_reuse_conditions",
+      "operation_family": "reuse_authorization",
+      "path": "reuse/mutation_valid_reuse_authorization_002_remove_reuse_conditions.json",
+      "source_fixture_id": "valid_reuse_authorization_002"
+    },
+    {
+      "expected_failure_class": "handoff_ref_unresolved",
+      "fixture_id": "mutation_valid_reuse_authorization_003_break_handoff_ref",
+      "mutation_operator": "mutate_reuse_break_handoff_ref",
+      "operation_family": "reuse_authorization",
+      "path": "reuse/mutation_valid_reuse_authorization_003_break_handoff_ref.json",
+      "source_fixture_id": "valid_reuse_authorization_003"
+    },
+    {
+      "expected_failure_class": "reuse_condition_mismatch",
+      "fixture_id": "mutation_valid_reuse_authorization_003_condition_mismatch",
+      "mutation_operator": "mutate_reuse_condition_mismatch",
+      "operation_family": "reuse_authorization",
+      "path": "reuse/mutation_valid_reuse_authorization_003_condition_mismatch.json",
+      "source_fixture_id": "valid_reuse_authorization_003"
+    },
+    {
+      "expected_failure_class": "purpose_constraint_mismatch",
+      "fixture_id": "mutation_valid_reuse_authorization_003_purpose_constraint_mismatch",
+      "mutation_operator": "mutate_reuse_purpose_constraint_mismatch",
+      "operation_family": "reuse_authorization",
+      "path": "reuse/mutation_valid_reuse_authorization_003_purpose_constraint_mismatch.json",
+      "source_fixture_id": "valid_reuse_authorization_003"
+    },
+    {
+      "expected_failure_class": "reuse_condition_missing",
+      "fixture_id": "mutation_valid_reuse_authorization_003_remove_reuse_conditions",
+      "mutation_operator": "mutate_reuse_remove_reuse_conditions",
+      "operation_family": "reuse_authorization",
+      "path": "reuse/mutation_valid_reuse_authorization_003_remove_reuse_conditions.json",
+      "source_fixture_id": "valid_reuse_authorization_003"
+    },
+    {
+      "expected_failure_class": "handoff_ref_unresolved",
+      "fixture_id": "mutation_valid_reuse_authorization_004_break_handoff_ref",
+      "mutation_operator": "mutate_reuse_break_handoff_ref",
+      "operation_family": "reuse_authorization",
+      "path": "reuse/mutation_valid_reuse_authorization_004_break_handoff_ref.json",
+      "source_fixture_id": "valid_reuse_authorization_004"
+    },
+    {
+      "expected_failure_class": "reuse_condition_mismatch",
+      "fixture_id": "mutation_valid_reuse_authorization_004_condition_mismatch",
+      "mutation_operator": "mutate_reuse_condition_mismatch",
+      "operation_family": "reuse_authorization",
+      "path": "reuse/mutation_valid_reuse_authorization_004_condition_mismatch.json",
+      "source_fixture_id": "valid_reuse_authorization_004"
+    },
+    {
+      "expected_failure_class": "purpose_constraint_mismatch",
+      "fixture_id": "mutation_valid_reuse_authorization_004_purpose_constraint_mismatch",
+      "mutation_operator": "mutate_reuse_purpose_constraint_mismatch",
+      "operation_family": "reuse_authorization",
+      "path": "reuse/mutation_valid_reuse_authorization_004_purpose_constraint_mismatch.json",
+      "source_fixture_id": "valid_reuse_authorization_004"
+    },
+    {
+      "expected_failure_class": "reuse_condition_missing",
+      "fixture_id": "mutation_valid_reuse_authorization_004_remove_reuse_conditions",
+      "mutation_operator": "mutate_reuse_remove_reuse_conditions",
+      "operation_family": "reuse_authorization",
+      "path": "reuse/mutation_valid_reuse_authorization_004_remove_reuse_conditions.json",
+      "source_fixture_id": "valid_reuse_authorization_004"
+    },
+    {
+      "expected_failure_class": "handoff_ref_unresolved",
+      "fixture_id": "mutation_valid_reuse_authorization_005_break_handoff_ref",
+      "mutation_operator": "mutate_reuse_break_handoff_ref",
+      "operation_family": "reuse_authorization",
+      "path": "reuse/mutation_valid_reuse_authorization_005_break_handoff_ref.json",
+      "source_fixture_id": "valid_reuse_authorization_005"
+    },
+    {
+      "expected_failure_class": "reuse_condition_mismatch",
+      "fixture_id": "mutation_valid_reuse_authorization_005_condition_mismatch",
+      "mutation_operator": "mutate_reuse_condition_mismatch",
+      "operation_family": "reuse_authorization",
+      "path": "reuse/mutation_valid_reuse_authorization_005_condition_mismatch.json",
+      "source_fixture_id": "valid_reuse_authorization_005"
+    },
+    {
+      "expected_failure_class": "purpose_constraint_mismatch",
+      "fixture_id": "mutation_valid_reuse_authorization_005_purpose_constraint_mismatch",
+      "mutation_operator": "mutate_reuse_purpose_constraint_mismatch",
+      "operation_family": "reuse_authorization",
+      "path": "reuse/mutation_valid_reuse_authorization_005_purpose_constraint_mismatch.json",
+      "source_fixture_id": "valid_reuse_authorization_005"
+    },
+    {
+      "expected_failure_class": "reuse_condition_missing",
+      "fixture_id": "mutation_valid_reuse_authorization_005_remove_reuse_conditions",
+      "mutation_operator": "mutate_reuse_remove_reuse_conditions",
+      "operation_family": "reuse_authorization",
+      "path": "reuse/mutation_valid_reuse_authorization_005_remove_reuse_conditions.json",
+      "source_fixture_id": "valid_reuse_authorization_005"
+    },
+    {
+      "expected_failure_class": "handoff_ref_unresolved",
+      "fixture_id": "mutation_valid_reuse_authorization_006_break_handoff_ref",
+      "mutation_operator": "mutate_reuse_break_handoff_ref",
+      "operation_family": "reuse_authorization",
+      "path": "reuse/mutation_valid_reuse_authorization_006_break_handoff_ref.json",
+      "source_fixture_id": "valid_reuse_authorization_006"
+    },
+    {
+      "expected_failure_class": "reuse_condition_mismatch",
+      "fixture_id": "mutation_valid_reuse_authorization_006_condition_mismatch",
+      "mutation_operator": "mutate_reuse_condition_mismatch",
+      "operation_family": "reuse_authorization",
+      "path": "reuse/mutation_valid_reuse_authorization_006_condition_mismatch.json",
+      "source_fixture_id": "valid_reuse_authorization_006"
+    },
+    {
+      "expected_failure_class": "purpose_constraint_mismatch",
+      "fixture_id": "mutation_valid_reuse_authorization_006_purpose_constraint_mismatch",
+      "mutation_operator": "mutate_reuse_purpose_constraint_mismatch",
+      "operation_family": "reuse_authorization",
+      "path": "reuse/mutation_valid_reuse_authorization_006_purpose_constraint_mismatch.json",
+      "source_fixture_id": "valid_reuse_authorization_006"
+    },
+    {
+      "expected_failure_class": "reuse_condition_missing",
+      "fixture_id": "mutation_valid_reuse_authorization_006_remove_reuse_conditions",
+      "mutation_operator": "mutate_reuse_remove_reuse_conditions",
+      "operation_family": "reuse_authorization",
+      "path": "reuse/mutation_valid_reuse_authorization_006_remove_reuse_conditions.json",
+      "source_fixture_id": "valid_reuse_authorization_006"
+    },
+    {
+      "expected_failure_class": "integrity_digest_mismatch",
+      "fixture_id": "mutation_valid_review_decision_001_integrity_digest_mismatch",
+      "mutation_operator": "mutate_review_integrity_digest_mismatch",
+      "operation_family": "review_decision",
+      "path": "review/mutation_valid_review_decision_001_integrity_digest_mismatch.json",
+      "source_fixture_id": "valid_review_decision_001"
+    },
+    {
+      "expected_failure_class": "policy_version_mismatch",
+      "fixture_id": "mutation_valid_review_decision_001_policy_version_mismatch",
+      "mutation_operator": "mutate_review_policy_version_mismatch",
+      "operation_family": "review_decision",
+      "path": "review/mutation_valid_review_decision_001_policy_version_mismatch.json",
+      "source_fixture_id": "valid_review_decision_001"
+    },
+    {
+      "expected_failure_class": "review_evidence_missing",
+      "fixture_id": "mutation_valid_review_decision_001_remove_review_evidence",
+      "mutation_operator": "mutate_review_remove_review_evidence",
+      "operation_family": "review_decision",
+      "path": "review/mutation_valid_review_decision_001_remove_review_evidence.json",
+      "source_fixture_id": "valid_review_decision_001"
+    },
+    {
+      "expected_failure_class": "review_trigger_missing",
+      "fixture_id": "mutation_valid_review_decision_001_remove_trigger",
+      "mutation_operator": "mutate_review_remove_trigger",
+      "operation_family": "review_decision",
+      "path": "review/mutation_valid_review_decision_001_remove_trigger.json",
+      "source_fixture_id": "valid_review_decision_001"
+    },
+    {
+      "expected_failure_class": "integrity_digest_mismatch",
+      "fixture_id": "mutation_valid_review_decision_002_integrity_digest_mismatch",
+      "mutation_operator": "mutate_review_integrity_digest_mismatch",
+      "operation_family": "review_decision",
+      "path": "review/mutation_valid_review_decision_002_integrity_digest_mismatch.json",
+      "source_fixture_id": "valid_review_decision_002"
+    },
+    {
+      "expected_failure_class": "policy_version_mismatch",
+      "fixture_id": "mutation_valid_review_decision_002_policy_version_mismatch",
+      "mutation_operator": "mutate_review_policy_version_mismatch",
+      "operation_family": "review_decision",
+      "path": "review/mutation_valid_review_decision_002_policy_version_mismatch.json",
+      "source_fixture_id": "valid_review_decision_002"
+    },
+    {
+      "expected_failure_class": "review_evidence_missing",
+      "fixture_id": "mutation_valid_review_decision_002_remove_review_evidence",
+      "mutation_operator": "mutate_review_remove_review_evidence",
+      "operation_family": "review_decision",
+      "path": "review/mutation_valid_review_decision_002_remove_review_evidence.json",
+      "source_fixture_id": "valid_review_decision_002"
+    },
+    {
+      "expected_failure_class": "review_trigger_missing",
+      "fixture_id": "mutation_valid_review_decision_002_remove_trigger",
+      "mutation_operator": "mutate_review_remove_trigger",
+      "operation_family": "review_decision",
+      "path": "review/mutation_valid_review_decision_002_remove_trigger.json",
+      "source_fixture_id": "valid_review_decision_002"
+    },
+    {
+      "expected_failure_class": "integrity_digest_mismatch",
+      "fixture_id": "mutation_valid_review_decision_003_integrity_digest_mismatch",
+      "mutation_operator": "mutate_review_integrity_digest_mismatch",
+      "operation_family": "review_decision",
+      "path": "review/mutation_valid_review_decision_003_integrity_digest_mismatch.json",
+      "source_fixture_id": "valid_review_decision_003"
+    },
+    {
+      "expected_failure_class": "policy_version_mismatch",
+      "fixture_id": "mutation_valid_review_decision_003_policy_version_mismatch",
+      "mutation_operator": "mutate_review_policy_version_mismatch",
+      "operation_family": "review_decision",
+      "path": "review/mutation_valid_review_decision_003_policy_version_mismatch.json",
+      "source_fixture_id": "valid_review_decision_003"
+    },
+    {
+      "expected_failure_class": "review_evidence_missing",
+      "fixture_id": "mutation_valid_review_decision_003_remove_review_evidence",
+      "mutation_operator": "mutate_review_remove_review_evidence",
+      "operation_family": "review_decision",
+      "path": "review/mutation_valid_review_decision_003_remove_review_evidence.json",
+      "source_fixture_id": "valid_review_decision_003"
+    },
+    {
+      "expected_failure_class": "review_trigger_missing",
+      "fixture_id": "mutation_valid_review_decision_003_remove_trigger",
+      "mutation_operator": "mutate_review_remove_trigger",
+      "operation_family": "review_decision",
+      "path": "review/mutation_valid_review_decision_003_remove_trigger.json",
+      "source_fixture_id": "valid_review_decision_003"
+    },
+    {
+      "expected_failure_class": "integrity_digest_mismatch",
+      "fixture_id": "mutation_valid_review_decision_004_integrity_digest_mismatch",
+      "mutation_operator": "mutate_review_integrity_digest_mismatch",
+      "operation_family": "review_decision",
+      "path": "review/mutation_valid_review_decision_004_integrity_digest_mismatch.json",
+      "source_fixture_id": "valid_review_decision_004"
+    },
+    {
+      "expected_failure_class": "policy_version_mismatch",
+      "fixture_id": "mutation_valid_review_decision_004_policy_version_mismatch",
+      "mutation_operator": "mutate_review_policy_version_mismatch",
+      "operation_family": "review_decision",
+      "path": "review/mutation_valid_review_decision_004_policy_version_mismatch.json",
+      "source_fixture_id": "valid_review_decision_004"
+    },
+    {
+      "expected_failure_class": "review_evidence_missing",
+      "fixture_id": "mutation_valid_review_decision_004_remove_review_evidence",
+      "mutation_operator": "mutate_review_remove_review_evidence",
+      "operation_family": "review_decision",
+      "path": "review/mutation_valid_review_decision_004_remove_review_evidence.json",
+      "source_fixture_id": "valid_review_decision_004"
+    },
+    {
+      "expected_failure_class": "review_trigger_missing",
+      "fixture_id": "mutation_valid_review_decision_004_remove_trigger",
+      "mutation_operator": "mutate_review_remove_trigger",
+      "operation_family": "review_decision",
+      "path": "review/mutation_valid_review_decision_004_remove_trigger.json",
+      "source_fixture_id": "valid_review_decision_004"
+    },
+    {
+      "expected_failure_class": "integrity_digest_mismatch",
+      "fixture_id": "mutation_valid_review_decision_005_integrity_digest_mismatch",
+      "mutation_operator": "mutate_review_integrity_digest_mismatch",
+      "operation_family": "review_decision",
+      "path": "review/mutation_valid_review_decision_005_integrity_digest_mismatch.json",
+      "source_fixture_id": "valid_review_decision_005"
+    },
+    {
+      "expected_failure_class": "policy_version_mismatch",
+      "fixture_id": "mutation_valid_review_decision_005_policy_version_mismatch",
+      "mutation_operator": "mutate_review_policy_version_mismatch",
+      "operation_family": "review_decision",
+      "path": "review/mutation_valid_review_decision_005_policy_version_mismatch.json",
+      "source_fixture_id": "valid_review_decision_005"
+    },
+    {
+      "expected_failure_class": "review_evidence_missing",
+      "fixture_id": "mutation_valid_review_decision_005_remove_review_evidence",
+      "mutation_operator": "mutate_review_remove_review_evidence",
+      "operation_family": "review_decision",
+      "path": "review/mutation_valid_review_decision_005_remove_review_evidence.json",
+      "source_fixture_id": "valid_review_decision_005"
+    },
+    {
+      "expected_failure_class": "review_trigger_missing",
+      "fixture_id": "mutation_valid_review_decision_005_remove_trigger",
+      "mutation_operator": "mutate_review_remove_trigger",
+      "operation_family": "review_decision",
+      "path": "review/mutation_valid_review_decision_005_remove_trigger.json",
+      "source_fixture_id": "valid_review_decision_005"
+    },
+    {
+      "expected_failure_class": "integrity_digest_mismatch",
+      "fixture_id": "mutation_valid_review_decision_006_integrity_digest_mismatch",
+      "mutation_operator": "mutate_review_integrity_digest_mismatch",
+      "operation_family": "review_decision",
+      "path": "review/mutation_valid_review_decision_006_integrity_digest_mismatch.json",
+      "source_fixture_id": "valid_review_decision_006"
+    },
+    {
+      "expected_failure_class": "policy_version_mismatch",
+      "fixture_id": "mutation_valid_review_decision_006_policy_version_mismatch",
+      "mutation_operator": "mutate_review_policy_version_mismatch",
+      "operation_family": "review_decision",
+      "path": "review/mutation_valid_review_decision_006_policy_version_mismatch.json",
+      "source_fixture_id": "valid_review_decision_006"
+    },
+    {
+      "expected_failure_class": "review_evidence_missing",
+      "fixture_id": "mutation_valid_review_decision_006_remove_review_evidence",
+      "mutation_operator": "mutate_review_remove_review_evidence",
+      "operation_family": "review_decision",
+      "path": "review/mutation_valid_review_decision_006_remove_review_evidence.json",
+      "source_fixture_id": "valid_review_decision_006"
+    },
+    {
+      "expected_failure_class": "review_trigger_missing",
+      "fixture_id": "mutation_valid_review_decision_006_remove_trigger",
+      "mutation_operator": "mutate_review_remove_trigger",
+      "operation_family": "review_decision",
+      "path": "review/mutation_valid_review_decision_006_remove_trigger.json",
+      "source_fixture_id": "valid_review_decision_006"
+    }
+  ],
+  "non_claims": {
+    "complete_workflow_coverage": false,
+    "legal_sufficiency": false,
+    "privacy_compliance_claim": false,
+    "production_deployment": false,
+    "real_government_decision": false,
+    "statistical_population_claim": false
+  },
+  "operation_family_counts": {
+    "access_decision": 24,
+    "reuse_authorization": 24,
+    "review_decision": 24
+  },
+  "overall_passed": true,
+  "source_valid_fixture_count": 18
+}

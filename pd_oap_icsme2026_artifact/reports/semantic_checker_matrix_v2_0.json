@@ -1,0 +1,876 @@
+{
+  "checker": {
+    "name": "pd-oap-v2-semantic-checker",
+    "version": "2.0-draft"
+  },
+  "failure_class_counts": {
+    "handoff_ref_unresolved": 2,
+    "integrity_digest_mismatch": 2,
+    "missing_authorization_basis": 2,
+    "policy_version_mismatch": 2,
+    "purpose_constraint_mismatch": 2,
+    "requester_role_mismatch": 2,
+    "reuse_condition_mismatch": 2,
+    "reuse_condition_missing": 2,
+    "review_evidence_missing": 2,
+    "review_trigger_missing": 2,
+    "unresolved_catalog_ref": 2,
+    "unresolved_dataset_ref": 2
+  },
+  "fixture_count": 45,
+  "fixture_root": "pd-oap/v2/fixtures/v2_0",
+  "invalid_expected_count": 24,
+  "matched_count": 45,
+  "operation_family_counts": {
+    "access_decision": 15,
+    "reuse_authorization": 15,
+    "review_decision": 15
+  },
+  "results": [
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "none",
+      "expected_result": "valid",
+      "fixture_id": "edge_access_denied_with_complete_evidence_001",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/edge/edge_access_denied_with_complete_evidence_001.json",
+      "issues": [],
+      "matched_expectation": true,
+      "observed_result": "valid",
+      "operation_family": "access_decision",
+      "primary_failure_code": "none"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "none",
+      "expected_result": "valid",
+      "fixture_id": "edge_reuse_denied_due_to_scope_001",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/edge/edge_reuse_denied_due_to_scope_001.json",
+      "issues": [],
+      "matched_expectation": true,
+      "observed_result": "valid",
+      "operation_family": "reuse_authorization",
+      "primary_failure_code": "none"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "none",
+      "expected_result": "valid",
+      "fixture_id": "edge_review_closed_without_renewal_001",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/edge/edge_review_closed_without_renewal_001.json",
+      "issues": [],
+      "matched_expectation": true,
+      "observed_result": "valid",
+      "operation_family": "review_decision",
+      "primary_failure_code": "none"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "missing_authorization_basis",
+      "expected_result": "invalid",
+      "fixture_id": "invalid_access_missing_authorization_basis_001",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/invalid/access/invalid_access_missing_authorization_basis_001.json",
+      "issues": [
+        {
+          "failure_code": "missing_authorization_basis",
+          "message": "Policy basis, policy id, policy version, or operation policy reference is missing or unresolved.",
+          "path": "policy.authorization_basis",
+          "rule_surface": "policy basis completeness"
+        }
+      ],
+      "matched_expectation": true,
+      "observed_result": "invalid",
+      "operation_family": "access_decision",
+      "primary_failure_code": "missing_authorization_basis"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "missing_authorization_basis",
+      "expected_result": "invalid",
+      "fixture_id": "invalid_access_missing_authorization_basis_002",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/invalid/access/invalid_access_missing_authorization_basis_002.json",
+      "issues": [
+        {
+          "failure_code": "missing_authorization_basis",
+          "message": "Policy basis, policy id, policy version, or operation policy reference is missing or unresolved.",
+          "path": "policy.authorization_basis",
+          "rule_surface": "policy basis completeness"
+        }
+      ],
+      "matched_expectation": true,
+      "observed_result": "invalid",
+      "operation_family": "access_decision",
+      "primary_failure_code": "missing_authorization_basis"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "requester_role_mismatch",
+      "expected_result": "invalid",
+      "fixture_id": "invalid_access_requester_role_mismatch_001",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/invalid/access/invalid_access_requester_role_mismatch_001.json",
+      "issues": [
+        {
+          "failure_code": "requester_role_mismatch",
+          "message": "Requester role is not allowed by the declared policy.",
+          "path": "requester.role",
+          "rule_surface": "requester-role policy constraint"
+        }
+      ],
+      "matched_expectation": true,
+      "observed_result": "invalid",
+      "operation_family": "access_decision",
+      "primary_failure_code": "requester_role_mismatch"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "requester_role_mismatch",
+      "expected_result": "invalid",
+      "fixture_id": "invalid_access_requester_role_mismatch_002",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/invalid/access/invalid_access_requester_role_mismatch_002.json",
+      "issues": [
+        {
+          "failure_code": "requester_role_mismatch",
+          "message": "Requester role is not allowed by the declared policy.",
+          "path": "requester.role",
+          "rule_surface": "requester-role policy constraint"
+        }
+      ],
+      "matched_expectation": true,
+      "observed_result": "invalid",
+      "operation_family": "access_decision",
+      "primary_failure_code": "requester_role_mismatch"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "unresolved_catalog_ref",
+      "expected_result": "invalid",
+      "fixture_id": "invalid_access_unresolved_catalog_ref_001",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/invalid/access/invalid_access_unresolved_catalog_ref_001.json",
+      "issues": [
+        {
+          "failure_code": "unresolved_catalog_ref",
+          "message": "Operation catalog reference does not match packaged catalog metadata.",
+          "path": "operation.catalog_id",
+          "rule_surface": "catalog reference closure"
+        }
+      ],
+      "matched_expectation": true,
+      "observed_result": "invalid",
+      "operation_family": "access_decision",
+      "primary_failure_code": "unresolved_catalog_ref"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "unresolved_catalog_ref",
+      "expected_result": "invalid",
+      "fixture_id": "invalid_access_unresolved_catalog_ref_002",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/invalid/access/invalid_access_unresolved_catalog_ref_002.json",
+      "issues": [
+        {
+          "failure_code": "unresolved_catalog_ref",
+          "message": "Operation catalog reference does not match packaged catalog metadata.",
+          "path": "operation.catalog_id",
+          "rule_surface": "catalog reference closure"
+        }
+      ],
+      "matched_expectation": true,
+      "observed_result": "invalid",
+      "operation_family": "access_decision",
+      "primary_failure_code": "unresolved_catalog_ref"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "unresolved_dataset_ref",
+      "expected_result": "invalid",
+      "fixture_id": "invalid_access_unresolved_dataset_ref_001",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/invalid/access/invalid_access_unresolved_dataset_ref_001.json",
+      "issues": [
+        {
+          "failure_code": "unresolved_dataset_ref",
+          "message": "Operation data object reference does not resolve to subject and catalog dataset refs.",
+          "path": "operation.data_object_id",
+          "rule_surface": "dataset reference closure"
+        }
+      ],
+      "matched_expectation": true,
+      "observed_result": "invalid",
+      "operation_family": "access_decision",
+      "primary_failure_code": "unresolved_dataset_ref"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "unresolved_dataset_ref",
+      "expected_result": "invalid",
+      "fixture_id": "invalid_access_unresolved_dataset_ref_002",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/invalid/access/invalid_access_unresolved_dataset_ref_002.json",
+      "issues": [
+        {
+          "failure_code": "unresolved_dataset_ref",
+          "message": "Operation data object reference does not resolve to subject and catalog dataset refs.",
+          "path": "operation.data_object_id",
+          "rule_surface": "dataset reference closure"
+        }
+      ],
+      "matched_expectation": true,
+      "observed_result": "invalid",
+      "operation_family": "access_decision",
+      "primary_failure_code": "unresolved_dataset_ref"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "handoff_ref_unresolved",
+      "expected_result": "invalid",
+      "fixture_id": "invalid_reuse_handoff_ref_unresolved_001",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/invalid/reuse/invalid_reuse_handoff_ref_unresolved_001.json",
+      "issues": [
+        {
+          "failure_code": "handoff_ref_unresolved",
+          "message": "One or more handoff references do not resolve to packaged evidence.",
+          "path": "provenance.handoff_refs",
+          "rule_surface": "handoff reference closure"
+        }
+      ],
+      "matched_expectation": true,
+      "observed_result": "invalid",
+      "operation_family": "reuse_authorization",
+      "primary_failure_code": "handoff_ref_unresolved"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "handoff_ref_unresolved",
+      "expected_result": "invalid",
+      "fixture_id": "invalid_reuse_handoff_ref_unresolved_002",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/invalid/reuse/invalid_reuse_handoff_ref_unresolved_002.json",
+      "issues": [
+        {
+          "failure_code": "handoff_ref_unresolved",
+          "message": "One or more handoff references do not resolve to packaged evidence.",
+          "path": "provenance.handoff_refs",
+          "rule_surface": "handoff reference closure"
+        }
+      ],
+      "matched_expectation": true,
+      "observed_result": "invalid",
+      "operation_family": "reuse_authorization",
+      "primary_failure_code": "handoff_ref_unresolved"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "purpose_constraint_mismatch",
+      "expected_result": "invalid",
+      "fixture_id": "invalid_reuse_purpose_constraint_mismatch_001",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/invalid/reuse/invalid_reuse_purpose_constraint_mismatch_001.json",
+      "issues": [
+        {
+          "failure_code": "purpose_constraint_mismatch",
+          "message": "Declared purpose is not allowed by the policy.",
+          "path": "purpose.declared_purpose",
+          "rule_surface": "purpose constraint matching"
+        }
+      ],
+      "matched_expectation": true,
+      "observed_result": "invalid",
+      "operation_family": "reuse_authorization",
+      "primary_failure_code": "purpose_constraint_mismatch"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "purpose_constraint_mismatch",
+      "expected_result": "invalid",
+      "fixture_id": "invalid_reuse_purpose_constraint_mismatch_002",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/invalid/reuse/invalid_reuse_purpose_constraint_mismatch_002.json",
+      "issues": [
+        {
+          "failure_code": "purpose_constraint_mismatch",
+          "message": "Declared purpose is not allowed by the policy.",
+          "path": "purpose.declared_purpose",
+          "rule_surface": "purpose constraint matching"
+        }
+      ],
+      "matched_expectation": true,
+      "observed_result": "invalid",
+      "operation_family": "reuse_authorization",
+      "primary_failure_code": "purpose_constraint_mismatch"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "reuse_condition_mismatch",
+      "expected_result": "invalid",
+      "fixture_id": "invalid_reuse_reuse_condition_mismatch_001",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/invalid/reuse/invalid_reuse_reuse_condition_mismatch_001.json",
+      "issues": [
+        {
+          "failure_code": "reuse_condition_mismatch",
+          "message": "Declared reuse condition conflicts with policy-required onward-transfer boundary.",
+          "path": "conditions",
+          "rule_surface": "condition consistency"
+        }
+      ],
+      "matched_expectation": true,
+      "observed_result": "invalid",
+      "operation_family": "reuse_authorization",
+      "primary_failure_code": "reuse_condition_mismatch"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "reuse_condition_mismatch",
+      "expected_result": "invalid",
+      "fixture_id": "invalid_reuse_reuse_condition_mismatch_002",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/invalid/reuse/invalid_reuse_reuse_condition_mismatch_002.json",
+      "issues": [
+        {
+          "failure_code": "reuse_condition_mismatch",
+          "message": "Declared reuse condition conflicts with policy-required onward-transfer boundary.",
+          "path": "conditions",
+          "rule_surface": "condition consistency"
+        }
+      ],
+      "matched_expectation": true,
+      "observed_result": "invalid",
+      "operation_family": "reuse_authorization",
+      "primary_failure_code": "reuse_condition_mismatch"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "reuse_condition_missing",
+      "expected_result": "invalid",
+      "fixture_id": "invalid_reuse_reuse_condition_missing_001",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/invalid/reuse/invalid_reuse_reuse_condition_missing_001.json",
+      "issues": [
+        {
+          "failure_code": "reuse_condition_missing",
+          "message": "Required reuse conditions are missing.",
+          "path": "conditions",
+          "rule_surface": "condition completeness"
+        }
+      ],
+      "matched_expectation": true,
+      "observed_result": "invalid",
+      "operation_family": "reuse_authorization",
+      "primary_failure_code": "reuse_condition_missing"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "reuse_condition_missing",
+      "expected_result": "invalid",
+      "fixture_id": "invalid_reuse_reuse_condition_missing_002",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/invalid/reuse/invalid_reuse_reuse_condition_missing_002.json",
+      "issues": [
+        {
+          "failure_code": "reuse_condition_missing",
+          "message": "Required reuse conditions are missing.",
+          "path": "conditions",
+          "rule_surface": "condition completeness"
+        }
+      ],
+      "matched_expectation": true,
+      "observed_result": "invalid",
+      "operation_family": "reuse_authorization",
+      "primary_failure_code": "reuse_condition_missing"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "integrity_digest_mismatch",
+      "expected_result": "invalid",
+      "fixture_id": "invalid_review_integrity_digest_mismatch_001",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/invalid/review/invalid_review_integrity_digest_mismatch_001.json",
+      "issues": [
+        {
+          "failure_code": "integrity_digest_mismatch",
+          "message": "Provenance integrity digest does not match evidence integrity digest.",
+          "path": "provenance.integrity_digest",
+          "rule_surface": "integrity digest consistency"
+        }
+      ],
+      "matched_expectation": true,
+      "observed_result": "invalid",
+      "operation_family": "review_decision",
+      "primary_failure_code": "integrity_digest_mismatch"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "integrity_digest_mismatch",
+      "expected_result": "invalid",
+      "fixture_id": "invalid_review_integrity_digest_mismatch_002",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/invalid/review/invalid_review_integrity_digest_mismatch_002.json",
+      "issues": [
+        {
+          "failure_code": "integrity_digest_mismatch",
+          "message": "Provenance integrity digest does not match evidence integrity digest.",
+          "path": "provenance.integrity_digest",
+          "rule_surface": "integrity digest consistency"
+        }
+      ],
+      "matched_expectation": true,
+      "observed_result": "invalid",
+      "operation_family": "review_decision",
+      "primary_failure_code": "integrity_digest_mismatch"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "policy_version_mismatch",
+      "expected_result": "invalid",
+      "fixture_id": "invalid_review_policy_version_mismatch_001",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/invalid/review/invalid_review_policy_version_mismatch_001.json",
+      "issues": [
+        {
+          "failure_code": "policy_version_mismatch",
+          "message": "Operation policy version does not match packaged policy version.",
+          "path": "operation.policy_version",
+          "rule_surface": "policy version consistency"
+        }
+      ],
+      "matched_expectation": true,
+      "observed_result": "invalid",
+      "operation_family": "review_decision",
+      "primary_failure_code": "policy_version_mismatch"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "policy_version_mismatch",
+      "expected_result": "invalid",
+      "fixture_id": "invalid_review_policy_version_mismatch_002",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/invalid/review/invalid_review_policy_version_mismatch_002.json",
+      "issues": [
+        {
+          "failure_code": "policy_version_mismatch",
+          "message": "Operation policy version does not match packaged policy version.",
+          "path": "operation.policy_version",
+          "rule_surface": "policy version consistency"
+        }
+      ],
+      "matched_expectation": true,
+      "observed_result": "invalid",
+      "operation_family": "review_decision",
+      "primary_failure_code": "policy_version_mismatch"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "review_evidence_missing",
+      "expected_result": "invalid",
+      "fixture_id": "invalid_review_review_evidence_missing_001",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/invalid/review/invalid_review_review_evidence_missing_001.json",
+      "issues": [
+        {
+          "failure_code": "review_evidence_missing",
+          "message": "Review operation lacks review-record evidence.",
+          "path": "evidence.evidence_objects",
+          "rule_surface": "review evidence completeness"
+        }
+      ],
+      "matched_expectation": true,
+      "observed_result": "invalid",
+      "operation_family": "review_decision",
+      "primary_failure_code": "review_evidence_missing"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "review_evidence_missing",
+      "expected_result": "invalid",
+      "fixture_id": "invalid_review_review_evidence_missing_002",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/invalid/review/invalid_review_review_evidence_missing_002.json",
+      "issues": [
+        {
+          "failure_code": "review_evidence_missing",
+          "message": "Review operation lacks review-record evidence.",
+          "path": "evidence.evidence_objects",
+          "rule_surface": "review evidence completeness"
+        }
+      ],
+      "matched_expectation": true,
+      "observed_result": "invalid",
+      "operation_family": "review_decision",
+      "primary_failure_code": "review_evidence_missing"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "review_trigger_missing",
+      "expected_result": "invalid",
+      "fixture_id": "invalid_review_review_trigger_missing_001",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/invalid/review/invalid_review_review_trigger_missing_001.json",
+      "issues": [
+        {
+          "failure_code": "review_trigger_missing",
+          "message": "Review operation lacks a declared review trigger.",
+          "path": "policy.review_triggers",
+          "rule_surface": "review trigger completeness"
+        }
+      ],
+      "matched_expectation": true,
+      "observed_result": "invalid",
+      "operation_family": "review_decision",
+      "primary_failure_code": "review_trigger_missing"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "review_trigger_missing",
+      "expected_result": "invalid",
+      "fixture_id": "invalid_review_review_trigger_missing_002",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/invalid/review/invalid_review_review_trigger_missing_002.json",
+      "issues": [
+        {
+          "failure_code": "review_trigger_missing",
+          "message": "Review operation lacks a declared review trigger.",
+          "path": "policy.review_triggers",
+          "rule_surface": "review trigger completeness"
+        }
+      ],
+      "matched_expectation": true,
+      "observed_result": "invalid",
+      "operation_family": "review_decision",
+      "primary_failure_code": "review_trigger_missing"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "none",
+      "expected_result": "valid",
+      "fixture_id": "valid_access_decision_001",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/valid/access/valid_access_decision_001.json",
+      "issues": [],
+      "matched_expectation": true,
+      "observed_result": "valid",
+      "operation_family": "access_decision",
+      "primary_failure_code": "none"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "none",
+      "expected_result": "valid",
+      "fixture_id": "valid_access_decision_002",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/valid/access/valid_access_decision_002.json",
+      "issues": [],
+      "matched_expectation": true,
+      "observed_result": "valid",
+      "operation_family": "access_decision",
+      "primary_failure_code": "none"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "none",
+      "expected_result": "valid",
+      "fixture_id": "valid_access_decision_003",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/valid/access/valid_access_decision_003.json",
+      "issues": [],
+      "matched_expectation": true,
+      "observed_result": "valid",
+      "operation_family": "access_decision",
+      "primary_failure_code": "none"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "none",
+      "expected_result": "valid",
+      "fixture_id": "valid_access_decision_004",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/valid/access/valid_access_decision_004.json",
+      "issues": [],
+      "matched_expectation": true,
+      "observed_result": "valid",
+      "operation_family": "access_decision",
+      "primary_failure_code": "none"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "none",
+      "expected_result": "valid",
+      "fixture_id": "valid_access_decision_005",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/valid/access/valid_access_decision_005.json",
+      "issues": [],
+      "matched_expectation": true,
+      "observed_result": "valid",
+      "operation_family": "access_decision",
+      "primary_failure_code": "none"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "none",
+      "expected_result": "valid",
+      "fixture_id": "valid_access_decision_006",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/valid/access/valid_access_decision_006.json",
+      "issues": [],
+      "matched_expectation": true,
+      "observed_result": "valid",
+      "operation_family": "access_decision",
+      "primary_failure_code": "none"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "none",
+      "expected_result": "valid",
+      "fixture_id": "valid_reuse_authorization_001",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/valid/reuse/valid_reuse_authorization_001.json",
+      "issues": [],
+      "matched_expectation": true,
+      "observed_result": "valid",
+      "operation_family": "reuse_authorization",
+      "primary_failure_code": "none"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "none",
+      "expected_result": "valid",
+      "fixture_id": "valid_reuse_authorization_002",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/valid/reuse/valid_reuse_authorization_002.json",
+      "issues": [],
+      "matched_expectation": true,
+      "observed_result": "valid",
+      "operation_family": "reuse_authorization",
+      "primary_failure_code": "none"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "none",
+      "expected_result": "valid",
+      "fixture_id": "valid_reuse_authorization_003",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/valid/reuse/valid_reuse_authorization_003.json",
+      "issues": [],
+      "matched_expectation": true,
+      "observed_result": "valid",
+      "operation_family": "reuse_authorization",
+      "primary_failure_code": "none"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "none",
+      "expected_result": "valid",
+      "fixture_id": "valid_reuse_authorization_004",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/valid/reuse/valid_reuse_authorization_004.json",
+      "issues": [],
+      "matched_expectation": true,
+      "observed_result": "valid",
+      "operation_family": "reuse_authorization",
+      "primary_failure_code": "none"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "none",
+      "expected_result": "valid",
+      "fixture_id": "valid_reuse_authorization_005",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/valid/reuse/valid_reuse_authorization_005.json",
+      "issues": [],
+      "matched_expectation": true,
+      "observed_result": "valid",
+      "operation_family": "reuse_authorization",
+      "primary_failure_code": "none"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "none",
+      "expected_result": "valid",
+      "fixture_id": "valid_reuse_authorization_006",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/valid/reuse/valid_reuse_authorization_006.json",
+      "issues": [],
+      "matched_expectation": true,
+      "observed_result": "valid",
+      "operation_family": "reuse_authorization",
+      "primary_failure_code": "none"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "none",
+      "expected_result": "valid",
+      "fixture_id": "valid_review_decision_001",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/valid/review/valid_review_decision_001.json",
+      "issues": [],
+      "matched_expectation": true,
+      "observed_result": "valid",
+      "operation_family": "review_decision",
+      "primary_failure_code": "none"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "none",
+      "expected_result": "valid",
+      "fixture_id": "valid_review_decision_002",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/valid/review/valid_review_decision_002.json",
+      "issues": [],
+      "matched_expectation": true,
+      "observed_result": "valid",
+      "operation_family": "review_decision",
+      "primary_failure_code": "none"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "none",
+      "expected_result": "valid",
+      "fixture_id": "valid_review_decision_003",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/valid/review/valid_review_decision_003.json",
+      "issues": [],
+      "matched_expectation": true,
+      "observed_result": "valid",
+      "operation_family": "review_decision",
+      "primary_failure_code": "none"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "none",
+      "expected_result": "valid",
+      "fixture_id": "valid_review_decision_004",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/valid/review/valid_review_decision_004.json",
+      "issues": [],
+      "matched_expectation": true,
+      "observed_result": "valid",
+      "operation_family": "review_decision",
+      "primary_failure_code": "none"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "none",
+      "expected_result": "valid",
+      "fixture_id": "valid_review_decision_005",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/valid/review/valid_review_decision_005.json",
+      "issues": [],
+      "matched_expectation": true,
+      "observed_result": "valid",
+      "operation_family": "review_decision",
+      "primary_failure_code": "none"
+    },
+    {
+      "checker": {
+        "name": "pd-oap-v2-semantic-checker",
+        "version": "2.0-draft"
+      },
+      "expected_primary_failure_code": "none",
+      "expected_result": "valid",
+      "fixture_id": "valid_review_decision_006",
+      "fixture_path": "pd-oap/v2/fixtures/v2_0/valid/review/valid_review_decision_006.json",
+      "issues": [],
+      "matched_expectation": true,
+      "observed_result": "valid",
+      "operation_family": "review_decision",
+      "primary_failure_code": "none"
+    }
+  ],
+  "unexpected_count": 0,
+  "valid_expected_count": 21
+}

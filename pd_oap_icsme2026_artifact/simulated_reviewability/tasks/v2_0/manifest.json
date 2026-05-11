@@ -1,0 +1,2367 @@
+{
+  "base_fixture_count": 45,
+  "mutation_fixture_count": 72,
+  "non_claims": {
+    "human_participant_data": false,
+    "human_study_result": false,
+    "legal_sufficiency": false,
+    "production_deployment": false
+  },
+  "representation_conditions": [
+    "logs_only",
+    "policy_only",
+    "provenance_only",
+    "full_pd_oap"
+  ],
+  "simulated_task_count": 468,
+  "simulation_task_pack_id": "pd-oap-simulated-reviewability@2.0-draft",
+  "source_specimen_count": 117,
+  "tasks": [
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_edge_access_denied_with_complete_evidence_001_logs_only.json",
+      "task_id": "task_edge_access_denied_with_complete_evidence_001_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_edge_access_denied_with_complete_evidence_001_policy_only.json",
+      "task_id": "task_edge_access_denied_with_complete_evidence_001_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_edge_access_denied_with_complete_evidence_001_provenance_only.json",
+      "task_id": "task_edge_access_denied_with_complete_evidence_001_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_edge_access_denied_with_complete_evidence_001_full_pd_oap.json",
+      "task_id": "task_edge_access_denied_with_complete_evidence_001_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_edge_reuse_denied_due_to_scope_001_logs_only.json",
+      "task_id": "task_edge_reuse_denied_due_to_scope_001_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_edge_reuse_denied_due_to_scope_001_policy_only.json",
+      "task_id": "task_edge_reuse_denied_due_to_scope_001_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_edge_reuse_denied_due_to_scope_001_provenance_only.json",
+      "task_id": "task_edge_reuse_denied_due_to_scope_001_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_edge_reuse_denied_due_to_scope_001_full_pd_oap.json",
+      "task_id": "task_edge_reuse_denied_due_to_scope_001_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_edge_review_closed_without_renewal_001_logs_only.json",
+      "task_id": "task_edge_review_closed_without_renewal_001_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_edge_review_closed_without_renewal_001_policy_only.json",
+      "task_id": "task_edge_review_closed_without_renewal_001_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_edge_review_closed_without_renewal_001_provenance_only.json",
+      "task_id": "task_edge_review_closed_without_renewal_001_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_edge_review_closed_without_renewal_001_full_pd_oap.json",
+      "task_id": "task_edge_review_closed_without_renewal_001_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_invalid_access_missing_authorization_basis_001_logs_only.json",
+      "task_id": "task_invalid_access_missing_authorization_basis_001_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_invalid_access_missing_authorization_basis_001_policy_only.json",
+      "task_id": "task_invalid_access_missing_authorization_basis_001_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_invalid_access_missing_authorization_basis_001_provenance_only.json",
+      "task_id": "task_invalid_access_missing_authorization_basis_001_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_invalid_access_missing_authorization_basis_001_full_pd_oap.json",
+      "task_id": "task_invalid_access_missing_authorization_basis_001_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_invalid_access_missing_authorization_basis_002_logs_only.json",
+      "task_id": "task_invalid_access_missing_authorization_basis_002_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_invalid_access_missing_authorization_basis_002_policy_only.json",
+      "task_id": "task_invalid_access_missing_authorization_basis_002_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_invalid_access_missing_authorization_basis_002_provenance_only.json",
+      "task_id": "task_invalid_access_missing_authorization_basis_002_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_invalid_access_missing_authorization_basis_002_full_pd_oap.json",
+      "task_id": "task_invalid_access_missing_authorization_basis_002_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_invalid_access_requester_role_mismatch_001_logs_only.json",
+      "task_id": "task_invalid_access_requester_role_mismatch_001_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_invalid_access_requester_role_mismatch_001_policy_only.json",
+      "task_id": "task_invalid_access_requester_role_mismatch_001_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_invalid_access_requester_role_mismatch_001_provenance_only.json",
+      "task_id": "task_invalid_access_requester_role_mismatch_001_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_invalid_access_requester_role_mismatch_001_full_pd_oap.json",
+      "task_id": "task_invalid_access_requester_role_mismatch_001_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_invalid_access_requester_role_mismatch_002_logs_only.json",
+      "task_id": "task_invalid_access_requester_role_mismatch_002_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_invalid_access_requester_role_mismatch_002_policy_only.json",
+      "task_id": "task_invalid_access_requester_role_mismatch_002_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_invalid_access_requester_role_mismatch_002_provenance_only.json",
+      "task_id": "task_invalid_access_requester_role_mismatch_002_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_invalid_access_requester_role_mismatch_002_full_pd_oap.json",
+      "task_id": "task_invalid_access_requester_role_mismatch_002_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_invalid_access_unresolved_catalog_ref_001_logs_only.json",
+      "task_id": "task_invalid_access_unresolved_catalog_ref_001_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_invalid_access_unresolved_catalog_ref_001_policy_only.json",
+      "task_id": "task_invalid_access_unresolved_catalog_ref_001_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_invalid_access_unresolved_catalog_ref_001_provenance_only.json",
+      "task_id": "task_invalid_access_unresolved_catalog_ref_001_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_invalid_access_unresolved_catalog_ref_001_full_pd_oap.json",
+      "task_id": "task_invalid_access_unresolved_catalog_ref_001_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_invalid_access_unresolved_catalog_ref_002_logs_only.json",
+      "task_id": "task_invalid_access_unresolved_catalog_ref_002_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_invalid_access_unresolved_catalog_ref_002_policy_only.json",
+      "task_id": "task_invalid_access_unresolved_catalog_ref_002_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_invalid_access_unresolved_catalog_ref_002_provenance_only.json",
+      "task_id": "task_invalid_access_unresolved_catalog_ref_002_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_invalid_access_unresolved_catalog_ref_002_full_pd_oap.json",
+      "task_id": "task_invalid_access_unresolved_catalog_ref_002_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_invalid_access_unresolved_dataset_ref_001_logs_only.json",
+      "task_id": "task_invalid_access_unresolved_dataset_ref_001_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_invalid_access_unresolved_dataset_ref_001_policy_only.json",
+      "task_id": "task_invalid_access_unresolved_dataset_ref_001_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_invalid_access_unresolved_dataset_ref_001_provenance_only.json",
+      "task_id": "task_invalid_access_unresolved_dataset_ref_001_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_invalid_access_unresolved_dataset_ref_001_full_pd_oap.json",
+      "task_id": "task_invalid_access_unresolved_dataset_ref_001_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_invalid_access_unresolved_dataset_ref_002_logs_only.json",
+      "task_id": "task_invalid_access_unresolved_dataset_ref_002_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_invalid_access_unresolved_dataset_ref_002_policy_only.json",
+      "task_id": "task_invalid_access_unresolved_dataset_ref_002_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_invalid_access_unresolved_dataset_ref_002_provenance_only.json",
+      "task_id": "task_invalid_access_unresolved_dataset_ref_002_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_invalid_access_unresolved_dataset_ref_002_full_pd_oap.json",
+      "task_id": "task_invalid_access_unresolved_dataset_ref_002_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_invalid_reuse_handoff_ref_unresolved_001_logs_only.json",
+      "task_id": "task_invalid_reuse_handoff_ref_unresolved_001_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_invalid_reuse_handoff_ref_unresolved_001_policy_only.json",
+      "task_id": "task_invalid_reuse_handoff_ref_unresolved_001_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_invalid_reuse_handoff_ref_unresolved_001_provenance_only.json",
+      "task_id": "task_invalid_reuse_handoff_ref_unresolved_001_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_invalid_reuse_handoff_ref_unresolved_001_full_pd_oap.json",
+      "task_id": "task_invalid_reuse_handoff_ref_unresolved_001_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_invalid_reuse_handoff_ref_unresolved_002_logs_only.json",
+      "task_id": "task_invalid_reuse_handoff_ref_unresolved_002_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_invalid_reuse_handoff_ref_unresolved_002_policy_only.json",
+      "task_id": "task_invalid_reuse_handoff_ref_unresolved_002_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_invalid_reuse_handoff_ref_unresolved_002_provenance_only.json",
+      "task_id": "task_invalid_reuse_handoff_ref_unresolved_002_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_invalid_reuse_handoff_ref_unresolved_002_full_pd_oap.json",
+      "task_id": "task_invalid_reuse_handoff_ref_unresolved_002_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_invalid_reuse_purpose_constraint_mismatch_001_logs_only.json",
+      "task_id": "task_invalid_reuse_purpose_constraint_mismatch_001_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_invalid_reuse_purpose_constraint_mismatch_001_policy_only.json",
+      "task_id": "task_invalid_reuse_purpose_constraint_mismatch_001_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_invalid_reuse_purpose_constraint_mismatch_001_provenance_only.json",
+      "task_id": "task_invalid_reuse_purpose_constraint_mismatch_001_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_invalid_reuse_purpose_constraint_mismatch_001_full_pd_oap.json",
+      "task_id": "task_invalid_reuse_purpose_constraint_mismatch_001_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_invalid_reuse_purpose_constraint_mismatch_002_logs_only.json",
+      "task_id": "task_invalid_reuse_purpose_constraint_mismatch_002_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_invalid_reuse_purpose_constraint_mismatch_002_policy_only.json",
+      "task_id": "task_invalid_reuse_purpose_constraint_mismatch_002_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_invalid_reuse_purpose_constraint_mismatch_002_provenance_only.json",
+      "task_id": "task_invalid_reuse_purpose_constraint_mismatch_002_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_invalid_reuse_purpose_constraint_mismatch_002_full_pd_oap.json",
+      "task_id": "task_invalid_reuse_purpose_constraint_mismatch_002_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_invalid_reuse_reuse_condition_mismatch_001_logs_only.json",
+      "task_id": "task_invalid_reuse_reuse_condition_mismatch_001_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_invalid_reuse_reuse_condition_mismatch_001_policy_only.json",
+      "task_id": "task_invalid_reuse_reuse_condition_mismatch_001_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_invalid_reuse_reuse_condition_mismatch_001_provenance_only.json",
+      "task_id": "task_invalid_reuse_reuse_condition_mismatch_001_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_invalid_reuse_reuse_condition_mismatch_001_full_pd_oap.json",
+      "task_id": "task_invalid_reuse_reuse_condition_mismatch_001_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_invalid_reuse_reuse_condition_mismatch_002_logs_only.json",
+      "task_id": "task_invalid_reuse_reuse_condition_mismatch_002_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_invalid_reuse_reuse_condition_mismatch_002_policy_only.json",
+      "task_id": "task_invalid_reuse_reuse_condition_mismatch_002_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_invalid_reuse_reuse_condition_mismatch_002_provenance_only.json",
+      "task_id": "task_invalid_reuse_reuse_condition_mismatch_002_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_invalid_reuse_reuse_condition_mismatch_002_full_pd_oap.json",
+      "task_id": "task_invalid_reuse_reuse_condition_mismatch_002_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_invalid_reuse_reuse_condition_missing_001_logs_only.json",
+      "task_id": "task_invalid_reuse_reuse_condition_missing_001_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_invalid_reuse_reuse_condition_missing_001_policy_only.json",
+      "task_id": "task_invalid_reuse_reuse_condition_missing_001_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_invalid_reuse_reuse_condition_missing_001_provenance_only.json",
+      "task_id": "task_invalid_reuse_reuse_condition_missing_001_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_invalid_reuse_reuse_condition_missing_001_full_pd_oap.json",
+      "task_id": "task_invalid_reuse_reuse_condition_missing_001_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_invalid_reuse_reuse_condition_missing_002_logs_only.json",
+      "task_id": "task_invalid_reuse_reuse_condition_missing_002_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_invalid_reuse_reuse_condition_missing_002_policy_only.json",
+      "task_id": "task_invalid_reuse_reuse_condition_missing_002_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_invalid_reuse_reuse_condition_missing_002_provenance_only.json",
+      "task_id": "task_invalid_reuse_reuse_condition_missing_002_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_invalid_reuse_reuse_condition_missing_002_full_pd_oap.json",
+      "task_id": "task_invalid_reuse_reuse_condition_missing_002_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_invalid_review_integrity_digest_mismatch_001_logs_only.json",
+      "task_id": "task_invalid_review_integrity_digest_mismatch_001_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_invalid_review_integrity_digest_mismatch_001_policy_only.json",
+      "task_id": "task_invalid_review_integrity_digest_mismatch_001_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_invalid_review_integrity_digest_mismatch_001_provenance_only.json",
+      "task_id": "task_invalid_review_integrity_digest_mismatch_001_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_invalid_review_integrity_digest_mismatch_001_full_pd_oap.json",
+      "task_id": "task_invalid_review_integrity_digest_mismatch_001_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_invalid_review_integrity_digest_mismatch_002_logs_only.json",
+      "task_id": "task_invalid_review_integrity_digest_mismatch_002_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_invalid_review_integrity_digest_mismatch_002_policy_only.json",
+      "task_id": "task_invalid_review_integrity_digest_mismatch_002_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_invalid_review_integrity_digest_mismatch_002_provenance_only.json",
+      "task_id": "task_invalid_review_integrity_digest_mismatch_002_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_invalid_review_integrity_digest_mismatch_002_full_pd_oap.json",
+      "task_id": "task_invalid_review_integrity_digest_mismatch_002_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_invalid_review_policy_version_mismatch_001_logs_only.json",
+      "task_id": "task_invalid_review_policy_version_mismatch_001_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_invalid_review_policy_version_mismatch_001_policy_only.json",
+      "task_id": "task_invalid_review_policy_version_mismatch_001_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_invalid_review_policy_version_mismatch_001_provenance_only.json",
+      "task_id": "task_invalid_review_policy_version_mismatch_001_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_invalid_review_policy_version_mismatch_001_full_pd_oap.json",
+      "task_id": "task_invalid_review_policy_version_mismatch_001_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_invalid_review_policy_version_mismatch_002_logs_only.json",
+      "task_id": "task_invalid_review_policy_version_mismatch_002_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_invalid_review_policy_version_mismatch_002_policy_only.json",
+      "task_id": "task_invalid_review_policy_version_mismatch_002_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_invalid_review_policy_version_mismatch_002_provenance_only.json",
+      "task_id": "task_invalid_review_policy_version_mismatch_002_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_invalid_review_policy_version_mismatch_002_full_pd_oap.json",
+      "task_id": "task_invalid_review_policy_version_mismatch_002_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_invalid_review_review_evidence_missing_001_logs_only.json",
+      "task_id": "task_invalid_review_review_evidence_missing_001_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_invalid_review_review_evidence_missing_001_policy_only.json",
+      "task_id": "task_invalid_review_review_evidence_missing_001_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_invalid_review_review_evidence_missing_001_provenance_only.json",
+      "task_id": "task_invalid_review_review_evidence_missing_001_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_invalid_review_review_evidence_missing_001_full_pd_oap.json",
+      "task_id": "task_invalid_review_review_evidence_missing_001_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_invalid_review_review_evidence_missing_002_logs_only.json",
+      "task_id": "task_invalid_review_review_evidence_missing_002_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_invalid_review_review_evidence_missing_002_policy_only.json",
+      "task_id": "task_invalid_review_review_evidence_missing_002_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_invalid_review_review_evidence_missing_002_provenance_only.json",
+      "task_id": "task_invalid_review_review_evidence_missing_002_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_invalid_review_review_evidence_missing_002_full_pd_oap.json",
+      "task_id": "task_invalid_review_review_evidence_missing_002_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_invalid_review_review_trigger_missing_001_logs_only.json",
+      "task_id": "task_invalid_review_review_trigger_missing_001_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_invalid_review_review_trigger_missing_001_policy_only.json",
+      "task_id": "task_invalid_review_review_trigger_missing_001_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_invalid_review_review_trigger_missing_001_provenance_only.json",
+      "task_id": "task_invalid_review_review_trigger_missing_001_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_invalid_review_review_trigger_missing_001_full_pd_oap.json",
+      "task_id": "task_invalid_review_review_trigger_missing_001_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_invalid_review_review_trigger_missing_002_logs_only.json",
+      "task_id": "task_invalid_review_review_trigger_missing_002_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_invalid_review_review_trigger_missing_002_policy_only.json",
+      "task_id": "task_invalid_review_review_trigger_missing_002_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_invalid_review_review_trigger_missing_002_provenance_only.json",
+      "task_id": "task_invalid_review_review_trigger_missing_002_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_invalid_review_review_trigger_missing_002_full_pd_oap.json",
+      "task_id": "task_invalid_review_review_trigger_missing_002_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_valid_access_decision_001_logs_only.json",
+      "task_id": "task_valid_access_decision_001_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_valid_access_decision_001_policy_only.json",
+      "task_id": "task_valid_access_decision_001_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_valid_access_decision_001_provenance_only.json",
+      "task_id": "task_valid_access_decision_001_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_valid_access_decision_001_full_pd_oap.json",
+      "task_id": "task_valid_access_decision_001_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_valid_access_decision_002_logs_only.json",
+      "task_id": "task_valid_access_decision_002_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_valid_access_decision_002_policy_only.json",
+      "task_id": "task_valid_access_decision_002_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_valid_access_decision_002_provenance_only.json",
+      "task_id": "task_valid_access_decision_002_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_valid_access_decision_002_full_pd_oap.json",
+      "task_id": "task_valid_access_decision_002_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_valid_access_decision_003_logs_only.json",
+      "task_id": "task_valid_access_decision_003_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_valid_access_decision_003_policy_only.json",
+      "task_id": "task_valid_access_decision_003_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_valid_access_decision_003_provenance_only.json",
+      "task_id": "task_valid_access_decision_003_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_valid_access_decision_003_full_pd_oap.json",
+      "task_id": "task_valid_access_decision_003_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_valid_access_decision_004_logs_only.json",
+      "task_id": "task_valid_access_decision_004_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_valid_access_decision_004_policy_only.json",
+      "task_id": "task_valid_access_decision_004_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_valid_access_decision_004_provenance_only.json",
+      "task_id": "task_valid_access_decision_004_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_valid_access_decision_004_full_pd_oap.json",
+      "task_id": "task_valid_access_decision_004_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_valid_access_decision_005_logs_only.json",
+      "task_id": "task_valid_access_decision_005_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_valid_access_decision_005_policy_only.json",
+      "task_id": "task_valid_access_decision_005_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_valid_access_decision_005_provenance_only.json",
+      "task_id": "task_valid_access_decision_005_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_valid_access_decision_005_full_pd_oap.json",
+      "task_id": "task_valid_access_decision_005_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_valid_access_decision_006_logs_only.json",
+      "task_id": "task_valid_access_decision_006_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_valid_access_decision_006_policy_only.json",
+      "task_id": "task_valid_access_decision_006_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_valid_access_decision_006_provenance_only.json",
+      "task_id": "task_valid_access_decision_006_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_valid_access_decision_006_full_pd_oap.json",
+      "task_id": "task_valid_access_decision_006_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_valid_reuse_authorization_001_logs_only.json",
+      "task_id": "task_valid_reuse_authorization_001_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_valid_reuse_authorization_001_policy_only.json",
+      "task_id": "task_valid_reuse_authorization_001_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_valid_reuse_authorization_001_provenance_only.json",
+      "task_id": "task_valid_reuse_authorization_001_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_valid_reuse_authorization_001_full_pd_oap.json",
+      "task_id": "task_valid_reuse_authorization_001_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_valid_reuse_authorization_002_logs_only.json",
+      "task_id": "task_valid_reuse_authorization_002_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_valid_reuse_authorization_002_policy_only.json",
+      "task_id": "task_valid_reuse_authorization_002_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_valid_reuse_authorization_002_provenance_only.json",
+      "task_id": "task_valid_reuse_authorization_002_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_valid_reuse_authorization_002_full_pd_oap.json",
+      "task_id": "task_valid_reuse_authorization_002_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_valid_reuse_authorization_003_logs_only.json",
+      "task_id": "task_valid_reuse_authorization_003_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_valid_reuse_authorization_003_policy_only.json",
+      "task_id": "task_valid_reuse_authorization_003_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_valid_reuse_authorization_003_provenance_only.json",
+      "task_id": "task_valid_reuse_authorization_003_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_valid_reuse_authorization_003_full_pd_oap.json",
+      "task_id": "task_valid_reuse_authorization_003_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_valid_reuse_authorization_004_logs_only.json",
+      "task_id": "task_valid_reuse_authorization_004_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_valid_reuse_authorization_004_policy_only.json",
+      "task_id": "task_valid_reuse_authorization_004_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_valid_reuse_authorization_004_provenance_only.json",
+      "task_id": "task_valid_reuse_authorization_004_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_valid_reuse_authorization_004_full_pd_oap.json",
+      "task_id": "task_valid_reuse_authorization_004_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_valid_reuse_authorization_005_logs_only.json",
+      "task_id": "task_valid_reuse_authorization_005_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_valid_reuse_authorization_005_policy_only.json",
+      "task_id": "task_valid_reuse_authorization_005_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_valid_reuse_authorization_005_provenance_only.json",
+      "task_id": "task_valid_reuse_authorization_005_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_valid_reuse_authorization_005_full_pd_oap.json",
+      "task_id": "task_valid_reuse_authorization_005_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_valid_reuse_authorization_006_logs_only.json",
+      "task_id": "task_valid_reuse_authorization_006_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_valid_reuse_authorization_006_policy_only.json",
+      "task_id": "task_valid_reuse_authorization_006_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_valid_reuse_authorization_006_provenance_only.json",
+      "task_id": "task_valid_reuse_authorization_006_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_valid_reuse_authorization_006_full_pd_oap.json",
+      "task_id": "task_valid_reuse_authorization_006_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_valid_review_decision_001_logs_only.json",
+      "task_id": "task_valid_review_decision_001_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_valid_review_decision_001_policy_only.json",
+      "task_id": "task_valid_review_decision_001_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_valid_review_decision_001_provenance_only.json",
+      "task_id": "task_valid_review_decision_001_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_valid_review_decision_001_full_pd_oap.json",
+      "task_id": "task_valid_review_decision_001_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_valid_review_decision_002_logs_only.json",
+      "task_id": "task_valid_review_decision_002_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_valid_review_decision_002_policy_only.json",
+      "task_id": "task_valid_review_decision_002_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_valid_review_decision_002_provenance_only.json",
+      "task_id": "task_valid_review_decision_002_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_valid_review_decision_002_full_pd_oap.json",
+      "task_id": "task_valid_review_decision_002_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_valid_review_decision_003_logs_only.json",
+      "task_id": "task_valid_review_decision_003_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_valid_review_decision_003_policy_only.json",
+      "task_id": "task_valid_review_decision_003_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_valid_review_decision_003_provenance_only.json",
+      "task_id": "task_valid_review_decision_003_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_valid_review_decision_003_full_pd_oap.json",
+      "task_id": "task_valid_review_decision_003_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_valid_review_decision_004_logs_only.json",
+      "task_id": "task_valid_review_decision_004_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_valid_review_decision_004_policy_only.json",
+      "task_id": "task_valid_review_decision_004_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_valid_review_decision_004_provenance_only.json",
+      "task_id": "task_valid_review_decision_004_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_valid_review_decision_004_full_pd_oap.json",
+      "task_id": "task_valid_review_decision_004_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_valid_review_decision_005_logs_only.json",
+      "task_id": "task_valid_review_decision_005_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_valid_review_decision_005_policy_only.json",
+      "task_id": "task_valid_review_decision_005_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_valid_review_decision_005_provenance_only.json",
+      "task_id": "task_valid_review_decision_005_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_valid_review_decision_005_full_pd_oap.json",
+      "task_id": "task_valid_review_decision_005_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_valid_review_decision_006_logs_only.json",
+      "task_id": "task_valid_review_decision_006_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_valid_review_decision_006_policy_only.json",
+      "task_id": "task_valid_review_decision_006_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_valid_review_decision_006_provenance_only.json",
+      "task_id": "task_valid_review_decision_006_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_valid_review_decision_006_full_pd_oap.json",
+      "task_id": "task_valid_review_decision_006_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_access_decision_001_break_catalog_ref_logs_only.json",
+      "task_id": "task_mutation_valid_access_decision_001_break_catalog_ref_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_access_decision_001_break_catalog_ref_policy_only.json",
+      "task_id": "task_mutation_valid_access_decision_001_break_catalog_ref_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_access_decision_001_break_catalog_ref_provenance_only.json",
+      "task_id": "task_mutation_valid_access_decision_001_break_catalog_ref_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_access_decision_001_break_catalog_ref_full_pd_oap.json",
+      "task_id": "task_mutation_valid_access_decision_001_break_catalog_ref_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_access_decision_001_break_dataset_ref_logs_only.json",
+      "task_id": "task_mutation_valid_access_decision_001_break_dataset_ref_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_access_decision_001_break_dataset_ref_policy_only.json",
+      "task_id": "task_mutation_valid_access_decision_001_break_dataset_ref_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_access_decision_001_break_dataset_ref_provenance_only.json",
+      "task_id": "task_mutation_valid_access_decision_001_break_dataset_ref_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_access_decision_001_break_dataset_ref_full_pd_oap.json",
+      "task_id": "task_mutation_valid_access_decision_001_break_dataset_ref_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_access_decision_001_remove_authorization_basis_logs_only.json",
+      "task_id": "task_mutation_valid_access_decision_001_remove_authorization_basis_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_access_decision_001_remove_authorization_basis_policy_only.json",
+      "task_id": "task_mutation_valid_access_decision_001_remove_authorization_basis_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_access_decision_001_remove_authorization_basis_provenance_only.json",
+      "task_id": "task_mutation_valid_access_decision_001_remove_authorization_basis_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_access_decision_001_remove_authorization_basis_full_pd_oap.json",
+      "task_id": "task_mutation_valid_access_decision_001_remove_authorization_basis_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_access_decision_001_requester_role_mismatch_logs_only.json",
+      "task_id": "task_mutation_valid_access_decision_001_requester_role_mismatch_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_access_decision_001_requester_role_mismatch_policy_only.json",
+      "task_id": "task_mutation_valid_access_decision_001_requester_role_mismatch_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_access_decision_001_requester_role_mismatch_provenance_only.json",
+      "task_id": "task_mutation_valid_access_decision_001_requester_role_mismatch_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_access_decision_001_requester_role_mismatch_full_pd_oap.json",
+      "task_id": "task_mutation_valid_access_decision_001_requester_role_mismatch_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_access_decision_002_break_catalog_ref_logs_only.json",
+      "task_id": "task_mutation_valid_access_decision_002_break_catalog_ref_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_access_decision_002_break_catalog_ref_policy_only.json",
+      "task_id": "task_mutation_valid_access_decision_002_break_catalog_ref_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_access_decision_002_break_catalog_ref_provenance_only.json",
+      "task_id": "task_mutation_valid_access_decision_002_break_catalog_ref_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_access_decision_002_break_catalog_ref_full_pd_oap.json",
+      "task_id": "task_mutation_valid_access_decision_002_break_catalog_ref_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_access_decision_002_break_dataset_ref_logs_only.json",
+      "task_id": "task_mutation_valid_access_decision_002_break_dataset_ref_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_access_decision_002_break_dataset_ref_policy_only.json",
+      "task_id": "task_mutation_valid_access_decision_002_break_dataset_ref_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_access_decision_002_break_dataset_ref_provenance_only.json",
+      "task_id": "task_mutation_valid_access_decision_002_break_dataset_ref_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_access_decision_002_break_dataset_ref_full_pd_oap.json",
+      "task_id": "task_mutation_valid_access_decision_002_break_dataset_ref_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_access_decision_002_remove_authorization_basis_logs_only.json",
+      "task_id": "task_mutation_valid_access_decision_002_remove_authorization_basis_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_access_decision_002_remove_authorization_basis_policy_only.json",
+      "task_id": "task_mutation_valid_access_decision_002_remove_authorization_basis_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_access_decision_002_remove_authorization_basis_provenance_only.json",
+      "task_id": "task_mutation_valid_access_decision_002_remove_authorization_basis_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_access_decision_002_remove_authorization_basis_full_pd_oap.json",
+      "task_id": "task_mutation_valid_access_decision_002_remove_authorization_basis_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_access_decision_002_requester_role_mismatch_logs_only.json",
+      "task_id": "task_mutation_valid_access_decision_002_requester_role_mismatch_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_access_decision_002_requester_role_mismatch_policy_only.json",
+      "task_id": "task_mutation_valid_access_decision_002_requester_role_mismatch_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_access_decision_002_requester_role_mismatch_provenance_only.json",
+      "task_id": "task_mutation_valid_access_decision_002_requester_role_mismatch_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_access_decision_002_requester_role_mismatch_full_pd_oap.json",
+      "task_id": "task_mutation_valid_access_decision_002_requester_role_mismatch_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_access_decision_003_break_catalog_ref_logs_only.json",
+      "task_id": "task_mutation_valid_access_decision_003_break_catalog_ref_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_access_decision_003_break_catalog_ref_policy_only.json",
+      "task_id": "task_mutation_valid_access_decision_003_break_catalog_ref_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_access_decision_003_break_catalog_ref_provenance_only.json",
+      "task_id": "task_mutation_valid_access_decision_003_break_catalog_ref_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_access_decision_003_break_catalog_ref_full_pd_oap.json",
+      "task_id": "task_mutation_valid_access_decision_003_break_catalog_ref_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_access_decision_003_break_dataset_ref_logs_only.json",
+      "task_id": "task_mutation_valid_access_decision_003_break_dataset_ref_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_access_decision_003_break_dataset_ref_policy_only.json",
+      "task_id": "task_mutation_valid_access_decision_003_break_dataset_ref_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_access_decision_003_break_dataset_ref_provenance_only.json",
+      "task_id": "task_mutation_valid_access_decision_003_break_dataset_ref_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_access_decision_003_break_dataset_ref_full_pd_oap.json",
+      "task_id": "task_mutation_valid_access_decision_003_break_dataset_ref_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_access_decision_003_remove_authorization_basis_logs_only.json",
+      "task_id": "task_mutation_valid_access_decision_003_remove_authorization_basis_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_access_decision_003_remove_authorization_basis_policy_only.json",
+      "task_id": "task_mutation_valid_access_decision_003_remove_authorization_basis_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_access_decision_003_remove_authorization_basis_provenance_only.json",
+      "task_id": "task_mutation_valid_access_decision_003_remove_authorization_basis_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_access_decision_003_remove_authorization_basis_full_pd_oap.json",
+      "task_id": "task_mutation_valid_access_decision_003_remove_authorization_basis_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_access_decision_003_requester_role_mismatch_logs_only.json",
+      "task_id": "task_mutation_valid_access_decision_003_requester_role_mismatch_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_access_decision_003_requester_role_mismatch_policy_only.json",
+      "task_id": "task_mutation_valid_access_decision_003_requester_role_mismatch_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_access_decision_003_requester_role_mismatch_provenance_only.json",
+      "task_id": "task_mutation_valid_access_decision_003_requester_role_mismatch_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_access_decision_003_requester_role_mismatch_full_pd_oap.json",
+      "task_id": "task_mutation_valid_access_decision_003_requester_role_mismatch_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_access_decision_004_break_catalog_ref_logs_only.json",
+      "task_id": "task_mutation_valid_access_decision_004_break_catalog_ref_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_access_decision_004_break_catalog_ref_policy_only.json",
+      "task_id": "task_mutation_valid_access_decision_004_break_catalog_ref_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_access_decision_004_break_catalog_ref_provenance_only.json",
+      "task_id": "task_mutation_valid_access_decision_004_break_catalog_ref_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_access_decision_004_break_catalog_ref_full_pd_oap.json",
+      "task_id": "task_mutation_valid_access_decision_004_break_catalog_ref_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_access_decision_004_break_dataset_ref_logs_only.json",
+      "task_id": "task_mutation_valid_access_decision_004_break_dataset_ref_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_access_decision_004_break_dataset_ref_policy_only.json",
+      "task_id": "task_mutation_valid_access_decision_004_break_dataset_ref_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_access_decision_004_break_dataset_ref_provenance_only.json",
+      "task_id": "task_mutation_valid_access_decision_004_break_dataset_ref_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_access_decision_004_break_dataset_ref_full_pd_oap.json",
+      "task_id": "task_mutation_valid_access_decision_004_break_dataset_ref_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_access_decision_004_remove_authorization_basis_logs_only.json",
+      "task_id": "task_mutation_valid_access_decision_004_remove_authorization_basis_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_access_decision_004_remove_authorization_basis_policy_only.json",
+      "task_id": "task_mutation_valid_access_decision_004_remove_authorization_basis_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_access_decision_004_remove_authorization_basis_provenance_only.json",
+      "task_id": "task_mutation_valid_access_decision_004_remove_authorization_basis_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_access_decision_004_remove_authorization_basis_full_pd_oap.json",
+      "task_id": "task_mutation_valid_access_decision_004_remove_authorization_basis_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_access_decision_004_requester_role_mismatch_logs_only.json",
+      "task_id": "task_mutation_valid_access_decision_004_requester_role_mismatch_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_access_decision_004_requester_role_mismatch_policy_only.json",
+      "task_id": "task_mutation_valid_access_decision_004_requester_role_mismatch_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_access_decision_004_requester_role_mismatch_provenance_only.json",
+      "task_id": "task_mutation_valid_access_decision_004_requester_role_mismatch_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_access_decision_004_requester_role_mismatch_full_pd_oap.json",
+      "task_id": "task_mutation_valid_access_decision_004_requester_role_mismatch_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_access_decision_005_break_catalog_ref_logs_only.json",
+      "task_id": "task_mutation_valid_access_decision_005_break_catalog_ref_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_access_decision_005_break_catalog_ref_policy_only.json",
+      "task_id": "task_mutation_valid_access_decision_005_break_catalog_ref_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_access_decision_005_break_catalog_ref_provenance_only.json",
+      "task_id": "task_mutation_valid_access_decision_005_break_catalog_ref_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_access_decision_005_break_catalog_ref_full_pd_oap.json",
+      "task_id": "task_mutation_valid_access_decision_005_break_catalog_ref_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_access_decision_005_break_dataset_ref_logs_only.json",
+      "task_id": "task_mutation_valid_access_decision_005_break_dataset_ref_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_access_decision_005_break_dataset_ref_policy_only.json",
+      "task_id": "task_mutation_valid_access_decision_005_break_dataset_ref_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_access_decision_005_break_dataset_ref_provenance_only.json",
+      "task_id": "task_mutation_valid_access_decision_005_break_dataset_ref_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_access_decision_005_break_dataset_ref_full_pd_oap.json",
+      "task_id": "task_mutation_valid_access_decision_005_break_dataset_ref_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_access_decision_005_remove_authorization_basis_logs_only.json",
+      "task_id": "task_mutation_valid_access_decision_005_remove_authorization_basis_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_access_decision_005_remove_authorization_basis_policy_only.json",
+      "task_id": "task_mutation_valid_access_decision_005_remove_authorization_basis_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_access_decision_005_remove_authorization_basis_provenance_only.json",
+      "task_id": "task_mutation_valid_access_decision_005_remove_authorization_basis_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_access_decision_005_remove_authorization_basis_full_pd_oap.json",
+      "task_id": "task_mutation_valid_access_decision_005_remove_authorization_basis_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_access_decision_005_requester_role_mismatch_logs_only.json",
+      "task_id": "task_mutation_valid_access_decision_005_requester_role_mismatch_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_access_decision_005_requester_role_mismatch_policy_only.json",
+      "task_id": "task_mutation_valid_access_decision_005_requester_role_mismatch_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_access_decision_005_requester_role_mismatch_provenance_only.json",
+      "task_id": "task_mutation_valid_access_decision_005_requester_role_mismatch_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_access_decision_005_requester_role_mismatch_full_pd_oap.json",
+      "task_id": "task_mutation_valid_access_decision_005_requester_role_mismatch_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_access_decision_006_break_catalog_ref_logs_only.json",
+      "task_id": "task_mutation_valid_access_decision_006_break_catalog_ref_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_access_decision_006_break_catalog_ref_policy_only.json",
+      "task_id": "task_mutation_valid_access_decision_006_break_catalog_ref_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_access_decision_006_break_catalog_ref_provenance_only.json",
+      "task_id": "task_mutation_valid_access_decision_006_break_catalog_ref_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_access_decision_006_break_catalog_ref_full_pd_oap.json",
+      "task_id": "task_mutation_valid_access_decision_006_break_catalog_ref_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_access_decision_006_break_dataset_ref_logs_only.json",
+      "task_id": "task_mutation_valid_access_decision_006_break_dataset_ref_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_access_decision_006_break_dataset_ref_policy_only.json",
+      "task_id": "task_mutation_valid_access_decision_006_break_dataset_ref_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_access_decision_006_break_dataset_ref_provenance_only.json",
+      "task_id": "task_mutation_valid_access_decision_006_break_dataset_ref_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_access_decision_006_break_dataset_ref_full_pd_oap.json",
+      "task_id": "task_mutation_valid_access_decision_006_break_dataset_ref_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_access_decision_006_remove_authorization_basis_logs_only.json",
+      "task_id": "task_mutation_valid_access_decision_006_remove_authorization_basis_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_access_decision_006_remove_authorization_basis_policy_only.json",
+      "task_id": "task_mutation_valid_access_decision_006_remove_authorization_basis_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_access_decision_006_remove_authorization_basis_provenance_only.json",
+      "task_id": "task_mutation_valid_access_decision_006_remove_authorization_basis_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_access_decision_006_remove_authorization_basis_full_pd_oap.json",
+      "task_id": "task_mutation_valid_access_decision_006_remove_authorization_basis_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_access_decision_006_requester_role_mismatch_logs_only.json",
+      "task_id": "task_mutation_valid_access_decision_006_requester_role_mismatch_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_access_decision_006_requester_role_mismatch_policy_only.json",
+      "task_id": "task_mutation_valid_access_decision_006_requester_role_mismatch_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_access_decision_006_requester_role_mismatch_provenance_only.json",
+      "task_id": "task_mutation_valid_access_decision_006_requester_role_mismatch_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_access_decision_006_requester_role_mismatch_full_pd_oap.json",
+      "task_id": "task_mutation_valid_access_decision_006_requester_role_mismatch_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_reuse_authorization_001_break_handoff_ref_logs_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_001_break_handoff_ref_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_reuse_authorization_001_break_handoff_ref_policy_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_001_break_handoff_ref_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_reuse_authorization_001_break_handoff_ref_provenance_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_001_break_handoff_ref_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_reuse_authorization_001_break_handoff_ref_full_pd_oap.json",
+      "task_id": "task_mutation_valid_reuse_authorization_001_break_handoff_ref_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_reuse_authorization_001_condition_mismatch_logs_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_001_condition_mismatch_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_reuse_authorization_001_condition_mismatch_policy_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_001_condition_mismatch_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_reuse_authorization_001_condition_mismatch_provenance_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_001_condition_mismatch_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_reuse_authorization_001_condition_mismatch_full_pd_oap.json",
+      "task_id": "task_mutation_valid_reuse_authorization_001_condition_mismatch_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_reuse_authorization_001_purpose_constraint_mismatch_logs_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_001_purpose_constraint_mismatch_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_reuse_authorization_001_purpose_constraint_mismatch_policy_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_001_purpose_constraint_mismatch_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_reuse_authorization_001_purpose_constraint_mismatch_provenance_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_001_purpose_constraint_mismatch_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_reuse_authorization_001_purpose_constraint_mismatch_full_pd_oap.json",
+      "task_id": "task_mutation_valid_reuse_authorization_001_purpose_constraint_mismatch_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_reuse_authorization_001_remove_reuse_conditions_logs_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_001_remove_reuse_conditions_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_reuse_authorization_001_remove_reuse_conditions_policy_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_001_remove_reuse_conditions_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_reuse_authorization_001_remove_reuse_conditions_provenance_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_001_remove_reuse_conditions_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_reuse_authorization_001_remove_reuse_conditions_full_pd_oap.json",
+      "task_id": "task_mutation_valid_reuse_authorization_001_remove_reuse_conditions_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_reuse_authorization_002_break_handoff_ref_logs_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_002_break_handoff_ref_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_reuse_authorization_002_break_handoff_ref_policy_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_002_break_handoff_ref_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_reuse_authorization_002_break_handoff_ref_provenance_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_002_break_handoff_ref_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_reuse_authorization_002_break_handoff_ref_full_pd_oap.json",
+      "task_id": "task_mutation_valid_reuse_authorization_002_break_handoff_ref_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_reuse_authorization_002_condition_mismatch_logs_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_002_condition_mismatch_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_reuse_authorization_002_condition_mismatch_policy_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_002_condition_mismatch_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_reuse_authorization_002_condition_mismatch_provenance_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_002_condition_mismatch_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_reuse_authorization_002_condition_mismatch_full_pd_oap.json",
+      "task_id": "task_mutation_valid_reuse_authorization_002_condition_mismatch_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_reuse_authorization_002_purpose_constraint_mismatch_logs_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_002_purpose_constraint_mismatch_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_reuse_authorization_002_purpose_constraint_mismatch_policy_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_002_purpose_constraint_mismatch_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_reuse_authorization_002_purpose_constraint_mismatch_provenance_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_002_purpose_constraint_mismatch_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_reuse_authorization_002_purpose_constraint_mismatch_full_pd_oap.json",
+      "task_id": "task_mutation_valid_reuse_authorization_002_purpose_constraint_mismatch_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_reuse_authorization_002_remove_reuse_conditions_logs_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_002_remove_reuse_conditions_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_reuse_authorization_002_remove_reuse_conditions_policy_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_002_remove_reuse_conditions_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_reuse_authorization_002_remove_reuse_conditions_provenance_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_002_remove_reuse_conditions_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_reuse_authorization_002_remove_reuse_conditions_full_pd_oap.json",
+      "task_id": "task_mutation_valid_reuse_authorization_002_remove_reuse_conditions_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_reuse_authorization_003_break_handoff_ref_logs_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_003_break_handoff_ref_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_reuse_authorization_003_break_handoff_ref_policy_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_003_break_handoff_ref_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_reuse_authorization_003_break_handoff_ref_provenance_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_003_break_handoff_ref_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_reuse_authorization_003_break_handoff_ref_full_pd_oap.json",
+      "task_id": "task_mutation_valid_reuse_authorization_003_break_handoff_ref_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_reuse_authorization_003_condition_mismatch_logs_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_003_condition_mismatch_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_reuse_authorization_003_condition_mismatch_policy_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_003_condition_mismatch_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_reuse_authorization_003_condition_mismatch_provenance_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_003_condition_mismatch_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_reuse_authorization_003_condition_mismatch_full_pd_oap.json",
+      "task_id": "task_mutation_valid_reuse_authorization_003_condition_mismatch_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_reuse_authorization_003_purpose_constraint_mismatch_logs_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_003_purpose_constraint_mismatch_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_reuse_authorization_003_purpose_constraint_mismatch_policy_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_003_purpose_constraint_mismatch_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_reuse_authorization_003_purpose_constraint_mismatch_provenance_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_003_purpose_constraint_mismatch_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_reuse_authorization_003_purpose_constraint_mismatch_full_pd_oap.json",
+      "task_id": "task_mutation_valid_reuse_authorization_003_purpose_constraint_mismatch_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_reuse_authorization_003_remove_reuse_conditions_logs_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_003_remove_reuse_conditions_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_reuse_authorization_003_remove_reuse_conditions_policy_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_003_remove_reuse_conditions_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_reuse_authorization_003_remove_reuse_conditions_provenance_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_003_remove_reuse_conditions_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_reuse_authorization_003_remove_reuse_conditions_full_pd_oap.json",
+      "task_id": "task_mutation_valid_reuse_authorization_003_remove_reuse_conditions_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_reuse_authorization_004_break_handoff_ref_logs_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_004_break_handoff_ref_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_reuse_authorization_004_break_handoff_ref_policy_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_004_break_handoff_ref_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_reuse_authorization_004_break_handoff_ref_provenance_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_004_break_handoff_ref_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_reuse_authorization_004_break_handoff_ref_full_pd_oap.json",
+      "task_id": "task_mutation_valid_reuse_authorization_004_break_handoff_ref_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_reuse_authorization_004_condition_mismatch_logs_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_004_condition_mismatch_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_reuse_authorization_004_condition_mismatch_policy_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_004_condition_mismatch_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_reuse_authorization_004_condition_mismatch_provenance_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_004_condition_mismatch_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_reuse_authorization_004_condition_mismatch_full_pd_oap.json",
+      "task_id": "task_mutation_valid_reuse_authorization_004_condition_mismatch_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_reuse_authorization_004_purpose_constraint_mismatch_logs_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_004_purpose_constraint_mismatch_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_reuse_authorization_004_purpose_constraint_mismatch_policy_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_004_purpose_constraint_mismatch_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_reuse_authorization_004_purpose_constraint_mismatch_provenance_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_004_purpose_constraint_mismatch_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_reuse_authorization_004_purpose_constraint_mismatch_full_pd_oap.json",
+      "task_id": "task_mutation_valid_reuse_authorization_004_purpose_constraint_mismatch_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_reuse_authorization_004_remove_reuse_conditions_logs_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_004_remove_reuse_conditions_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_reuse_authorization_004_remove_reuse_conditions_policy_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_004_remove_reuse_conditions_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_reuse_authorization_004_remove_reuse_conditions_provenance_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_004_remove_reuse_conditions_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_reuse_authorization_004_remove_reuse_conditions_full_pd_oap.json",
+      "task_id": "task_mutation_valid_reuse_authorization_004_remove_reuse_conditions_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_reuse_authorization_005_break_handoff_ref_logs_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_005_break_handoff_ref_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_reuse_authorization_005_break_handoff_ref_policy_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_005_break_handoff_ref_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_reuse_authorization_005_break_handoff_ref_provenance_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_005_break_handoff_ref_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_reuse_authorization_005_break_handoff_ref_full_pd_oap.json",
+      "task_id": "task_mutation_valid_reuse_authorization_005_break_handoff_ref_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_reuse_authorization_005_condition_mismatch_logs_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_005_condition_mismatch_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_reuse_authorization_005_condition_mismatch_policy_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_005_condition_mismatch_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_reuse_authorization_005_condition_mismatch_provenance_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_005_condition_mismatch_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_reuse_authorization_005_condition_mismatch_full_pd_oap.json",
+      "task_id": "task_mutation_valid_reuse_authorization_005_condition_mismatch_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_reuse_authorization_005_purpose_constraint_mismatch_logs_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_005_purpose_constraint_mismatch_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_reuse_authorization_005_purpose_constraint_mismatch_policy_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_005_purpose_constraint_mismatch_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_reuse_authorization_005_purpose_constraint_mismatch_provenance_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_005_purpose_constraint_mismatch_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_reuse_authorization_005_purpose_constraint_mismatch_full_pd_oap.json",
+      "task_id": "task_mutation_valid_reuse_authorization_005_purpose_constraint_mismatch_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_reuse_authorization_005_remove_reuse_conditions_logs_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_005_remove_reuse_conditions_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_reuse_authorization_005_remove_reuse_conditions_policy_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_005_remove_reuse_conditions_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_reuse_authorization_005_remove_reuse_conditions_provenance_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_005_remove_reuse_conditions_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_reuse_authorization_005_remove_reuse_conditions_full_pd_oap.json",
+      "task_id": "task_mutation_valid_reuse_authorization_005_remove_reuse_conditions_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_reuse_authorization_006_break_handoff_ref_logs_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_006_break_handoff_ref_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_reuse_authorization_006_break_handoff_ref_policy_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_006_break_handoff_ref_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_reuse_authorization_006_break_handoff_ref_provenance_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_006_break_handoff_ref_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_reuse_authorization_006_break_handoff_ref_full_pd_oap.json",
+      "task_id": "task_mutation_valid_reuse_authorization_006_break_handoff_ref_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_reuse_authorization_006_condition_mismatch_logs_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_006_condition_mismatch_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_reuse_authorization_006_condition_mismatch_policy_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_006_condition_mismatch_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_reuse_authorization_006_condition_mismatch_provenance_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_006_condition_mismatch_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_reuse_authorization_006_condition_mismatch_full_pd_oap.json",
+      "task_id": "task_mutation_valid_reuse_authorization_006_condition_mismatch_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_reuse_authorization_006_purpose_constraint_mismatch_logs_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_006_purpose_constraint_mismatch_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_reuse_authorization_006_purpose_constraint_mismatch_policy_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_006_purpose_constraint_mismatch_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_reuse_authorization_006_purpose_constraint_mismatch_provenance_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_006_purpose_constraint_mismatch_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_reuse_authorization_006_purpose_constraint_mismatch_full_pd_oap.json",
+      "task_id": "task_mutation_valid_reuse_authorization_006_purpose_constraint_mismatch_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_reuse_authorization_006_remove_reuse_conditions_logs_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_006_remove_reuse_conditions_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_reuse_authorization_006_remove_reuse_conditions_policy_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_006_remove_reuse_conditions_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_reuse_authorization_006_remove_reuse_conditions_provenance_only.json",
+      "task_id": "task_mutation_valid_reuse_authorization_006_remove_reuse_conditions_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_reuse_authorization_006_remove_reuse_conditions_full_pd_oap.json",
+      "task_id": "task_mutation_valid_reuse_authorization_006_remove_reuse_conditions_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_review_decision_001_integrity_digest_mismatch_logs_only.json",
+      "task_id": "task_mutation_valid_review_decision_001_integrity_digest_mismatch_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_review_decision_001_integrity_digest_mismatch_policy_only.json",
+      "task_id": "task_mutation_valid_review_decision_001_integrity_digest_mismatch_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_review_decision_001_integrity_digest_mismatch_provenance_only.json",
+      "task_id": "task_mutation_valid_review_decision_001_integrity_digest_mismatch_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_review_decision_001_integrity_digest_mismatch_full_pd_oap.json",
+      "task_id": "task_mutation_valid_review_decision_001_integrity_digest_mismatch_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_review_decision_001_policy_version_mismatch_logs_only.json",
+      "task_id": "task_mutation_valid_review_decision_001_policy_version_mismatch_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_review_decision_001_policy_version_mismatch_policy_only.json",
+      "task_id": "task_mutation_valid_review_decision_001_policy_version_mismatch_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_review_decision_001_policy_version_mismatch_provenance_only.json",
+      "task_id": "task_mutation_valid_review_decision_001_policy_version_mismatch_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_review_decision_001_policy_version_mismatch_full_pd_oap.json",
+      "task_id": "task_mutation_valid_review_decision_001_policy_version_mismatch_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_review_decision_001_remove_review_evidence_logs_only.json",
+      "task_id": "task_mutation_valid_review_decision_001_remove_review_evidence_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_review_decision_001_remove_review_evidence_policy_only.json",
+      "task_id": "task_mutation_valid_review_decision_001_remove_review_evidence_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_review_decision_001_remove_review_evidence_provenance_only.json",
+      "task_id": "task_mutation_valid_review_decision_001_remove_review_evidence_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_review_decision_001_remove_review_evidence_full_pd_oap.json",
+      "task_id": "task_mutation_valid_review_decision_001_remove_review_evidence_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_review_decision_001_remove_trigger_logs_only.json",
+      "task_id": "task_mutation_valid_review_decision_001_remove_trigger_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_review_decision_001_remove_trigger_policy_only.json",
+      "task_id": "task_mutation_valid_review_decision_001_remove_trigger_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_review_decision_001_remove_trigger_provenance_only.json",
+      "task_id": "task_mutation_valid_review_decision_001_remove_trigger_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_review_decision_001_remove_trigger_full_pd_oap.json",
+      "task_id": "task_mutation_valid_review_decision_001_remove_trigger_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_review_decision_002_integrity_digest_mismatch_logs_only.json",
+      "task_id": "task_mutation_valid_review_decision_002_integrity_digest_mismatch_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_review_decision_002_integrity_digest_mismatch_policy_only.json",
+      "task_id": "task_mutation_valid_review_decision_002_integrity_digest_mismatch_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_review_decision_002_integrity_digest_mismatch_provenance_only.json",
+      "task_id": "task_mutation_valid_review_decision_002_integrity_digest_mismatch_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_review_decision_002_integrity_digest_mismatch_full_pd_oap.json",
+      "task_id": "task_mutation_valid_review_decision_002_integrity_digest_mismatch_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_review_decision_002_policy_version_mismatch_logs_only.json",
+      "task_id": "task_mutation_valid_review_decision_002_policy_version_mismatch_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_review_decision_002_policy_version_mismatch_policy_only.json",
+      "task_id": "task_mutation_valid_review_decision_002_policy_version_mismatch_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_review_decision_002_policy_version_mismatch_provenance_only.json",
+      "task_id": "task_mutation_valid_review_decision_002_policy_version_mismatch_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_review_decision_002_policy_version_mismatch_full_pd_oap.json",
+      "task_id": "task_mutation_valid_review_decision_002_policy_version_mismatch_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_review_decision_002_remove_review_evidence_logs_only.json",
+      "task_id": "task_mutation_valid_review_decision_002_remove_review_evidence_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_review_decision_002_remove_review_evidence_policy_only.json",
+      "task_id": "task_mutation_valid_review_decision_002_remove_review_evidence_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_review_decision_002_remove_review_evidence_provenance_only.json",
+      "task_id": "task_mutation_valid_review_decision_002_remove_review_evidence_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_review_decision_002_remove_review_evidence_full_pd_oap.json",
+      "task_id": "task_mutation_valid_review_decision_002_remove_review_evidence_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_review_decision_002_remove_trigger_logs_only.json",
+      "task_id": "task_mutation_valid_review_decision_002_remove_trigger_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_review_decision_002_remove_trigger_policy_only.json",
+      "task_id": "task_mutation_valid_review_decision_002_remove_trigger_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_review_decision_002_remove_trigger_provenance_only.json",
+      "task_id": "task_mutation_valid_review_decision_002_remove_trigger_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_review_decision_002_remove_trigger_full_pd_oap.json",
+      "task_id": "task_mutation_valid_review_decision_002_remove_trigger_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_review_decision_003_integrity_digest_mismatch_logs_only.json",
+      "task_id": "task_mutation_valid_review_decision_003_integrity_digest_mismatch_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_review_decision_003_integrity_digest_mismatch_policy_only.json",
+      "task_id": "task_mutation_valid_review_decision_003_integrity_digest_mismatch_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_review_decision_003_integrity_digest_mismatch_provenance_only.json",
+      "task_id": "task_mutation_valid_review_decision_003_integrity_digest_mismatch_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_review_decision_003_integrity_digest_mismatch_full_pd_oap.json",
+      "task_id": "task_mutation_valid_review_decision_003_integrity_digest_mismatch_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_review_decision_003_policy_version_mismatch_logs_only.json",
+      "task_id": "task_mutation_valid_review_decision_003_policy_version_mismatch_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_review_decision_003_policy_version_mismatch_policy_only.json",
+      "task_id": "task_mutation_valid_review_decision_003_policy_version_mismatch_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_review_decision_003_policy_version_mismatch_provenance_only.json",
+      "task_id": "task_mutation_valid_review_decision_003_policy_version_mismatch_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_review_decision_003_policy_version_mismatch_full_pd_oap.json",
+      "task_id": "task_mutation_valid_review_decision_003_policy_version_mismatch_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_review_decision_003_remove_review_evidence_logs_only.json",
+      "task_id": "task_mutation_valid_review_decision_003_remove_review_evidence_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_review_decision_003_remove_review_evidence_policy_only.json",
+      "task_id": "task_mutation_valid_review_decision_003_remove_review_evidence_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_review_decision_003_remove_review_evidence_provenance_only.json",
+      "task_id": "task_mutation_valid_review_decision_003_remove_review_evidence_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_review_decision_003_remove_review_evidence_full_pd_oap.json",
+      "task_id": "task_mutation_valid_review_decision_003_remove_review_evidence_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_review_decision_003_remove_trigger_logs_only.json",
+      "task_id": "task_mutation_valid_review_decision_003_remove_trigger_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_review_decision_003_remove_trigger_policy_only.json",
+      "task_id": "task_mutation_valid_review_decision_003_remove_trigger_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_review_decision_003_remove_trigger_provenance_only.json",
+      "task_id": "task_mutation_valid_review_decision_003_remove_trigger_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_review_decision_003_remove_trigger_full_pd_oap.json",
+      "task_id": "task_mutation_valid_review_decision_003_remove_trigger_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_review_decision_004_integrity_digest_mismatch_logs_only.json",
+      "task_id": "task_mutation_valid_review_decision_004_integrity_digest_mismatch_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_review_decision_004_integrity_digest_mismatch_policy_only.json",
+      "task_id": "task_mutation_valid_review_decision_004_integrity_digest_mismatch_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_review_decision_004_integrity_digest_mismatch_provenance_only.json",
+      "task_id": "task_mutation_valid_review_decision_004_integrity_digest_mismatch_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_review_decision_004_integrity_digest_mismatch_full_pd_oap.json",
+      "task_id": "task_mutation_valid_review_decision_004_integrity_digest_mismatch_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_review_decision_004_policy_version_mismatch_logs_only.json",
+      "task_id": "task_mutation_valid_review_decision_004_policy_version_mismatch_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_review_decision_004_policy_version_mismatch_policy_only.json",
+      "task_id": "task_mutation_valid_review_decision_004_policy_version_mismatch_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_review_decision_004_policy_version_mismatch_provenance_only.json",
+      "task_id": "task_mutation_valid_review_decision_004_policy_version_mismatch_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_review_decision_004_policy_version_mismatch_full_pd_oap.json",
+      "task_id": "task_mutation_valid_review_decision_004_policy_version_mismatch_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_review_decision_004_remove_review_evidence_logs_only.json",
+      "task_id": "task_mutation_valid_review_decision_004_remove_review_evidence_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_review_decision_004_remove_review_evidence_policy_only.json",
+      "task_id": "task_mutation_valid_review_decision_004_remove_review_evidence_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_review_decision_004_remove_review_evidence_provenance_only.json",
+      "task_id": "task_mutation_valid_review_decision_004_remove_review_evidence_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_review_decision_004_remove_review_evidence_full_pd_oap.json",
+      "task_id": "task_mutation_valid_review_decision_004_remove_review_evidence_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_review_decision_004_remove_trigger_logs_only.json",
+      "task_id": "task_mutation_valid_review_decision_004_remove_trigger_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_review_decision_004_remove_trigger_policy_only.json",
+      "task_id": "task_mutation_valid_review_decision_004_remove_trigger_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_review_decision_004_remove_trigger_provenance_only.json",
+      "task_id": "task_mutation_valid_review_decision_004_remove_trigger_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_review_decision_004_remove_trigger_full_pd_oap.json",
+      "task_id": "task_mutation_valid_review_decision_004_remove_trigger_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_review_decision_005_integrity_digest_mismatch_logs_only.json",
+      "task_id": "task_mutation_valid_review_decision_005_integrity_digest_mismatch_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_review_decision_005_integrity_digest_mismatch_policy_only.json",
+      "task_id": "task_mutation_valid_review_decision_005_integrity_digest_mismatch_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_review_decision_005_integrity_digest_mismatch_provenance_only.json",
+      "task_id": "task_mutation_valid_review_decision_005_integrity_digest_mismatch_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_review_decision_005_integrity_digest_mismatch_full_pd_oap.json",
+      "task_id": "task_mutation_valid_review_decision_005_integrity_digest_mismatch_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_review_decision_005_policy_version_mismatch_logs_only.json",
+      "task_id": "task_mutation_valid_review_decision_005_policy_version_mismatch_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_review_decision_005_policy_version_mismatch_policy_only.json",
+      "task_id": "task_mutation_valid_review_decision_005_policy_version_mismatch_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_review_decision_005_policy_version_mismatch_provenance_only.json",
+      "task_id": "task_mutation_valid_review_decision_005_policy_version_mismatch_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_review_decision_005_policy_version_mismatch_full_pd_oap.json",
+      "task_id": "task_mutation_valid_review_decision_005_policy_version_mismatch_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_review_decision_005_remove_review_evidence_logs_only.json",
+      "task_id": "task_mutation_valid_review_decision_005_remove_review_evidence_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_review_decision_005_remove_review_evidence_policy_only.json",
+      "task_id": "task_mutation_valid_review_decision_005_remove_review_evidence_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_review_decision_005_remove_review_evidence_provenance_only.json",
+      "task_id": "task_mutation_valid_review_decision_005_remove_review_evidence_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_review_decision_005_remove_review_evidence_full_pd_oap.json",
+      "task_id": "task_mutation_valid_review_decision_005_remove_review_evidence_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_review_decision_005_remove_trigger_logs_only.json",
+      "task_id": "task_mutation_valid_review_decision_005_remove_trigger_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_review_decision_005_remove_trigger_policy_only.json",
+      "task_id": "task_mutation_valid_review_decision_005_remove_trigger_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_review_decision_005_remove_trigger_provenance_only.json",
+      "task_id": "task_mutation_valid_review_decision_005_remove_trigger_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_review_decision_005_remove_trigger_full_pd_oap.json",
+      "task_id": "task_mutation_valid_review_decision_005_remove_trigger_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_review_decision_006_integrity_digest_mismatch_logs_only.json",
+      "task_id": "task_mutation_valid_review_decision_006_integrity_digest_mismatch_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_review_decision_006_integrity_digest_mismatch_policy_only.json",
+      "task_id": "task_mutation_valid_review_decision_006_integrity_digest_mismatch_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_review_decision_006_integrity_digest_mismatch_provenance_only.json",
+      "task_id": "task_mutation_valid_review_decision_006_integrity_digest_mismatch_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_review_decision_006_integrity_digest_mismatch_full_pd_oap.json",
+      "task_id": "task_mutation_valid_review_decision_006_integrity_digest_mismatch_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_review_decision_006_policy_version_mismatch_logs_only.json",
+      "task_id": "task_mutation_valid_review_decision_006_policy_version_mismatch_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_review_decision_006_policy_version_mismatch_policy_only.json",
+      "task_id": "task_mutation_valid_review_decision_006_policy_version_mismatch_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_review_decision_006_policy_version_mismatch_provenance_only.json",
+      "task_id": "task_mutation_valid_review_decision_006_policy_version_mismatch_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_review_decision_006_policy_version_mismatch_full_pd_oap.json",
+      "task_id": "task_mutation_valid_review_decision_006_policy_version_mismatch_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_review_decision_006_remove_review_evidence_logs_only.json",
+      "task_id": "task_mutation_valid_review_decision_006_remove_review_evidence_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_review_decision_006_remove_review_evidence_policy_only.json",
+      "task_id": "task_mutation_valid_review_decision_006_remove_review_evidence_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_review_decision_006_remove_review_evidence_provenance_only.json",
+      "task_id": "task_mutation_valid_review_decision_006_remove_review_evidence_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_review_decision_006_remove_review_evidence_full_pd_oap.json",
+      "task_id": "task_mutation_valid_review_decision_006_remove_review_evidence_full_pd_oap"
+    },
+    {
+      "condition": "logs_only",
+      "path": "logs_only/task_mutation_valid_review_decision_006_remove_trigger_logs_only.json",
+      "task_id": "task_mutation_valid_review_decision_006_remove_trigger_logs_only"
+    },
+    {
+      "condition": "policy_only",
+      "path": "policy_only/task_mutation_valid_review_decision_006_remove_trigger_policy_only.json",
+      "task_id": "task_mutation_valid_review_decision_006_remove_trigger_policy_only"
+    },
+    {
+      "condition": "provenance_only",
+      "path": "provenance_only/task_mutation_valid_review_decision_006_remove_trigger_provenance_only.json",
+      "task_id": "task_mutation_valid_review_decision_006_remove_trigger_provenance_only"
+    },
+    {
+      "condition": "full_pd_oap",
+      "path": "full_pd_oap/task_mutation_valid_review_decision_006_remove_trigger_full_pd_oap.json",
+      "task_id": "task_mutation_valid_review_decision_006_remove_trigger_full_pd_oap"
+    }
+  ],
+  "tasks_by_condition": {
+    "full_pd_oap": 117,
+    "logs_only": 117,
+    "policy_only": 117,
+    "provenance_only": 117
+  }
+}

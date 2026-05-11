@@ -1,0 +1,175 @@
+{
+  "actor": {
+    "actor_id": "synthetic-data-steward-review-001",
+    "actor_type": "synthetic_data_steward",
+    "name": "Synthetic Data Steward Office"
+  },
+  "catalog": {
+    "catalog_id": "synthetic-catalog-review-001",
+    "catalog_label": "Synthetic review catalog",
+    "dataset_refs": [
+      "synthetic-dataset-review-003"
+    ],
+    "policy_refs": [
+      "synthetic-policy-review-001"
+    ]
+  },
+  "conditions": [
+    {
+      "condition_id": "condition-valid_review_decision_003-purpose",
+      "source": "synthetic_policy",
+      "type": "review_condition",
+      "value": "limited_to_accountability_review"
+    }
+  ],
+  "decision": {
+    "decision_basis": "synthetic_authorization_basis_review",
+    "decision_id": "decision-valid_review_decision_003",
+    "outcome": "allow",
+    "rationale": "Synthetic fixture decision with internally consistent policy and evidence linkage."
+  },
+  "evidence": {
+    "evidence_ids": [
+      "evidence-valid_review_decision_003-policy",
+      "evidence-valid_review_decision_003-dataset",
+      "evidence-valid_review_decision_003-decision",
+      "evidence-valid_review_decision_003-review"
+    ],
+    "evidence_objects": [
+      {
+        "digest": "sha256:cc59468512bfbfaeb5c58225be27cabf73de0116fb0934ad30ec4cbbbcd3df57",
+        "evidence_id": "evidence-valid_review_decision_003-policy",
+        "linked_refs": [
+          "synthetic-policy-review-001"
+        ],
+        "purpose": "policy_basis",
+        "synthetic": true,
+        "type": "policy_record"
+      },
+      {
+        "digest": "sha256:c018534f977e5afce996d790b7a9d1c97e1710c8d556a5f08a327e74075e9c20",
+        "evidence_id": "evidence-valid_review_decision_003-dataset",
+        "linked_refs": [
+          "synthetic-dataset-review-003"
+        ],
+        "purpose": "dataset_reference",
+        "synthetic": true,
+        "type": "dataset_record"
+      },
+      {
+        "digest": "sha256:caffbba895806e9853a0e2cb8af14810e6004028ca1bb84616f99fb5b471bbad",
+        "evidence_id": "evidence-valid_review_decision_003-decision",
+        "linked_refs": [
+          "synthetic-dataset-review-003",
+          "synthetic-policy-review-001"
+        ],
+        "purpose": "decision_record",
+        "synthetic": true,
+        "type": "review_record"
+      },
+      {
+        "digest": "sha256:d5839dd1a1e0e7dd69e13747e80f4ff094515bd5883f8f0af400a4462fbb802d",
+        "evidence_id": "evidence-valid_review_decision_003-review",
+        "linked_refs": [
+          "synthetic-dataset-review-003",
+          "synthetic-policy-review-001"
+        ],
+        "purpose": "review_record",
+        "synthetic": true,
+        "type": "review_record"
+      }
+    ],
+    "integrity_digest": "sha256:f0582bd4147c0720d51b08b5d729d186d3962991f6295eff9260e3ad62f165f7"
+  },
+  "fixture_id": "mutation_valid_review_decision_003_remove_trigger",
+  "fixture_metadata": {
+    "benchmark_version": "2.0-draft",
+    "controlled_fixture": true,
+    "fixture_family": "mutation",
+    "notes": "Synthetic mutation generated from a valid v2.0 fixture.",
+    "operation_family": "review_decision",
+    "primary_purpose": "mutation_evaluation",
+    "synthetic": true
+  },
+  "mutation_metadata": {
+    "expected_failure_class": "review_trigger_missing",
+    "mutation_description": "Review triggers removed.",
+    "mutation_operator": "mutate_review_remove_trigger",
+    "source_fixture_id": "valid_review_decision_003"
+  },
+  "non_claims": {
+    "complete_workflow_coverage": false,
+    "legal_sufficiency": false,
+    "privacy_compliance_claim": false,
+    "production_deployment": false,
+    "real_government_decision": false,
+    "statistical_population_claim": false
+  },
+  "operation": {
+    "catalog_id": "synthetic-catalog-review-001",
+    "data_object_id": "synthetic-dataset-review-003",
+    "decision_scope": "single_operation",
+    "operation_family": "review_decision",
+    "operation_id": "operation-valid_review_decision_003",
+    "operation_type": "review_decision",
+    "policy_id": "synthetic-policy-review-001",
+    "policy_version": "2026.1",
+    "requested_action": "post_operation_review"
+  },
+  "policy": {
+    "allowed_purposes": [
+      "accountability_review"
+    ],
+    "allowed_requester_roles": [
+      "review_board_member"
+    ],
+    "authorization_basis": "synthetic_authorization_basis_review",
+    "policy_id": "synthetic-policy-review-001",
+    "policy_version": "2026.1",
+    "required_reuse_conditions": [],
+    "review_triggers": []
+  },
+  "profile": {
+    "name": "public-data-operation-accountability-profile",
+    "profile_id": "public-data-operation-accountability-profile@2.0-draft",
+    "version": "2.0-draft"
+  },
+  "provenance": {
+    "handoff_refs": [],
+    "integrity_digest": "sha256:f0582bd4147c0720d51b08b5d729d186d3962991f6295eff9260e3ad62f165f7",
+    "source_refs": [
+      "synthetic-dataset-review-003",
+      "synthetic-catalog-review-001",
+      "synthetic-policy-review-001"
+    ]
+  },
+  "purpose": {
+    "allowed_by_policy": true,
+    "declared_purpose": "accountability_review",
+    "purpose_id": "purpose-valid_review_decision_003"
+  },
+  "requester": {
+    "declared_affiliation": "synthetic local research or service unit",
+    "requester_id": "synthetic-requester-review-003",
+    "role": "review_board_member"
+  },
+  "statement_id": "statement-mutation_valid_review_decision_003_remove_trigger",
+  "subject": {
+    "data_object_id": "synthetic-dataset-review-003",
+    "object_type": "public_data_object",
+    "sensitivity": "bounded_public_sector_data",
+    "title": "Synthetic review public-data object 003"
+  },
+  "validation": {
+    "expected_failure_class": "review_trigger_missing",
+    "expected_primary_failure_code": "review_trigger_missing",
+    "expected_result": "invalid",
+    "required_rule_surfaces": [
+      "operation_boundary",
+      "review_trigger_presence",
+      "review_evidence_presence",
+      "policy_version_consistency",
+      "integrity_digest_consistency"
+    ]
+  }
+}

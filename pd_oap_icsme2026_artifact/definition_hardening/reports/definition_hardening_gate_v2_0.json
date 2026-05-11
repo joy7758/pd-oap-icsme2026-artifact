@@ -1,0 +1,23 @@
+{
+  "concepts_found": [
+    "public-data operation",
+    "operation-accountability statement",
+    "structural inspectability",
+    "reviewability",
+    "semantic failure surface",
+    "controlled fixture benchmark"
+  ],
+  "definition_hardening_gate": {
+    "name": "pd-oap-v2-definition-hardening-gate",
+    "version": "2.0"
+  },
+  "missing_concepts": [],
+  "missing_contract_terms": [],
+  "missing_headings": {},
+  "missing_required_files": [],
+  "overall_passed": true,
+  "placeholder_found": false,
+  "required_files_present": true,
+  "thesis_found": true,
+  "unsafe_claims_found": []
+}

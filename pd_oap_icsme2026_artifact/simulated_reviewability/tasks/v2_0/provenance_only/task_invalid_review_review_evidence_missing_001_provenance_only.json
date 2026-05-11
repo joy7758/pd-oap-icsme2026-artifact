@@ -1,0 +1,69 @@
+{
+  "expected_review_target": {
+    "evidence_completeness_expected": "judge whether evidence refs and validation fields are visible",
+    "failure_detection_expected": "detect review_evidence_missing",
+    "operation_reconstruction_expected": "review_decision",
+    "policy_basis_expected": "identify policy id and policy version when visible"
+  },
+  "hidden_material_summary": {
+    "excluded": [
+      "semantic_validation_expectations",
+      "full_evidence_completeness",
+      "non_claims",
+      "explicit_checker_result"
+    ]
+  },
+  "non_claims": {
+    "human_participant_data": false,
+    "human_study_result": false,
+    "legal_sufficiency": false,
+    "production_deployment": false
+  },
+  "representation_condition": "provenance_only",
+  "scoring_expectation": {},
+  "simulation_profile": {
+    "name": "pd-oap-simulated-reviewability",
+    "version": "2.0-draft"
+  },
+  "source_specimen": {
+    "expected_primary_failure_code": "review_evidence_missing",
+    "expected_result": "invalid",
+    "fixture_id": "invalid_review_review_evidence_missing_001",
+    "operation_family": "review_decision",
+    "source_type": "base_invalid"
+  },
+  "task_id": "task_invalid_review_review_evidence_missing_001_provenance_only",
+  "visible_material": {
+    "provenance": {
+      "handoff_refs": [],
+      "integrity_digest": "sha256:3230cd066aaeb951bb386580b666ff789c86763bf5d0bdff606e43038b268f9c",
+      "source_refs": [
+        "synthetic-dataset-review-003",
+        "synthetic-catalog-review-001",
+        "synthetic-policy-review-001"
+      ]
+    },
+    "reference_links": {
+      "actor_id": "synthetic-data-steward-review-001",
+      "catalog_id": "synthetic-catalog-review-001",
+      "decision_status": null,
+      "policy_id": "synthetic-policy-review-001",
+      "purpose": "accountability_review",
+      "requester_id": "synthetic-requester-review-003",
+      "subject_id": "synthetic-dataset-review-003"
+    },
+    "refs": {
+      "actor_id": "synthetic-data-steward-review-001",
+      "catalog_id": "synthetic-catalog-review-001",
+      "decision_status": null,
+      "operation_family": "review_decision",
+      "operation_id": "operation-invalid_review_review_evidence_missing_001",
+      "policy_id": "synthetic-policy-review-001",
+      "policy_version": "2026.1",
+      "purpose": "accountability_review",
+      "requester_id": "synthetic-requester-review-003",
+      "requester_role": null,
+      "subject_id": "synthetic-dataset-review-003"
+    }
+  }
+}

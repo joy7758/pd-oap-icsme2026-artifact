@@ -1,0 +1,187 @@
+{
+  "actor": {
+    "actor_id": "synthetic-data-steward-reuse-001",
+    "actor_type": "synthetic_data_steward",
+    "name": "Synthetic Data Steward Office"
+  },
+  "catalog": {
+    "catalog_id": "synthetic-catalog-reuse-001",
+    "catalog_label": "Synthetic reuse catalog",
+    "dataset_refs": [
+      "synthetic-dataset-reuse-002"
+    ],
+    "policy_refs": [
+      "synthetic-policy-reuse-001"
+    ]
+  },
+  "conditions": [
+    {
+      "condition_id": "condition-edge_reuse_denied_due_to_scope_001-purpose",
+      "source": "synthetic_policy",
+      "type": "reuse_condition",
+      "value": "limited_to_service_improvement"
+    },
+    {
+      "condition_id": "condition-edge_reuse_denied_due_to_scope_001-attribution",
+      "source": "synthetic_policy",
+      "type": "attribution",
+      "value": "required"
+    },
+    {
+      "condition_id": "condition-edge_reuse_denied_due_to_scope_001-onward-transfer",
+      "source": "synthetic_policy",
+      "type": "onward_transfer",
+      "value": "forbidden"
+    }
+  ],
+  "decision": {
+    "decision_basis": "synthetic_authorization_basis_reuse",
+    "decision_id": "decision-edge_reuse_denied_due_to_scope_001",
+    "outcome": "deny",
+    "rationale": "Synthetic denial with complete policy and evidence linkage."
+  },
+  "edge_case_reason": "denied_but_valid_scope_boundary",
+  "evidence": {
+    "evidence_ids": [
+      "evidence-edge_reuse_denied_due_to_scope_001-policy",
+      "evidence-edge_reuse_denied_due_to_scope_001-dataset",
+      "evidence-edge_reuse_denied_due_to_scope_001-decision",
+      "synthetic-handoff-edge_reuse_denied_due_to_scope_001"
+    ],
+    "evidence_objects": [
+      {
+        "digest": "sha256:23084a8579cb5478650ab30f187f7ff343ab89d98562b30fe6a54a75c252259b",
+        "evidence_id": "evidence-edge_reuse_denied_due_to_scope_001-policy",
+        "linked_refs": [
+          "synthetic-policy-reuse-001"
+        ],
+        "purpose": "policy_basis",
+        "synthetic": true,
+        "type": "policy_record"
+      },
+      {
+        "digest": "sha256:8e456e9c4593ab5b30bbf5153e68396e43af1ae80c090225d4c7990636031c6e",
+        "evidence_id": "evidence-edge_reuse_denied_due_to_scope_001-dataset",
+        "linked_refs": [
+          "synthetic-dataset-reuse-002"
+        ],
+        "purpose": "dataset_reference",
+        "synthetic": true,
+        "type": "dataset_record"
+      },
+      {
+        "digest": "sha256:c3ea1746e34e728e38b1c6d5ebd928c4cd2c0d4e7dc1fa6ea12f1ed08ab58743",
+        "evidence_id": "evidence-edge_reuse_denied_due_to_scope_001-decision",
+        "linked_refs": [
+          "synthetic-dataset-reuse-002",
+          "synthetic-policy-reuse-001"
+        ],
+        "purpose": "decision_record",
+        "synthetic": true,
+        "type": "reuse_authorization_record"
+      },
+      {
+        "digest": "sha256:8f46e9b3cd74d954b99c824c91b53e09d791a0f6440bf12b6bf3ce60db5958d7",
+        "evidence_id": "synthetic-handoff-edge_reuse_denied_due_to_scope_001",
+        "linked_refs": [
+          "synthetic-dataset-reuse-002",
+          "synthetic-policy-reuse-001"
+        ],
+        "purpose": "handoff_record",
+        "synthetic": true,
+        "type": "handoff_record"
+      }
+    ],
+    "integrity_digest": "sha256:1ddff8696d07b32000685480bc5e95a6ba780e7265fe10ce34ea36921b83a13b"
+  },
+  "fixture_id": "edge_reuse_denied_due_to_scope_001",
+  "fixture_metadata": {
+    "benchmark_version": "2.0-draft",
+    "controlled_fixture": true,
+    "fixture_family": "edge",
+    "notes": "Synthetic controlled fixture for PD-OAP v2.0 evaluation design.",
+    "operation_family": "reuse_authorization",
+    "primary_purpose": "edge_case",
+    "synthetic": true
+  },
+  "non_claims": {
+    "complete_workflow_coverage": false,
+    "legal_sufficiency": false,
+    "privacy_compliance_claim": false,
+    "production_deployment": false,
+    "real_government_decision": false,
+    "statistical_population_claim": false
+  },
+  "operation": {
+    "catalog_id": "synthetic-catalog-reuse-001",
+    "data_object_id": "synthetic-dataset-reuse-002",
+    "decision_scope": "single_operation",
+    "operation_family": "reuse_authorization",
+    "operation_id": "operation-edge_reuse_denied_due_to_scope_001",
+    "operation_type": "reuse_authorization",
+    "policy_id": "synthetic-policy-reuse-001",
+    "policy_version": "2026.1",
+    "requested_action": "bounded_reuse"
+  },
+  "policy": {
+    "allowed_purposes": [
+      "service_improvement"
+    ],
+    "allowed_requester_roles": [
+      "public_service_partner"
+    ],
+    "authorization_basis": "synthetic_authorization_basis_reuse",
+    "policy_id": "synthetic-policy-reuse-001",
+    "policy_version": "2026.1",
+    "required_reuse_conditions": [
+      "attribution",
+      "onward_transfer_forbidden"
+    ],
+    "review_triggers": []
+  },
+  "profile": {
+    "name": "public-data-operation-accountability-profile",
+    "profile_id": "public-data-operation-accountability-profile@2.0-draft",
+    "version": "2.0-draft"
+  },
+  "provenance": {
+    "handoff_refs": [
+      "synthetic-handoff-edge_reuse_denied_due_to_scope_001"
+    ],
+    "integrity_digest": "sha256:1ddff8696d07b32000685480bc5e95a6ba780e7265fe10ce34ea36921b83a13b",
+    "source_refs": [
+      "synthetic-dataset-reuse-002",
+      "synthetic-catalog-reuse-001",
+      "synthetic-policy-reuse-001"
+    ]
+  },
+  "purpose": {
+    "allowed_by_policy": true,
+    "declared_purpose": "service_improvement",
+    "purpose_id": "purpose-edge_reuse_denied_due_to_scope_001"
+  },
+  "requester": {
+    "declared_affiliation": "synthetic local research or service unit",
+    "requester_id": "synthetic-requester-reuse-002",
+    "role": "public_service_partner"
+  },
+  "statement_id": "statement-edge_reuse_denied_due_to_scope_001",
+  "subject": {
+    "data_object_id": "synthetic-dataset-reuse-002",
+    "object_type": "public_data_object",
+    "sensitivity": "bounded_public_sector_data",
+    "title": "Synthetic reuse public-data object 002"
+  },
+  "validation": {
+    "expected_failure_class": "none",
+    "expected_primary_failure_code": "none",
+    "expected_result": "valid",
+    "required_rule_surfaces": [
+      "operation_boundary",
+      "purpose_policy_match",
+      "reuse_condition_completeness",
+      "reuse_condition_consistency",
+      "handoff_reference_closure"
+    ]
+  }
+}

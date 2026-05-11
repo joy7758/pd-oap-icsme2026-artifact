@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite it as below."
+title: "PD-OAP ICSME 2026 Artifact"
+authors:
+  - family-names: "Zhang"
+    given-names: "Bin"
+version: "v0.1-icsme2026"
+date-released: "2026-05-11"

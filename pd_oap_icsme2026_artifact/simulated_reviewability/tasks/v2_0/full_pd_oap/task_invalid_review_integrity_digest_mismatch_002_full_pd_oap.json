@@ -1,0 +1,210 @@
+{
+  "expected_review_target": {
+    "evidence_completeness_expected": "judge whether evidence refs and validation fields are visible",
+    "failure_detection_expected": "detect integrity_digest_mismatch",
+    "operation_reconstruction_expected": "review_decision",
+    "policy_basis_expected": "identify policy id and policy version when visible"
+  },
+  "hidden_material_summary": {
+    "excluded": [
+      "external_real_world_evidence_beyond_source_specimen"
+    ]
+  },
+  "non_claims": {
+    "human_participant_data": false,
+    "human_study_result": false,
+    "legal_sufficiency": false,
+    "production_deployment": false
+  },
+  "representation_condition": "full_pd_oap",
+  "scoring_expectation": {},
+  "simulation_profile": {
+    "name": "pd-oap-simulated-reviewability",
+    "version": "2.0-draft"
+  },
+  "source_specimen": {
+    "expected_primary_failure_code": "integrity_digest_mismatch",
+    "expected_result": "invalid",
+    "fixture_id": "invalid_review_integrity_digest_mismatch_002",
+    "operation_family": "review_decision",
+    "source_type": "base_invalid"
+  },
+  "task_id": "task_invalid_review_integrity_digest_mismatch_002_full_pd_oap",
+  "visible_material": {
+    "actor": {
+      "actor_id": "synthetic-data-steward-review-001",
+      "actor_type": "synthetic_data_steward",
+      "name": "Synthetic Data Steward Office"
+    },
+    "catalog": {
+      "catalog_id": "synthetic-catalog-review-001",
+      "catalog_label": "Synthetic review catalog",
+      "dataset_refs": [
+        "synthetic-dataset-review-008"
+      ],
+      "policy_refs": [
+        "synthetic-policy-review-001"
+      ]
+    },
+    "conditions": [
+      {
+        "condition_id": "condition-invalid_review_integrity_digest_mismatch_002-purpose",
+        "source": "synthetic_policy",
+        "type": "review_condition",
+        "value": "limited_to_accountability_review"
+      }
+    ],
+    "decision": {
+      "decision_basis": "synthetic_authorization_basis_review",
+      "decision_id": "decision-invalid_review_integrity_digest_mismatch_002",
+      "outcome": "allow",
+      "rationale": "Synthetic fixture decision with internally consistent policy and evidence linkage."
+    },
+    "evidence": {
+      "evidence_ids": [
+        "evidence-invalid_review_integrity_digest_mismatch_002-policy",
+        "evidence-invalid_review_integrity_digest_mismatch_002-dataset",
+        "evidence-invalid_review_integrity_digest_mismatch_002-decision",
+        "evidence-invalid_review_integrity_digest_mismatch_002-review"
+      ],
+      "evidence_objects": [
+        {
+          "digest": "sha256:4cb9d23cab7604854daa0a9437613c0945abf94dcd4bf385f6e9aad80a179823",
+          "evidence_id": "evidence-invalid_review_integrity_digest_mismatch_002-policy",
+          "linked_refs": [
+            "synthetic-policy-review-001"
+          ],
+          "purpose": "policy_basis",
+          "synthetic": true,
+          "type": "policy_record"
+        },
+        {
+          "digest": "sha256:f4957314a4a665a786146afe999700f8f46b59cd15d64e96cc1a7b396c3843b0",
+          "evidence_id": "evidence-invalid_review_integrity_digest_mismatch_002-dataset",
+          "linked_refs": [
+            "synthetic-dataset-review-008"
+          ],
+          "purpose": "dataset_reference",
+          "synthetic": true,
+          "type": "dataset_record"
+        },
+        {
+          "digest": "sha256:19e731c89dac81c51821c8a97dd3874c74bbc59e873241162853f0b5c74ad3e0",
+          "evidence_id": "evidence-invalid_review_integrity_digest_mismatch_002-decision",
+          "linked_refs": [
+            "synthetic-dataset-review-008",
+            "synthetic-policy-review-001"
+          ],
+          "purpose": "decision_record",
+          "synthetic": true,
+          "type": "review_record"
+        },
+        {
+          "digest": "sha256:eea5287ed0f522ed353824ef07ce98af0ea3366c1143024b91221360448e3644",
+          "evidence_id": "evidence-invalid_review_integrity_digest_mismatch_002-review",
+          "linked_refs": [
+            "synthetic-dataset-review-008",
+            "synthetic-policy-review-001"
+          ],
+          "purpose": "review_record",
+          "synthetic": true,
+          "type": "review_record"
+        }
+      ],
+      "integrity_digest": "sha256:15289fc72e25fbde36077e7ffb3b537d04585a0c7e81d6be07645bb3d42db2ce"
+    },
+    "fixture_id": "invalid_review_integrity_digest_mismatch_002",
+    "fixture_metadata": {
+      "benchmark_version": "2.0-draft",
+      "controlled_fixture": true,
+      "fixture_family": "invalid",
+      "notes": "Synthetic controlled fixture for PD-OAP v2.0 evaluation design.",
+      "operation_family": "review_decision",
+      "primary_purpose": "negative_control",
+      "synthetic": true
+    },
+    "intentional_defect": {
+      "defect_description": "Provenance integrity digest differs from the packaged evidence digest.",
+      "expected_detection_surface": "integrity digest consistency",
+      "failure_class": "integrity_digest_mismatch"
+    },
+    "non_claims": {
+      "complete_workflow_coverage": false,
+      "legal_sufficiency": false,
+      "privacy_compliance_claim": false,
+      "production_deployment": false,
+      "real_government_decision": false,
+      "statistical_population_claim": false
+    },
+    "operation": {
+      "catalog_id": "synthetic-catalog-review-001",
+      "data_object_id": "synthetic-dataset-review-008",
+      "decision_scope": "single_operation",
+      "operation_family": "review_decision",
+      "operation_id": "operation-invalid_review_integrity_digest_mismatch_002",
+      "operation_type": "review_decision",
+      "policy_id": "synthetic-policy-review-001",
+      "policy_version": "2026.1",
+      "requested_action": "post_operation_review"
+    },
+    "policy": {
+      "allowed_purposes": [
+        "accountability_review"
+      ],
+      "allowed_requester_roles": [
+        "review_board_member"
+      ],
+      "authorization_basis": "synthetic_authorization_basis_review",
+      "policy_id": "synthetic-policy-review-001",
+      "policy_version": "2026.1",
+      "required_reuse_conditions": [],
+      "review_triggers": [
+        "scheduled_review",
+        "evidence_completeness_check"
+      ]
+    },
+    "profile": {
+      "name": "public-data-operation-accountability-profile",
+      "profile_id": "public-data-operation-accountability-profile@2.0-draft",
+      "version": "2.0-draft"
+    },
+    "provenance": {
+      "handoff_refs": [],
+      "integrity_digest": "sha256:b8d225e442b85aff343dfee3255e39ba971d042c378eca92d31f73c84874bd41",
+      "source_refs": [
+        "synthetic-dataset-review-008",
+        "synthetic-catalog-review-001",
+        "synthetic-policy-review-001"
+      ]
+    },
+    "purpose": {
+      "allowed_by_policy": true,
+      "declared_purpose": "accountability_review",
+      "purpose_id": "purpose-invalid_review_integrity_digest_mismatch_002"
+    },
+    "requester": {
+      "declared_affiliation": "synthetic local research or service unit",
+      "requester_id": "synthetic-requester-review-008",
+      "role": "review_board_member"
+    },
+    "statement_id": "statement-invalid_review_integrity_digest_mismatch_002",
+    "subject": {
+      "data_object_id": "synthetic-dataset-review-008",
+      "object_type": "public_data_object",
+      "sensitivity": "bounded_public_sector_data",
+      "title": "Synthetic review public-data object 008"
+    },
+    "validation": {
+      "expected_failure_class": "integrity_digest_mismatch",
+      "expected_primary_failure_code": "integrity_digest_mismatch",
+      "expected_result": "invalid",
+      "required_rule_surfaces": [
+        "operation_boundary",
+        "review_trigger_presence",
+        "review_evidence_presence",
+        "policy_version_consistency",
+        "integrity_digest_consistency"
+      ]
+    }
+  }
+}

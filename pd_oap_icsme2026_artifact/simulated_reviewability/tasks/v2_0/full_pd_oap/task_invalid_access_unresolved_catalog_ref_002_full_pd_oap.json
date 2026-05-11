@@ -1,0 +1,195 @@
+{
+  "expected_review_target": {
+    "evidence_completeness_expected": "judge whether evidence refs and validation fields are visible",
+    "failure_detection_expected": "detect unresolved_catalog_ref",
+    "operation_reconstruction_expected": "access_decision",
+    "policy_basis_expected": "identify policy id and policy version when visible"
+  },
+  "hidden_material_summary": {
+    "excluded": [
+      "external_real_world_evidence_beyond_source_specimen"
+    ]
+  },
+  "non_claims": {
+    "human_participant_data": false,
+    "human_study_result": false,
+    "legal_sufficiency": false,
+    "production_deployment": false
+  },
+  "representation_condition": "full_pd_oap",
+  "scoring_expectation": {},
+  "simulation_profile": {
+    "name": "pd-oap-simulated-reviewability",
+    "version": "2.0-draft"
+  },
+  "source_specimen": {
+    "expected_primary_failure_code": "unresolved_catalog_ref",
+    "expected_result": "invalid",
+    "fixture_id": "invalid_access_unresolved_catalog_ref_002",
+    "operation_family": "access_decision",
+    "source_type": "base_invalid"
+  },
+  "task_id": "task_invalid_access_unresolved_catalog_ref_002_full_pd_oap",
+  "visible_material": {
+    "actor": {
+      "actor_id": "synthetic-data-steward-access-001",
+      "actor_type": "synthetic_data_steward",
+      "name": "Synthetic Data Steward Office"
+    },
+    "catalog": {
+      "catalog_id": "synthetic-catalog-access-001",
+      "catalog_label": "Synthetic access catalog",
+      "dataset_refs": [
+        "synthetic-dataset-access-006"
+      ],
+      "policy_refs": [
+        "synthetic-policy-access-001"
+      ]
+    },
+    "conditions": [
+      {
+        "condition_id": "condition-invalid_access_unresolved_catalog_ref_002-purpose",
+        "source": "synthetic_policy",
+        "type": "access_boundary",
+        "value": "limited_to_public_service_planning"
+      }
+    ],
+    "decision": {
+      "decision_basis": "synthetic_authorization_basis_access",
+      "decision_id": "decision-invalid_access_unresolved_catalog_ref_002",
+      "outcome": "allow",
+      "rationale": "Synthetic fixture decision with internally consistent policy and evidence linkage."
+    },
+    "evidence": {
+      "evidence_ids": [
+        "evidence-invalid_access_unresolved_catalog_ref_002-policy",
+        "evidence-invalid_access_unresolved_catalog_ref_002-dataset",
+        "evidence-invalid_access_unresolved_catalog_ref_002-decision"
+      ],
+      "evidence_objects": [
+        {
+          "digest": "sha256:a19ed185c2fd1a637a22859d8c2775308e2fc62d7410e351db4943951a683afe",
+          "evidence_id": "evidence-invalid_access_unresolved_catalog_ref_002-policy",
+          "linked_refs": [
+            "synthetic-policy-access-001"
+          ],
+          "purpose": "policy_basis",
+          "synthetic": true,
+          "type": "policy_record"
+        },
+        {
+          "digest": "sha256:e40ad7f19ac366ed1b3fd8d75bb84f31072a60e45afc98eac6228c07c6d90cd0",
+          "evidence_id": "evidence-invalid_access_unresolved_catalog_ref_002-dataset",
+          "linked_refs": [
+            "synthetic-dataset-access-006"
+          ],
+          "purpose": "dataset_reference",
+          "synthetic": true,
+          "type": "dataset_record"
+        },
+        {
+          "digest": "sha256:7fd11f3567e34f374d31bcdecbb3268626002aea7ebbf29b63c81dc0647af79d",
+          "evidence_id": "evidence-invalid_access_unresolved_catalog_ref_002-decision",
+          "linked_refs": [
+            "synthetic-dataset-access-006",
+            "synthetic-policy-access-001"
+          ],
+          "purpose": "decision_record",
+          "synthetic": true,
+          "type": "authorization_record"
+        }
+      ],
+      "integrity_digest": "sha256:4637a0dbd3bee3ef9c78074bec7b5610e67e3801fe2ae9c5973841d530a4c38b"
+    },
+    "fixture_id": "invalid_access_unresolved_catalog_ref_002",
+    "fixture_metadata": {
+      "benchmark_version": "2.0-draft",
+      "controlled_fixture": true,
+      "fixture_family": "invalid",
+      "notes": "Synthetic controlled fixture for PD-OAP v2.0 evaluation design.",
+      "operation_family": "access_decision",
+      "primary_purpose": "negative_control",
+      "synthetic": true
+    },
+    "intentional_defect": {
+      "defect_description": "Operation catalog reference does not match the packaged catalog block.",
+      "expected_detection_surface": "catalog reference closure",
+      "failure_class": "unresolved_catalog_ref"
+    },
+    "non_claims": {
+      "complete_workflow_coverage": false,
+      "legal_sufficiency": false,
+      "privacy_compliance_claim": false,
+      "production_deployment": false,
+      "real_government_decision": false,
+      "statistical_population_claim": false
+    },
+    "operation": {
+      "catalog_id": "synthetic-catalog-missing",
+      "data_object_id": "synthetic-dataset-access-006",
+      "decision_scope": "single_operation",
+      "operation_family": "access_decision",
+      "operation_id": "operation-invalid_access_unresolved_catalog_ref_002",
+      "operation_type": "access_decision",
+      "policy_id": "synthetic-policy-access-001",
+      "policy_version": "2026.1",
+      "requested_action": "restricted_access"
+    },
+    "policy": {
+      "allowed_purposes": [
+        "public_service_planning"
+      ],
+      "allowed_requester_roles": [
+        "public_research_unit"
+      ],
+      "authorization_basis": "synthetic_authorization_basis_access",
+      "policy_id": "synthetic-policy-access-001",
+      "policy_version": "2026.1",
+      "required_reuse_conditions": [],
+      "review_triggers": []
+    },
+    "profile": {
+      "name": "public-data-operation-accountability-profile",
+      "profile_id": "public-data-operation-accountability-profile@2.0-draft",
+      "version": "2.0-draft"
+    },
+    "provenance": {
+      "handoff_refs": [],
+      "integrity_digest": "sha256:4637a0dbd3bee3ef9c78074bec7b5610e67e3801fe2ae9c5973841d530a4c38b",
+      "source_refs": [
+        "synthetic-dataset-access-006",
+        "synthetic-catalog-access-001",
+        "synthetic-policy-access-001"
+      ]
+    },
+    "purpose": {
+      "allowed_by_policy": true,
+      "declared_purpose": "public_service_planning",
+      "purpose_id": "purpose-invalid_access_unresolved_catalog_ref_002"
+    },
+    "requester": {
+      "declared_affiliation": "synthetic local research or service unit",
+      "requester_id": "synthetic-requester-access-006",
+      "role": "public_research_unit"
+    },
+    "statement_id": "statement-invalid_access_unresolved_catalog_ref_002",
+    "subject": {
+      "data_object_id": "synthetic-dataset-access-006",
+      "object_type": "public_data_object",
+      "sensitivity": "bounded_public_sector_data",
+      "title": "Synthetic access public-data object 006"
+    },
+    "validation": {
+      "expected_failure_class": "unresolved_catalog_ref",
+      "expected_primary_failure_code": "unresolved_catalog_ref",
+      "expected_result": "invalid",
+      "required_rule_surfaces": [
+        "operation_boundary",
+        "policy_basis_presence",
+        "dataset_reference_closure",
+        "catalog_reference_closure",
+        "requester_role_policy_match"
+      ]
+    }
+  }
+}

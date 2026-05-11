@@ -1,0 +1,396 @@
+{
+  "benchmark_id": "pd-oap-controlled-fixture-benchmark@2.0-draft",
+  "edge_count": 3,
+  "failure_class_counts": {
+    "handoff_ref_unresolved": 2,
+    "integrity_digest_mismatch": 2,
+    "missing_authorization_basis": 2,
+    "policy_version_mismatch": 2,
+    "purpose_constraint_mismatch": 2,
+    "requester_role_mismatch": 2,
+    "reuse_condition_mismatch": 2,
+    "reuse_condition_missing": 2,
+    "review_evidence_missing": 2,
+    "review_trigger_missing": 2,
+    "unresolved_catalog_ref": 2,
+    "unresolved_dataset_ref": 2
+  },
+  "fixture_count": 45,
+  "fixtures": [
+    {
+      "expected_failure_class": "none",
+      "expected_result": "valid",
+      "fixture_family": "edge",
+      "fixture_id": "edge_access_denied_with_complete_evidence_001",
+      "operation_family": "access_decision",
+      "path": "edge/edge_access_denied_with_complete_evidence_001.json"
+    },
+    {
+      "expected_failure_class": "none",
+      "expected_result": "valid",
+      "fixture_family": "edge",
+      "fixture_id": "edge_reuse_denied_due_to_scope_001",
+      "operation_family": "reuse_authorization",
+      "path": "edge/edge_reuse_denied_due_to_scope_001.json"
+    },
+    {
+      "expected_failure_class": "none",
+      "expected_result": "valid",
+      "fixture_family": "edge",
+      "fixture_id": "edge_review_closed_without_renewal_001",
+      "operation_family": "review_decision",
+      "path": "edge/edge_review_closed_without_renewal_001.json"
+    },
+    {
+      "expected_failure_class": "missing_authorization_basis",
+      "expected_result": "invalid",
+      "fixture_family": "invalid",
+      "fixture_id": "invalid_access_missing_authorization_basis_001",
+      "operation_family": "access_decision",
+      "path": "invalid/access/invalid_access_missing_authorization_basis_001.json"
+    },
+    {
+      "expected_failure_class": "missing_authorization_basis",
+      "expected_result": "invalid",
+      "fixture_family": "invalid",
+      "fixture_id": "invalid_access_missing_authorization_basis_002",
+      "operation_family": "access_decision",
+      "path": "invalid/access/invalid_access_missing_authorization_basis_002.json"
+    },
+    {
+      "expected_failure_class": "requester_role_mismatch",
+      "expected_result": "invalid",
+      "fixture_family": "invalid",
+      "fixture_id": "invalid_access_requester_role_mismatch_001",
+      "operation_family": "access_decision",
+      "path": "invalid/access/invalid_access_requester_role_mismatch_001.json"
+    },
+    {
+      "expected_failure_class": "requester_role_mismatch",
+      "expected_result": "invalid",
+      "fixture_family": "invalid",
+      "fixture_id": "invalid_access_requester_role_mismatch_002",
+      "operation_family": "access_decision",
+      "path": "invalid/access/invalid_access_requester_role_mismatch_002.json"
+    },
+    {
+      "expected_failure_class": "unresolved_catalog_ref",
+      "expected_result": "invalid",
+      "fixture_family": "invalid",
+      "fixture_id": "invalid_access_unresolved_catalog_ref_001",
+      "operation_family": "access_decision",
+      "path": "invalid/access/invalid_access_unresolved_catalog_ref_001.json"
+    },
+    {
+      "expected_failure_class": "unresolved_catalog_ref",
+      "expected_result": "invalid",
+      "fixture_family": "invalid",
+      "fixture_id": "invalid_access_unresolved_catalog_ref_002",
+      "operation_family": "access_decision",
+      "path": "invalid/access/invalid_access_unresolved_catalog_ref_002.json"
+    },
+    {
+      "expected_failure_class": "unresolved_dataset_ref",
+      "expected_result": "invalid",
+      "fixture_family": "invalid",
+      "fixture_id": "invalid_access_unresolved_dataset_ref_001",
+      "operation_family": "access_decision",
+      "path": "invalid/access/invalid_access_unresolved_dataset_ref_001.json"
+    },
+    {
+      "expected_failure_class": "unresolved_dataset_ref",
+      "expected_result": "invalid",
+      "fixture_family": "invalid",
+      "fixture_id": "invalid_access_unresolved_dataset_ref_002",
+      "operation_family": "access_decision",
+      "path": "invalid/access/invalid_access_unresolved_dataset_ref_002.json"
+    },
+    {
+      "expected_failure_class": "handoff_ref_unresolved",
+      "expected_result": "invalid",
+      "fixture_family": "invalid",
+      "fixture_id": "invalid_reuse_handoff_ref_unresolved_001",
+      "operation_family": "reuse_authorization",
+      "path": "invalid/reuse/invalid_reuse_handoff_ref_unresolved_001.json"
+    },
+    {
+      "expected_failure_class": "handoff_ref_unresolved",
+      "expected_result": "invalid",
+      "fixture_family": "invalid",
+      "fixture_id": "invalid_reuse_handoff_ref_unresolved_002",
+      "operation_family": "reuse_authorization",
+      "path": "invalid/reuse/invalid_reuse_handoff_ref_unresolved_002.json"
+    },
+    {
+      "expected_failure_class": "purpose_constraint_mismatch",
+      "expected_result": "invalid",
+      "fixture_family": "invalid",
+      "fixture_id": "invalid_reuse_purpose_constraint_mismatch_001",
+      "operation_family": "reuse_authorization",
+      "path": "invalid/reuse/invalid_reuse_purpose_constraint_mismatch_001.json"
+    },
+    {
+      "expected_failure_class": "purpose_constraint_mismatch",
+      "expected_result": "invalid",
+      "fixture_family": "invalid",
+      "fixture_id": "invalid_reuse_purpose_constraint_mismatch_002",
+      "operation_family": "reuse_authorization",
+      "path": "invalid/reuse/invalid_reuse_purpose_constraint_mismatch_002.json"
+    },
+    {
+      "expected_failure_class": "reuse_condition_mismatch",
+      "expected_result": "invalid",
+      "fixture_family": "invalid",
+      "fixture_id": "invalid_reuse_reuse_condition_mismatch_001",
+      "operation_family": "reuse_authorization",
+      "path": "invalid/reuse/invalid_reuse_reuse_condition_mismatch_001.json"
+    },
+    {
+      "expected_failure_class": "reuse_condition_mismatch",
+      "expected_result": "invalid",
+      "fixture_family": "invalid",
+      "fixture_id": "invalid_reuse_reuse_condition_mismatch_002",
+      "operation_family": "reuse_authorization",
+      "path": "invalid/reuse/invalid_reuse_reuse_condition_mismatch_002.json"
+    },
+    {
+      "expected_failure_class": "reuse_condition_missing",
+      "expected_result": "invalid",
+      "fixture_family": "invalid",
+      "fixture_id": "invalid_reuse_reuse_condition_missing_001",
+      "operation_family": "reuse_authorization",
+      "path": "invalid/reuse/invalid_reuse_reuse_condition_missing_001.json"
+    },
+    {
+      "expected_failure_class": "reuse_condition_missing",
+      "expected_result": "invalid",
+      "fixture_family": "invalid",
+      "fixture_id": "invalid_reuse_reuse_condition_missing_002",
+      "operation_family": "reuse_authorization",
+      "path": "invalid/reuse/invalid_reuse_reuse_condition_missing_002.json"
+    },
+    {
+      "expected_failure_class": "integrity_digest_mismatch",
+      "expected_result": "invalid",
+      "fixture_family": "invalid",
+      "fixture_id": "invalid_review_integrity_digest_mismatch_001",
+      "operation_family": "review_decision",
+      "path": "invalid/review/invalid_review_integrity_digest_mismatch_001.json"
+    },
+    {
+      "expected_failure_class": "integrity_digest_mismatch",
+      "expected_result": "invalid",
+      "fixture_family": "invalid",
+      "fixture_id": "invalid_review_integrity_digest_mismatch_002",
+      "operation_family": "review_decision",
+      "path": "invalid/review/invalid_review_integrity_digest_mismatch_002.json"
+    },
+    {
+      "expected_failure_class": "policy_version_mismatch",
+      "expected_result": "invalid",
+      "fixture_family": "invalid",
+      "fixture_id": "invalid_review_policy_version_mismatch_001",
+      "operation_family": "review_decision",
+      "path": "invalid/review/invalid_review_policy_version_mismatch_001.json"
+    },
+    {
+      "expected_failure_class": "policy_version_mismatch",
+      "expected_result": "invalid",
+      "fixture_family": "invalid",
+      "fixture_id": "invalid_review_policy_version_mismatch_002",
+      "operation_family": "review_decision",
+      "path": "invalid/review/invalid_review_policy_version_mismatch_002.json"
+    },
+    {
+      "expected_failure_class": "review_evidence_missing",
+      "expected_result": "invalid",
+      "fixture_family": "invalid",
+      "fixture_id": "invalid_review_review_evidence_missing_001",
+      "operation_family": "review_decision",
+      "path": "invalid/review/invalid_review_review_evidence_missing_001.json"
+    },
+    {
+      "expected_failure_class": "review_evidence_missing",
+      "expected_result": "invalid",
+      "fixture_family": "invalid",
+      "fixture_id": "invalid_review_review_evidence_missing_002",
+      "operation_family": "review_decision",
+      "path": "invalid/review/invalid_review_review_evidence_missing_002.json"
+    },
+    {
+      "expected_failure_class": "review_trigger_missing",
+      "expected_result": "invalid",
+      "fixture_family": "invalid",
+      "fixture_id": "invalid_review_review_trigger_missing_001",
+      "operation_family": "review_decision",
+      "path": "invalid/review/invalid_review_review_trigger_missing_001.json"
+    },
+    {
+      "expected_failure_class": "review_trigger_missing",
+      "expected_result": "invalid",
+      "fixture_family": "invalid",
+      "fixture_id": "invalid_review_review_trigger_missing_002",
+      "operation_family": "review_decision",
+      "path": "invalid/review/invalid_review_review_trigger_missing_002.json"
+    },
+    {
+      "expected_failure_class": "none",
+      "expected_result": "valid",
+      "fixture_family": "valid",
+      "fixture_id": "valid_access_decision_001",
+      "operation_family": "access_decision",
+      "path": "valid/access/valid_access_decision_001.json"
+    },
+    {
+      "expected_failure_class": "none",
+      "expected_result": "valid",
+      "fixture_family": "valid",
+      "fixture_id": "valid_access_decision_002",
+      "operation_family": "access_decision",
+      "path": "valid/access/valid_access_decision_002.json"
+    },
+    {
+      "expected_failure_class": "none",
+      "expected_result": "valid",
+      "fixture_family": "valid",
+      "fixture_id": "valid_access_decision_003",
+      "operation_family": "access_decision",
+      "path": "valid/access/valid_access_decision_003.json"
+    },
+    {
+      "expected_failure_class": "none",
+      "expected_result": "valid",
+      "fixture_family": "valid",
+      "fixture_id": "valid_access_decision_004",
+      "operation_family": "access_decision",
+      "path": "valid/access/valid_access_decision_004.json"
+    },
+    {
+      "expected_failure_class": "none",
+      "expected_result": "valid",
+      "fixture_family": "valid",
+      "fixture_id": "valid_access_decision_005",
+      "operation_family": "access_decision",
+      "path": "valid/access/valid_access_decision_005.json"
+    },
+    {
+      "expected_failure_class": "none",
+      "expected_result": "valid",
+      "fixture_family": "valid",
+      "fixture_id": "valid_access_decision_006",
+      "operation_family": "access_decision",
+      "path": "valid/access/valid_access_decision_006.json"
+    },
+    {
+      "expected_failure_class": "none",
+      "expected_result": "valid",
+      "fixture_family": "valid",
+      "fixture_id": "valid_reuse_authorization_001",
+      "operation_family": "reuse_authorization",
+      "path": "valid/reuse/valid_reuse_authorization_001.json"
+    },
+    {
+      "expected_failure_class": "none",
+      "expected_result": "valid",
+      "fixture_family": "valid",
+      "fixture_id": "valid_reuse_authorization_002",
+      "operation_family": "reuse_authorization",
+      "path": "valid/reuse/valid_reuse_authorization_002.json"
+    },
+    {
+      "expected_failure_class": "none",
+      "expected_result": "valid",
+      "fixture_family": "valid",
+      "fixture_id": "valid_reuse_authorization_003",
+      "operation_family": "reuse_authorization",
+      "path": "valid/reuse/valid_reuse_authorization_003.json"
+    },
+    {
+      "expected_failure_class": "none",
+      "expected_result": "valid",
+      "fixture_family": "valid",
+      "fixture_id": "valid_reuse_authorization_004",
+      "operation_family": "reuse_authorization",
+      "path": "valid/reuse/valid_reuse_authorization_004.json"
+    },
+    {
+      "expected_failure_class": "none",
+      "expected_result": "valid",
+      "fixture_family": "valid",
+      "fixture_id": "valid_reuse_authorization_005",
+      "operation_family": "reuse_authorization",
+      "path": "valid/reuse/valid_reuse_authorization_005.json"
+    },
+    {
+      "expected_failure_class": "none",
+      "expected_result": "valid",
+      "fixture_family": "valid",
+      "fixture_id": "valid_reuse_authorization_006",
+      "operation_family": "reuse_authorization",
+      "path": "valid/reuse/valid_reuse_authorization_006.json"
+    },
+    {
+      "expected_failure_class": "none",
+      "expected_result": "valid",
+      "fixture_family": "valid",
+      "fixture_id": "valid_review_decision_001",
+      "operation_family": "review_decision",
+      "path": "valid/review/valid_review_decision_001.json"
+    },
+    {
+      "expected_failure_class": "none",
+      "expected_result": "valid",
+      "fixture_family": "valid",
+      "fixture_id": "valid_review_decision_002",
+      "operation_family": "review_decision",
+      "path": "valid/review/valid_review_decision_002.json"
+    },
+    {
+      "expected_failure_class": "none",
+      "expected_result": "valid",
+      "fixture_family": "valid",
+      "fixture_id": "valid_review_decision_003",
+      "operation_family": "review_decision",
+      "path": "valid/review/valid_review_decision_003.json"
+    },
+    {
+      "expected_failure_class": "none",
+      "expected_result": "valid",
+      "fixture_family": "valid",
+      "fixture_id": "valid_review_decision_004",
+      "operation_family": "review_decision",
+      "path": "valid/review/valid_review_decision_004.json"
+    },
+    {
+      "expected_failure_class": "none",
+      "expected_result": "valid",
+      "fixture_family": "valid",
+      "fixture_id": "valid_review_decision_005",
+      "operation_family": "review_decision",
+      "path": "valid/review/valid_review_decision_005.json"
+    },
+    {
+      "expected_failure_class": "none",
+      "expected_result": "valid",
+      "fixture_family": "valid",
+      "fixture_id": "valid_review_decision_006",
+      "operation_family": "review_decision",
+      "path": "valid/review/valid_review_decision_006.json"
+    }
+  ],
+  "invalid_count": 24,
+  "non_claims": {
+    "complete_workflow_coverage": false,
+    "legal_sufficiency": false,
+    "privacy_compliance_claim": false,
+    "production_deployment": false,
+    "real_government_decision": false,
+    "statistical_population_claim": false
+  },
+  "operation_family_counts": {
+    "access_decision": 15,
+    "reuse_authorization": 15,
+    "review_decision": 15
+  },
+  "valid_count": 18
+}

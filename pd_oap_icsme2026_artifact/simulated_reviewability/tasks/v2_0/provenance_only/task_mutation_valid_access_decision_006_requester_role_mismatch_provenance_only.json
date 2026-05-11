@@ -1,0 +1,69 @@
+{
+  "expected_review_target": {
+    "evidence_completeness_expected": "judge whether evidence refs and validation fields are visible",
+    "failure_detection_expected": "detect requester_role_mismatch",
+    "operation_reconstruction_expected": "access_decision",
+    "policy_basis_expected": "identify policy id and policy version when visible"
+  },
+  "hidden_material_summary": {
+    "excluded": [
+      "semantic_validation_expectations",
+      "full_evidence_completeness",
+      "non_claims",
+      "explicit_checker_result"
+    ]
+  },
+  "non_claims": {
+    "human_participant_data": false,
+    "human_study_result": false,
+    "legal_sufficiency": false,
+    "production_deployment": false
+  },
+  "representation_condition": "provenance_only",
+  "scoring_expectation": {},
+  "simulation_profile": {
+    "name": "pd-oap-simulated-reviewability",
+    "version": "2.0-draft"
+  },
+  "source_specimen": {
+    "expected_primary_failure_code": "requester_role_mismatch",
+    "expected_result": "invalid",
+    "fixture_id": "mutation_valid_access_decision_006_requester_role_mismatch",
+    "operation_family": "access_decision",
+    "source_type": "mutation"
+  },
+  "task_id": "task_mutation_valid_access_decision_006_requester_role_mismatch_provenance_only",
+  "visible_material": {
+    "provenance": {
+      "handoff_refs": [],
+      "integrity_digest": "sha256:c0eb744478adb31900cca7f9a5e1f7d22d3c544198fc0a8831e2c4bb7d4e4b71",
+      "source_refs": [
+        "synthetic-dataset-access-006",
+        "synthetic-catalog-access-001",
+        "synthetic-policy-access-001"
+      ]
+    },
+    "reference_links": {
+      "actor_id": "synthetic-data-steward-access-001",
+      "catalog_id": "synthetic-catalog-access-001",
+      "decision_status": null,
+      "policy_id": "synthetic-policy-access-001",
+      "purpose": "public_service_planning",
+      "requester_id": "synthetic-requester-access-006",
+      "subject_id": "synthetic-dataset-access-006"
+    },
+    "refs": {
+      "actor_id": "synthetic-data-steward-access-001",
+      "catalog_id": "synthetic-catalog-access-001",
+      "decision_status": null,
+      "operation_family": "access_decision",
+      "operation_id": "operation-valid_access_decision_006",
+      "policy_id": "synthetic-policy-access-001",
+      "policy_version": "2026.1",
+      "purpose": "public_service_planning",
+      "requester_id": "synthetic-requester-access-006",
+      "requester_role": null,
+      "subject_id": "synthetic-dataset-access-006"
+    }
+  }
+}

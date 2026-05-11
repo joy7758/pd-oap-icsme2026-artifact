@@ -1,0 +1,46 @@
+{
+  "expected_review_target": {
+    "evidence_completeness_expected": "judge whether evidence refs and validation fields are visible",
+    "failure_detection_expected": "detect handoff_ref_unresolved",
+    "operation_reconstruction_expected": "reuse_authorization",
+    "policy_basis_expected": "identify policy id and policy version when visible"
+  },
+  "hidden_material_summary": {
+    "excluded": [
+      "explicit_policy_basis_details",
+      "evidence_package",
+      "validation_expectations",
+      "full_provenance_links",
+      "non_claims"
+    ]
+  },
+  "non_claims": {
+    "human_participant_data": false,
+    "human_study_result": false,
+    "legal_sufficiency": false,
+    "production_deployment": false
+  },
+  "representation_condition": "logs_only",
+  "scoring_expectation": {},
+  "simulation_profile": {
+    "name": "pd-oap-simulated-reviewability",
+    "version": "2.0-draft"
+  },
+  "source_specimen": {
+    "expected_primary_failure_code": "handoff_ref_unresolved",
+    "expected_result": "invalid",
+    "fixture_id": "mutation_valid_reuse_authorization_006_break_handoff_ref",
+    "operation_family": "reuse_authorization",
+    "source_type": "mutation"
+  },
+  "task_id": "task_mutation_valid_reuse_authorization_006_break_handoff_ref_logs_only",
+  "visible_material": {
+    "actor_id": "synthetic-data-steward-reuse-001",
+    "decision_status": null,
+    "event_time": "2026-01-01T01:35:57Z",
+    "event_type": "operation_event",
+    "operation_family": "reuse_authorization",
+    "operation_id": "operation-valid_reuse_authorization_006",
+    "subject_ref": "synthetic-dataset-reuse-006"
+  }
+}

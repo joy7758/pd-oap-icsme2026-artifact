@@ -1,0 +1,191 @@
+{
+  "expected_review_target": {
+    "evidence_completeness_expected": "judge whether evidence refs and validation fields are visible",
+    "failure_detection_expected": "no semantic failure expected",
+    "operation_reconstruction_expected": "access_decision",
+    "policy_basis_expected": "identify policy id and policy version when visible"
+  },
+  "hidden_material_summary": {
+    "excluded": [
+      "external_real_world_evidence_beyond_source_specimen"
+    ]
+  },
+  "non_claims": {
+    "human_participant_data": false,
+    "human_study_result": false,
+    "legal_sufficiency": false,
+    "production_deployment": false
+  },
+  "representation_condition": "full_pd_oap",
+  "scoring_expectation": {},
+  "simulation_profile": {
+    "name": "pd-oap-simulated-reviewability",
+    "version": "2.0-draft"
+  },
+  "source_specimen": {
+    "expected_primary_failure_code": "none",
+    "expected_result": "valid",
+    "fixture_id": "edge_access_denied_with_complete_evidence_001",
+    "operation_family": "access_decision",
+    "source_type": "edge"
+  },
+  "task_id": "task_edge_access_denied_with_complete_evidence_001_full_pd_oap",
+  "visible_material": {
+    "actor": {
+      "actor_id": "synthetic-data-steward-access-001",
+      "actor_type": "synthetic_data_steward",
+      "name": "Synthetic Data Steward Office"
+    },
+    "catalog": {
+      "catalog_id": "synthetic-catalog-access-001",
+      "catalog_label": "Synthetic access catalog",
+      "dataset_refs": [
+        "synthetic-dataset-access-001"
+      ],
+      "policy_refs": [
+        "synthetic-policy-access-001"
+      ]
+    },
+    "conditions": [
+      {
+        "condition_id": "condition-edge_access_denied_with_complete_evidence_001-purpose",
+        "source": "synthetic_policy",
+        "type": "access_boundary",
+        "value": "limited_to_public_service_planning"
+      }
+    ],
+    "decision": {
+      "decision_basis": "synthetic_authorization_basis_access",
+      "decision_id": "decision-edge_access_denied_with_complete_evidence_001",
+      "outcome": "deny",
+      "rationale": "Synthetic denial with complete policy and evidence linkage."
+    },
+    "edge_case_reason": "denied_but_valid_complete_evidence",
+    "evidence": {
+      "evidence_ids": [
+        "evidence-edge_access_denied_with_complete_evidence_001-policy",
+        "evidence-edge_access_denied_with_complete_evidence_001-dataset",
+        "evidence-edge_access_denied_with_complete_evidence_001-decision"
+      ],
+      "evidence_objects": [
+        {
+          "digest": "sha256:9722be0a3f1144a57b8fd1b2567bb850b7d8341b5c8b45bd91afc33dfafe95df",
+          "evidence_id": "evidence-edge_access_denied_with_complete_evidence_001-policy",
+          "linked_refs": [
+            "synthetic-policy-access-001"
+          ],
+          "purpose": "policy_basis",
+          "synthetic": true,
+          "type": "policy_record"
+        },
+        {
+          "digest": "sha256:cfcc035884e28426d6909019c2e04a07c26f6e1958bb86e884a27684b9442347",
+          "evidence_id": "evidence-edge_access_denied_with_complete_evidence_001-dataset",
+          "linked_refs": [
+            "synthetic-dataset-access-001"
+          ],
+          "purpose": "dataset_reference",
+          "synthetic": true,
+          "type": "dataset_record"
+        },
+        {
+          "digest": "sha256:f1ad08b7764e022a51722fe07be9116d730b1f46341ce50d8e553a8e7a53f9c4",
+          "evidence_id": "evidence-edge_access_denied_with_complete_evidence_001-decision",
+          "linked_refs": [
+            "synthetic-dataset-access-001",
+            "synthetic-policy-access-001"
+          ],
+          "purpose": "decision_record",
+          "synthetic": true,
+          "type": "authorization_record"
+        }
+      ],
+      "integrity_digest": "sha256:822e475a925e61b2b120d29df4c1ecb9d339b4b913e5bd9228d13aff02390f8d"
+    },
+    "fixture_id": "edge_access_denied_with_complete_evidence_001",
+    "fixture_metadata": {
+      "benchmark_version": "2.0-draft",
+      "controlled_fixture": true,
+      "fixture_family": "edge",
+      "notes": "Synthetic controlled fixture for PD-OAP v2.0 evaluation design.",
+      "operation_family": "access_decision",
+      "primary_purpose": "edge_case",
+      "synthetic": true
+    },
+    "non_claims": {
+      "complete_workflow_coverage": false,
+      "legal_sufficiency": false,
+      "privacy_compliance_claim": false,
+      "production_deployment": false,
+      "real_government_decision": false,
+      "statistical_population_claim": false
+    },
+    "operation": {
+      "catalog_id": "synthetic-catalog-access-001",
+      "data_object_id": "synthetic-dataset-access-001",
+      "decision_scope": "single_operation",
+      "operation_family": "access_decision",
+      "operation_id": "operation-edge_access_denied_with_complete_evidence_001",
+      "operation_type": "access_decision",
+      "policy_id": "synthetic-policy-access-001",
+      "policy_version": "2026.1",
+      "requested_action": "restricted_access"
+    },
+    "policy": {
+      "allowed_purposes": [
+        "public_service_planning"
+      ],
+      "allowed_requester_roles": [
+        "public_research_unit"
+      ],
+      "authorization_basis": "synthetic_authorization_basis_access",
+      "policy_id": "synthetic-policy-access-001",
+      "policy_version": "2026.1",
+      "required_reuse_conditions": [],
+      "review_triggers": []
+    },
+    "profile": {
+      "name": "public-data-operation-accountability-profile",
+      "profile_id": "public-data-operation-accountability-profile@2.0-draft",
+      "version": "2.0-draft"
+    },
+    "provenance": {
+      "handoff_refs": [],
+      "integrity_digest": "sha256:822e475a925e61b2b120d29df4c1ecb9d339b4b913e5bd9228d13aff02390f8d",
+      "source_refs": [
+        "synthetic-dataset-access-001",
+        "synthetic-catalog-access-001",
+        "synthetic-policy-access-001"
+      ]
+    },
+    "purpose": {
+      "allowed_by_policy": true,
+      "declared_purpose": "public_service_planning",
+      "purpose_id": "purpose-edge_access_denied_with_complete_evidence_001"
+    },
+    "requester": {
+      "declared_affiliation": "synthetic local research or service unit",
+      "requester_id": "synthetic-requester-access-001",
+      "role": "public_research_unit"
+    },
+    "statement_id": "statement-edge_access_denied_with_complete_evidence_001",
+    "subject": {
+      "data_object_id": "synthetic-dataset-access-001",
+      "object_type": "public_data_object",
+      "sensitivity": "bounded_public_sector_data",
+      "title": "Synthetic access public-data object 001"
+    },
+    "validation": {
+      "expected_failure_class": "none",
+      "expected_primary_failure_code": "none",
+      "expected_result": "valid",
+      "required_rule_surfaces": [
+        "operation_boundary",
+        "policy_basis_presence",
+        "dataset_reference_closure",
+        "catalog_reference_closure",
+        "requester_role_policy_match"
+      ]
+    }
+  }
+}

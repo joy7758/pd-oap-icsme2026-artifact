@@ -1,0 +1,79 @@
+{
+  "expected_review_target": {
+    "evidence_completeness_expected": "judge whether evidence refs and validation fields are visible",
+    "failure_detection_expected": "detect reuse_condition_mismatch",
+    "operation_reconstruction_expected": "reuse_authorization",
+    "policy_basis_expected": "identify policy id and policy version when visible"
+  },
+  "hidden_material_summary": {
+    "excluded": [
+      "concrete_operation_execution",
+      "evidence_package",
+      "actual_provenance_closure",
+      "actual_decision_record"
+    ]
+  },
+  "non_claims": {
+    "human_participant_data": false,
+    "human_study_result": false,
+    "legal_sufficiency": false,
+    "production_deployment": false
+  },
+  "representation_condition": "policy_only",
+  "scoring_expectation": {},
+  "simulation_profile": {
+    "name": "pd-oap-simulated-reviewability",
+    "version": "2.0-draft"
+  },
+  "source_specimen": {
+    "expected_primary_failure_code": "reuse_condition_mismatch",
+    "expected_result": "invalid",
+    "fixture_id": "mutation_valid_reuse_authorization_002_condition_mismatch",
+    "operation_family": "reuse_authorization",
+    "source_type": "mutation"
+  },
+  "task_id": "task_mutation_valid_reuse_authorization_002_condition_mismatch_policy_only",
+  "visible_material": {
+    "condition_codes": [
+      {
+        "condition_id": "condition-valid_reuse_authorization_002-purpose",
+        "source": "synthetic_policy",
+        "type": "reuse_condition",
+        "value": "limited_to_service_improvement"
+      },
+      {
+        "condition_id": "condition-valid_reuse_authorization_002-attribution",
+        "source": "synthetic_policy",
+        "type": "attribution",
+        "value": "required"
+      },
+      {
+        "condition_id": "condition-valid_reuse_authorization_002-onward-transfer",
+        "source": "synthetic_policy",
+        "type": "onward_transfer",
+        "value": "permitted"
+      }
+    ],
+    "policy": {
+      "allowed_purposes": [
+        "service_improvement"
+      ],
+      "allowed_requester_roles": [
+        "public_service_partner"
+      ],
+      "authorization_basis": "synthetic_authorization_basis_reuse",
+      "policy_id": "synthetic-policy-reuse-001",
+      "policy_version": "2026.1",
+      "required_reuse_conditions": [
+        "attribution",
+        "onward_transfer_forbidden"
+      ],
+      "review_triggers": []
+    },
+    "purpose_constraints": {
+      "allowed_by_policy": true,
+      "declared_purpose": "service_improvement",
+      "purpose_id": "purpose-valid_reuse_authorization_002"
+    }
+  }
+}

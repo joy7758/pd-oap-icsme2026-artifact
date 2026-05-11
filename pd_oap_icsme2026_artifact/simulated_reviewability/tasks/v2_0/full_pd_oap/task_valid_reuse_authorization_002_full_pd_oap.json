@@ -1,0 +1,219 @@
+{
+  "expected_review_target": {
+    "evidence_completeness_expected": "judge whether evidence refs and validation fields are visible",
+    "failure_detection_expected": "no semantic failure expected",
+    "operation_reconstruction_expected": "reuse_authorization",
+    "policy_basis_expected": "identify policy id and policy version when visible"
+  },
+  "hidden_material_summary": {
+    "excluded": [
+      "external_real_world_evidence_beyond_source_specimen"
+    ]
+  },
+  "non_claims": {
+    "human_participant_data": false,
+    "human_study_result": false,
+    "legal_sufficiency": false,
+    "production_deployment": false
+  },
+  "representation_condition": "full_pd_oap",
+  "scoring_expectation": {},
+  "simulation_profile": {
+    "name": "pd-oap-simulated-reviewability",
+    "version": "2.0-draft"
+  },
+  "source_specimen": {
+    "expected_primary_failure_code": "none",
+    "expected_result": "valid",
+    "fixture_id": "valid_reuse_authorization_002",
+    "operation_family": "reuse_authorization",
+    "source_type": "base_valid"
+  },
+  "task_id": "task_valid_reuse_authorization_002_full_pd_oap",
+  "visible_material": {
+    "actor": {
+      "actor_id": "synthetic-data-steward-reuse-001",
+      "actor_type": "synthetic_data_steward",
+      "name": "Synthetic Data Steward Office"
+    },
+    "catalog": {
+      "catalog_id": "synthetic-catalog-reuse-001",
+      "catalog_label": "Synthetic reuse catalog",
+      "dataset_refs": [
+        "synthetic-dataset-reuse-002"
+      ],
+      "policy_refs": [
+        "synthetic-policy-reuse-001"
+      ]
+    },
+    "conditions": [
+      {
+        "condition_id": "condition-valid_reuse_authorization_002-purpose",
+        "source": "synthetic_policy",
+        "type": "reuse_condition",
+        "value": "limited_to_service_improvement"
+      },
+      {
+        "condition_id": "condition-valid_reuse_authorization_002-attribution",
+        "source": "synthetic_policy",
+        "type": "attribution",
+        "value": "required"
+      },
+      {
+        "condition_id": "condition-valid_reuse_authorization_002-onward-transfer",
+        "source": "synthetic_policy",
+        "type": "onward_transfer",
+        "value": "forbidden"
+      }
+    ],
+    "decision": {
+      "decision_basis": "synthetic_authorization_basis_reuse",
+      "decision_id": "decision-valid_reuse_authorization_002",
+      "outcome": "allow",
+      "rationale": "Synthetic fixture decision with internally consistent policy and evidence linkage."
+    },
+    "evidence": {
+      "evidence_ids": [
+        "evidence-valid_reuse_authorization_002-policy",
+        "evidence-valid_reuse_authorization_002-dataset",
+        "evidence-valid_reuse_authorization_002-decision",
+        "synthetic-handoff-valid_reuse_authorization_002"
+      ],
+      "evidence_objects": [
+        {
+          "digest": "sha256:b95287a1e4b99c88542677081b00a4f736a35501a87b449b259698adb4621935",
+          "evidence_id": "evidence-valid_reuse_authorization_002-policy",
+          "linked_refs": [
+            "synthetic-policy-reuse-001"
+          ],
+          "purpose": "policy_basis",
+          "synthetic": true,
+          "type": "policy_record"
+        },
+        {
+          "digest": "sha256:c649710f6b2747e9175deedf244f777d6f9d128f18bd8a35d75af2e679371603",
+          "evidence_id": "evidence-valid_reuse_authorization_002-dataset",
+          "linked_refs": [
+            "synthetic-dataset-reuse-002"
+          ],
+          "purpose": "dataset_reference",
+          "synthetic": true,
+          "type": "dataset_record"
+        },
+        {
+          "digest": "sha256:98613d31595cea9f167408c00bf20f66f858d25c96f8a901d32bf232d2c43d5b",
+          "evidence_id": "evidence-valid_reuse_authorization_002-decision",
+          "linked_refs": [
+            "synthetic-dataset-reuse-002",
+            "synthetic-policy-reuse-001"
+          ],
+          "purpose": "decision_record",
+          "synthetic": true,
+          "type": "reuse_authorization_record"
+        },
+        {
+          "digest": "sha256:c598d01105d1d36d47d0b7e33c90f1566beb1ddeb193dc117b1428c5c370cc62",
+          "evidence_id": "synthetic-handoff-valid_reuse_authorization_002",
+          "linked_refs": [
+            "synthetic-dataset-reuse-002",
+            "synthetic-policy-reuse-001"
+          ],
+          "purpose": "handoff_record",
+          "synthetic": true,
+          "type": "handoff_record"
+        }
+      ],
+      "integrity_digest": "sha256:d59f7ea17e7b4dfbe19da5d2e31a72a080b999eafeb096c417f8ef6b51f21a1f"
+    },
+    "fixture_id": "valid_reuse_authorization_002",
+    "fixture_metadata": {
+      "benchmark_version": "2.0-draft",
+      "controlled_fixture": true,
+      "fixture_family": "valid",
+      "notes": "Synthetic controlled fixture for PD-OAP v2.0 evaluation design.",
+      "operation_family": "reuse_authorization",
+      "primary_purpose": "representation",
+      "synthetic": true
+    },
+    "non_claims": {
+      "complete_workflow_coverage": false,
+      "legal_sufficiency": false,
+      "privacy_compliance_claim": false,
+      "production_deployment": false,
+      "real_government_decision": false,
+      "statistical_population_claim": false
+    },
+    "operation": {
+      "catalog_id": "synthetic-catalog-reuse-001",
+      "data_object_id": "synthetic-dataset-reuse-002",
+      "decision_scope": "single_operation",
+      "operation_family": "reuse_authorization",
+      "operation_id": "operation-valid_reuse_authorization_002",
+      "operation_type": "reuse_authorization",
+      "policy_id": "synthetic-policy-reuse-001",
+      "policy_version": "2026.1",
+      "requested_action": "bounded_reuse"
+    },
+    "policy": {
+      "allowed_purposes": [
+        "service_improvement"
+      ],
+      "allowed_requester_roles": [
+        "public_service_partner"
+      ],
+      "authorization_basis": "synthetic_authorization_basis_reuse",
+      "policy_id": "synthetic-policy-reuse-001",
+      "policy_version": "2026.1",
+      "required_reuse_conditions": [
+        "attribution",
+        "onward_transfer_forbidden"
+      ],
+      "review_triggers": []
+    },
+    "profile": {
+      "name": "public-data-operation-accountability-profile",
+      "profile_id": "public-data-operation-accountability-profile@2.0-draft",
+      "version": "2.0-draft"
+    },
+    "provenance": {
+      "handoff_refs": [
+        "synthetic-handoff-valid_reuse_authorization_002"
+      ],
+      "integrity_digest": "sha256:d59f7ea17e7b4dfbe19da5d2e31a72a080b999eafeb096c417f8ef6b51f21a1f",
+      "source_refs": [
+        "synthetic-dataset-reuse-002",
+        "synthetic-catalog-reuse-001",
+        "synthetic-policy-reuse-001"
+      ]
+    },
+    "purpose": {
+      "allowed_by_policy": true,
+      "declared_purpose": "service_improvement",
+      "purpose_id": "purpose-valid_reuse_authorization_002"
+    },
+    "requester": {
+      "declared_affiliation": "synthetic local research or service unit",
+      "requester_id": "synthetic-requester-reuse-002",
+      "role": "public_service_partner"
+    },
+    "statement_id": "statement-valid_reuse_authorization_002",
+    "subject": {
+      "data_object_id": "synthetic-dataset-reuse-002",
+      "object_type": "public_data_object",
+      "sensitivity": "bounded_public_sector_data",
+      "title": "Synthetic reuse public-data object 002"
+    },
+    "validation": {
+      "expected_failure_class": "none",
+      "expected_primary_failure_code": "none",
+      "expected_result": "valid",
+      "required_rule_surfaces": [
+        "operation_boundary",
+        "purpose_policy_match",
+        "reuse_condition_completeness",
+        "reuse_condition_consistency",
+        "handoff_reference_closure"
+      ]
+    }
+  }
+}

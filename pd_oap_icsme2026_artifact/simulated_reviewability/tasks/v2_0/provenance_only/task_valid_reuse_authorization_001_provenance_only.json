@@ -1,0 +1,71 @@
+{
+  "expected_review_target": {
+    "evidence_completeness_expected": "judge whether evidence refs and validation fields are visible",
+    "failure_detection_expected": "no semantic failure expected",
+    "operation_reconstruction_expected": "reuse_authorization",
+    "policy_basis_expected": "identify policy id and policy version when visible"
+  },
+  "hidden_material_summary": {
+    "excluded": [
+      "semantic_validation_expectations",
+      "full_evidence_completeness",
+      "non_claims",
+      "explicit_checker_result"
+    ]
+  },
+  "non_claims": {
+    "human_participant_data": false,
+    "human_study_result": false,
+    "legal_sufficiency": false,
+    "production_deployment": false
+  },
+  "representation_condition": "provenance_only",
+  "scoring_expectation": {},
+  "simulation_profile": {
+    "name": "pd-oap-simulated-reviewability",
+    "version": "2.0-draft"
+  },
+  "source_specimen": {
+    "expected_primary_failure_code": "none",
+    "expected_result": "valid",
+    "fixture_id": "valid_reuse_authorization_001",
+    "operation_family": "reuse_authorization",
+    "source_type": "base_valid"
+  },
+  "task_id": "task_valid_reuse_authorization_001_provenance_only",
+  "visible_material": {
+    "provenance": {
+      "handoff_refs": [
+        "synthetic-handoff-valid_reuse_authorization_001"
+      ],
+      "integrity_digest": "sha256:7336b3ade5db25f8adfbd137d986c8f939471fcb3057d24e3dc8f3ae961852b2",
+      "source_refs": [
+        "synthetic-dataset-reuse-001",
+        "synthetic-catalog-reuse-001",
+        "synthetic-policy-reuse-001"
+      ]
+    },
+    "reference_links": {
+      "actor_id": "synthetic-data-steward-reuse-001",
+      "catalog_id": "synthetic-catalog-reuse-001",
+      "decision_status": null,
+      "policy_id": "synthetic-policy-reuse-001",
+      "purpose": "service_improvement",
+      "requester_id": "synthetic-requester-reuse-001",
+      "subject_id": "synthetic-dataset-reuse-001"
+    },
+    "refs": {
+      "actor_id": "synthetic-data-steward-reuse-001",
+      "catalog_id": "synthetic-catalog-reuse-001",
+      "decision_status": null,
+      "operation_family": "reuse_authorization",
+      "operation_id": "operation-valid_reuse_authorization_001",
+      "policy_id": "synthetic-policy-reuse-001",
+      "policy_version": "2026.1",
+      "purpose": "service_improvement",
+      "requester_id": "synthetic-requester-reuse-001",
+      "requester_role": null,
+      "subject_id": "synthetic-dataset-reuse-001"
+    }
+  }
+}

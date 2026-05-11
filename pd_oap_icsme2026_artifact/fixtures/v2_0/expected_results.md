@@ -1,0 +1,49 @@
+# v2.0 Expected Results
+
+| Fixture | Family | Operation family | Expected result | Expected primary failure code |
+|---|---|---|---|---|
+| edge_access_denied_with_complete_evidence_001 | edge | access_decision | valid | none |
+| edge_reuse_denied_due_to_scope_001 | edge | reuse_authorization | valid | none |
+| edge_review_closed_without_renewal_001 | edge | review_decision | valid | none |
+| invalid_access_missing_authorization_basis_001 | invalid | access_decision | invalid | missing_authorization_basis |
+| invalid_access_missing_authorization_basis_002 | invalid | access_decision | invalid | missing_authorization_basis |
+| invalid_access_requester_role_mismatch_001 | invalid | access_decision | invalid | requester_role_mismatch |
+| invalid_access_requester_role_mismatch_002 | invalid | access_decision | invalid | requester_role_mismatch |
+| invalid_access_unresolved_catalog_ref_001 | invalid | access_decision | invalid | unresolved_catalog_ref |
+| invalid_access_unresolved_catalog_ref_002 | invalid | access_decision | invalid | unresolved_catalog_ref |
+| invalid_access_unresolved_dataset_ref_001 | invalid | access_decision | invalid | unresolved_dataset_ref |
+| invalid_access_unresolved_dataset_ref_002 | invalid | access_decision | invalid | unresolved_dataset_ref |
+| invalid_reuse_handoff_ref_unresolved_001 | invalid | reuse_authorization | invalid | handoff_ref_unresolved |
+| invalid_reuse_handoff_ref_unresolved_002 | invalid | reuse_authorization | invalid | handoff_ref_unresolved |
+| invalid_reuse_purpose_constraint_mismatch_001 | invalid | reuse_authorization | invalid | purpose_constraint_mismatch |
+| invalid_reuse_purpose_constraint_mismatch_002 | invalid | reuse_authorization | invalid | purpose_constraint_mismatch |
+| invalid_reuse_reuse_condition_mismatch_001 | invalid | reuse_authorization | invalid | reuse_condition_mismatch |
+| invalid_reuse_reuse_condition_mismatch_002 | invalid | reuse_authorization | invalid | reuse_condition_mismatch |
+| invalid_reuse_reuse_condition_missing_001 | invalid | reuse_authorization | invalid | reuse_condition_missing |
+| invalid_reuse_reuse_condition_missing_002 | invalid | reuse_authorization | invalid | reuse_condition_missing |
+| invalid_review_integrity_digest_mismatch_001 | invalid | review_decision | invalid | integrity_digest_mismatch |
+| invalid_review_integrity_digest_mismatch_002 | invalid | review_decision | invalid | integrity_digest_mismatch |
+| invalid_review_policy_version_mismatch_001 | invalid | review_decision | invalid | policy_version_mismatch |
+| invalid_review_policy_version_mismatch_002 | invalid | review_decision | invalid | policy_version_mismatch |
+| invalid_review_review_evidence_missing_001 | invalid | review_decision | invalid | review_evidence_missing |
+| invalid_review_review_evidence_missing_002 | invalid | review_decision | invalid | review_evidence_missing |
+| invalid_review_review_trigger_missing_001 | invalid | review_decision | invalid | review_trigger_missing |
+| invalid_review_review_trigger_missing_002 | invalid | review_decision | invalid | review_trigger_missing |
+| valid_access_decision_001 | valid | access_decision | valid | none |
+| valid_access_decision_002 | valid | access_decision | valid | none |
+| valid_access_decision_003 | valid | access_decision | valid | none |
+| valid_access_decision_004 | valid | access_decision | valid | none |
+| valid_access_decision_005 | valid | access_decision | valid | none |
+| valid_access_decision_006 | valid | access_decision | valid | none |
+| valid_reuse_authorization_001 | valid | reuse_authorization | valid | none |
+| valid_reuse_authorization_002 | valid | reuse_authorization | valid | none |
+| valid_reuse_authorization_003 | valid | reuse_authorization | valid | none |
+| valid_reuse_authorization_004 | valid | reuse_authorization | valid | none |
+| valid_reuse_authorization_005 | valid | reuse_authorization | valid | none |
+| valid_reuse_authorization_006 | valid | reuse_authorization | valid | none |
+| valid_review_decision_001 | valid | review_decision | valid | none |
+| valid_review_decision_002 | valid | review_decision | valid | none |
+| valid_review_decision_003 | valid | review_decision | valid | none |
+| valid_review_decision_004 | valid | review_decision | valid | none |
+| valid_review_decision_005 | valid | review_decision | valid | none |
+| valid_review_decision_006 | valid | review_decision | valid | none |

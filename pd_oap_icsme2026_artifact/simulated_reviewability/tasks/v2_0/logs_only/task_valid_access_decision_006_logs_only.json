@@ -1,0 +1,46 @@
+{
+  "expected_review_target": {
+    "evidence_completeness_expected": "judge whether evidence refs and validation fields are visible",
+    "failure_detection_expected": "no semantic failure expected",
+    "operation_reconstruction_expected": "access_decision",
+    "policy_basis_expected": "identify policy id and policy version when visible"
+  },
+  "hidden_material_summary": {
+    "excluded": [
+      "explicit_policy_basis_details",
+      "evidence_package",
+      "validation_expectations",
+      "full_provenance_links",
+      "non_claims"
+    ]
+  },
+  "non_claims": {
+    "human_participant_data": false,
+    "human_study_result": false,
+    "legal_sufficiency": false,
+    "production_deployment": false
+  },
+  "representation_condition": "logs_only",
+  "scoring_expectation": {},
+  "simulation_profile": {
+    "name": "pd-oap-simulated-reviewability",
+    "version": "2.0-draft"
+  },
+  "source_specimen": {
+    "expected_primary_failure_code": "none",
+    "expected_result": "valid",
+    "fixture_id": "valid_access_decision_006",
+    "operation_family": "access_decision",
+    "source_type": "base_valid"
+  },
+  "task_id": "task_valid_access_decision_006_logs_only",
+  "visible_material": {
+    "actor_id": "synthetic-data-steward-access-001",
+    "decision_status": null,
+    "event_time": "2026-01-01T00:40:35Z",
+    "event_type": "operation_event",
+    "operation_family": "access_decision",
+    "operation_id": "operation-valid_access_decision_006",
+    "subject_ref": "synthetic-dataset-access-006"
+  }
+}

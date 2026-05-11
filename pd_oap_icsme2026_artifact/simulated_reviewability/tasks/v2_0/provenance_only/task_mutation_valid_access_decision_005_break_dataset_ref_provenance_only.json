@@ -1,0 +1,69 @@
+{
+  "expected_review_target": {
+    "evidence_completeness_expected": "judge whether evidence refs and validation fields are visible",
+    "failure_detection_expected": "detect unresolved_dataset_ref",
+    "operation_reconstruction_expected": "access_decision",
+    "policy_basis_expected": "identify policy id and policy version when visible"
+  },
+  "hidden_material_summary": {
+    "excluded": [
+      "semantic_validation_expectations",
+      "full_evidence_completeness",
+      "non_claims",
+      "explicit_checker_result"
+    ]
+  },
+  "non_claims": {
+    "human_participant_data": false,
+    "human_study_result": false,
+    "legal_sufficiency": false,
+    "production_deployment": false
+  },
+  "representation_condition": "provenance_only",
+  "scoring_expectation": {},
+  "simulation_profile": {
+    "name": "pd-oap-simulated-reviewability",
+    "version": "2.0-draft"
+  },
+  "source_specimen": {
+    "expected_primary_failure_code": "unresolved_dataset_ref",
+    "expected_result": "invalid",
+    "fixture_id": "mutation_valid_access_decision_005_break_dataset_ref",
+    "operation_family": "access_decision",
+    "source_type": "mutation"
+  },
+  "task_id": "task_mutation_valid_access_decision_005_break_dataset_ref_provenance_only",
+  "visible_material": {
+    "provenance": {
+      "handoff_refs": [],
+      "integrity_digest": "sha256:4e0d976c319b7f14c1638a6b02353b748e7e590ec2af2bee36657ab2d64e54fa",
+      "source_refs": [
+        "synthetic-dataset-access-005",
+        "synthetic-catalog-access-001",
+        "synthetic-policy-access-001"
+      ]
+    },
+    "reference_links": {
+      "actor_id": "synthetic-data-steward-access-001",
+      "catalog_id": "synthetic-catalog-access-001",
+      "decision_status": null,
+      "policy_id": "synthetic-policy-access-001",
+      "purpose": "public_service_planning",
+      "requester_id": "synthetic-requester-access-005",
+      "subject_id": "synthetic-dataset-mutation-missing"
+    },
+    "refs": {
+      "actor_id": "synthetic-data-steward-access-001",
+      "catalog_id": "synthetic-catalog-access-001",
+      "decision_status": null,
+      "operation_family": "access_decision",
+      "operation_id": "operation-valid_access_decision_005",
+      "policy_id": "synthetic-policy-access-001",
+      "policy_version": "2026.1",
+      "purpose": "public_service_planning",
+      "requester_id": "synthetic-requester-access-005",
+      "requester_role": null,
+      "subject_id": "synthetic-dataset-mutation-missing"
+    }
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "actor": {
+    "actor_id": "synthetic-data-steward-review-001",
+    "actor_type": "synthetic_data_steward",
+    "name": "Synthetic Data Steward Office"
+  },
+  "catalog": {
+    "catalog_id": "synthetic-catalog-review-001",
+    "catalog_label": "Synthetic review catalog",
+    "dataset_refs": [
+      "synthetic-dataset-review-002"
+    ],
+    "policy_refs": [
+      "synthetic-policy-review-001"
+    ]
+  },
+  "conditions": [
+    {
+      "condition_id": "condition-invalid_review_review_trigger_missing_002-purpose",
+      "source": "synthetic_policy",
+      "type": "review_condition",
+      "value": "limited_to_accountability_review"
+    }
+  ],
+  "decision": {
+    "decision_basis": "synthetic_authorization_basis_review",
+    "decision_id": "decision-invalid_review_review_trigger_missing_002",
+    "outcome": "allow",
+    "rationale": "Synthetic fixture decision with internally consistent policy and evidence linkage."
+  },
+  "evidence": {
+    "evidence_ids": [
+      "evidence-invalid_review_review_trigger_missing_002-policy",
+      "evidence-invalid_review_review_trigger_missing_002-dataset",
+      "evidence-invalid_review_review_trigger_missing_002-decision",
+      "evidence-invalid_review_review_trigger_missing_002-review"
+    ],
+    "evidence_objects": [
+      {
+        "digest": "sha256:fae581557a03d42cb7c06ef971909c57675f7e5fef927cc49900a49632c7047a",
+        "evidence_id": "evidence-invalid_review_review_trigger_missing_002-policy",
+        "linked_refs": [
+          "synthetic-policy-review-001"
+        ],
+        "purpose": "policy_basis",
+        "synthetic": true,
+        "type": "policy_record"
+      },
+      {
+        "digest": "sha256:866fa429d708c24383e70a7f5f908476492a81cf20c3eb4b0a9661a471e528be",
+        "evidence_id": "evidence-invalid_review_review_trigger_missing_002-dataset",
+        "linked_refs": [
+          "synthetic-dataset-review-002"
+        ],
+        "purpose": "dataset_reference",
+        "synthetic": true,
+        "type": "dataset_record"
+      },
+      {
+        "digest": "sha256:921cb4f1338da6820c7a205f55e299e21214ebdd1e8facd829a5e33c6b18f6d7",
+        "evidence_id": "evidence-invalid_review_review_trigger_missing_002-decision",
+        "linked_refs": [
+          "synthetic-dataset-review-002",
+          "synthetic-policy-review-001"
+        ],
+        "purpose": "decision_record",
+        "synthetic": true,
+        "type": "review_record"
+      },
+      {
+        "digest": "sha256:16f807fec92a27c2e578e63587527b78ffc2f74eb4356e1821dff529a144b4e0",
+        "evidence_id": "evidence-invalid_review_review_trigger_missing_002-review",
+        "linked_refs": [
+          "synthetic-dataset-review-002",
+          "synthetic-policy-review-001"
+        ],
+        "purpose": "review_record",
+        "synthetic": true,
+        "type": "review_record"
+      }
+    ],
+    "integrity_digest": "sha256:7c632d91b5985991d46b3e7ba8a1ecf7e8ffcb83fb6cffed3086638110461248"
+  },
+  "fixture_id": "invalid_review_review_trigger_missing_002",
+  "fixture_metadata": {
+    "benchmark_version": "2.0-draft",
+    "controlled_fixture": true,
+    "fixture_family": "invalid",
+    "notes": "Synthetic controlled fixture for PD-OAP v2.0 evaluation design.",
+    "operation_family": "review_decision",
+    "primary_purpose": "negative_control",
+    "synthetic": true
+  },
+  "intentional_defect": {
+    "defect_description": "Review decision lacks the policy trigger that initiated review.",
+    "expected_detection_surface": "review trigger completeness",
+    "failure_class": "review_trigger_missing"
+  },
+  "non_claims": {
+    "complete_workflow_coverage": false,
+    "legal_sufficiency": false,
+    "privacy_compliance_claim": false,
+    "production_deployment": false,
+    "real_government_decision": false,
+    "statistical_population_claim": false
+  },
+  "operation": {
+    "catalog_id": "synthetic-catalog-review-001",
+    "data_object_id": "synthetic-dataset-review-002",
+    "decision_scope": "single_operation",
+    "operation_family": "review_decision",
+    "operation_id": "operation-invalid_review_review_trigger_missing_002",
+    "operation_type": "review_decision",
+    "policy_id": "synthetic-policy-review-001",
+    "policy_version": "2026.1",
+    "requested_action": "post_operation_review"
+  },
+  "policy": {
+    "allowed_purposes": [
+      "accountability_review"
+    ],
+    "allowed_requester_roles": [
+      "review_board_member"
+    ],
+    "authorization_basis": "synthetic_authorization_basis_review",
+    "policy_id": "synthetic-policy-review-001",
+    "policy_version": "2026.1",
+    "required_reuse_conditions": [],
+    "review_triggers": []
+  },
+  "profile": {
+    "name": "public-data-operation-accountability-profile",
+    "profile_id": "public-data-operation-accountability-profile@2.0-draft",
+    "version": "2.0-draft"
+  },
+  "provenance": {
+    "handoff_refs": [],
+    "integrity_digest": "sha256:7c632d91b5985991d46b3e7ba8a1ecf7e8ffcb83fb6cffed3086638110461248",
+    "source_refs": [
+      "synthetic-dataset-review-002",
+      "synthetic-catalog-review-001",
+      "synthetic-policy-review-001"
+    ]
+  },
+  "purpose": {
+    "allowed_by_policy": true,
+    "declared_purpose": "accountability_review",
+    "purpose_id": "purpose-invalid_review_review_trigger_missing_002"
+  },
+  "requester": {
+    "declared_affiliation": "synthetic local research or service unit",
+    "requester_id": "synthetic-requester-review-002",
+    "role": "review_board_member"
+  },
+  "statement_id": "statement-invalid_review_review_trigger_missing_002",
+  "subject": {
+    "data_object_id": "synthetic-dataset-review-002",
+    "object_type": "public_data_object",
+    "sensitivity": "bounded_public_sector_data",
+    "title": "Synthetic review public-data object 002"
+  },
+  "validation": {
+    "expected_failure_class": "review_trigger_missing",
+    "expected_primary_failure_code": "review_trigger_missing",
+    "expected_result": "invalid",
+    "required_rule_surfaces": [
+      "operation_boundary",
+      "review_trigger_presence",
+      "review_evidence_presence",
+      "policy_version_consistency",
+      "integrity_digest_consistency"
+    ]
+  }
+}
